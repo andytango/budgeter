@@ -4,9 +4,7 @@ A personal budget that Claude keeps up to date for you every morning, on your ph
 
 ![Budgeter on a phone: the current pay period, this period's spending, the tax year view and dark mode](docs/screenshots/hero.jpg)
 
-*Everyone and every number in these screenshots is made up: a household with a mortgage, a partner
-who pays a share of the bills, a couple of cards and a car on finance
-([`examples/demo-budget.json`](examples/demo-budget.json)).*
+*Demo data ([`examples/demo-budget.json`](examples/demo-budget.json)).*
 
 ## What it is
 
