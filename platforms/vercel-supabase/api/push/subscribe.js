@@ -1,0 +1,4 @@
+// POST /api/push/subscribe: handled by the shared API (api/_lib/api.js).
+import { route } from "../_lib/supabase.js";
+
+export const POST = route;

@@ -1,14 +1,14 @@
-// Local preview of the phone app with example data, no Cloudflare needed (Node 18+, no dependencies).
+// Local preview of the phone app with example data, no hosting needed (Node 20+, no dependencies).
 //   node tools/preview.mjs [path/to/budget.json]      then open http://localhost:8787
-// Serves app/public and answers /api/budget with the JSON file (examples/demo-budget.json by default).
-// Push sign-up is stubbed out. This skips the Cloudflare Access check, so only use it locally.
+// Serves app/ and answers /api/budget with the JSON file (examples/demo-budget.json by default).
+// No sign-in and push is stubbed out, so only use it locally.
 import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
 import { extname, join, normalize } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
-const pub = join(root, "app", "public");
+const pub = join(root, "app");
 const data = process.argv[2] || join(root, "examples", "demo-budget.json");
 const types = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".png": "image/png",
   ".json": "application/json", ".webmanifest": "application/manifest+json", ".svg": "image/svg+xml" };

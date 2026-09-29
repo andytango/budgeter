@@ -1,0 +1,25 @@
+// Fill in every REPLACE_ME (see SETUP.md in the Budgeter repo: platforms/cloudflare/SETUP.md).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "budgeter",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-01",
+  // Only reachable through your custom domain, which Cloudflare Access protects.
+  "workers_dev": false,
+  "preview_urls": false,
+  "assets": { "directory": "./public", "binding": "ASSETS", "run_worker_first": true },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "budgeter-db", "database_id": "REPLACE_ME_D1_DATABASE_ID" }
+  ],
+  // Sends queued push notifications every minute.
+  "triggers": { "crons": ["* * * * *"] },
+  "routes": [{ "pattern": "REPLACE_ME_DOMAIN", "custom_domain": true }],
+  "vars": {
+    // Your Access team domain and the Access application's audience (AUD) tag.
+    "ACCESS_TEAM_DOMAIN": "https://REPLACE_ME.cloudflareaccess.com",
+    "ACCESS_AUD": "REPLACE_ME_ACCESS_AUD",
+    // From `node tools/gen-vapid.mjs` in the Budgeter repo. The private key goes in the VAPID_PRIVATE_JWK secret, never here.
+    "VAPID_SUBJECT": "https://REPLACE_ME_DOMAIN",
+    "VAPID_PUBLIC_KEY": "REPLACE_ME_VAPID_PUBLIC_KEY"
+  }
+}

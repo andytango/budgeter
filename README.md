@@ -11,42 +11,36 @@ who pays a share of the bills, a couple of cards and a car on finance
 
 ## What it is
 
-Most budgeting apps ask you to categorise transactions and then show you charts of the past. This
-one answers a single question: **how much will be in my account the day before I next get paid?**
+Most budgeting apps ask you to categorise transactions and then show you charts of the past. This one
+answers a single question: **how much will be in my account the day before I next get paid?**
 
-Each morning a scheduled Claude routine:
+Every morning a scheduled Claude routine reads your bank and new transactions, works out what each
+payment was (checking your email for receipts), ticks off bills, itemises every bit of spending,
+updates your debts, and sends a notification to your phone with the headline number and the one
+thing that needs doing. Everything else is on the phone app: this pay period, forecasts for five
+years, past periods, your tax year and your loans.
 
-1. reads your bank balances and new transactions through a bank connector,
-2. works out what each payment was (searching your email for receipts when it doesn't recognise one),
-3. updates the budget: ticks off bills that went out, itemises every bit of discretionary spending,
-   updates debt balances, and rolls over to a new period on payday,
-4. writes you a short brief in the chat, and
-5. sends a push notification to your phone with the headline number and the one thing that needs
-   doing.
+## Get started
 
-You look at the result on your phone, in the Budgeter app, or in a Claude artifact.
+You don't set this up by hand. Open your coding agent (built for Claude Code; any agent that can run
+commands will manage) and say:
 
-## The model
+> Set up Budgeter for me on **Vercel + Supabase** (or **Cloudflare**):
+> https://github.com/andytango/budgeter
 
-Everything revolves around the **pay period**: from the day before payday to the day before the next
-payday. That's when your balance is at its lowest, so it's the number that matters.
+The agent follows [AGENTS.md](AGENTS.md). It asks a few questions (which host, your private repo, your
+email, how you're paid), builds the app into your private repo, provisions the database and sign-in,
+deploys, loads your first budget, and creates the daily routine. It stops only for the things you have
+to do yourself, like creating an access token or signing in on your phone.
 
-```
-Start of Period  (balance just before your salary lands)
-+ Income         (salary, partner's bill share, refunds…)
-− Expenses       (bills, debt payments, and every discretionary spend so far)
-= Period End Cash
-```
+**You'll need:**
+- a Claude plan with Claude Code on the web and scheduled routines,
+- a bank connector for Claude (e.g. Era Context) or statement exports, and an email connector,
+- a private GitHub repo for your finances,
+- a free **Vercel + Supabase** account pair, or a **Cloudflare** account with a domain on it.
 
-- **Planned items** (salary, bills, debt payments) come from a recurring **plan**: monthly on a day,
-  weekly, on payday, or one-off / annual on a date.
-- **Discretionary spending is never forecast.** It only appears once you've spent it, so the
-  forecast shows what you'd have left if you spent nothing more. Every card payment is itemised,
-  and any unexplained difference shows up as "not itemised yet".
-- **Future periods** are projected from the plan for five years, including debts: each debt's balance
-  is simulated with monthly interest, and its payments stop once it hits £0.
-- **Past periods** come from your bank statement (see [`tools/backfill.py`](tools/backfill.py)) and
-  then from each payday rollover.
+Hosting fits in the free plans. To look first: `node tools/preview.mjs`, then open
+http://localhost:8787 to see the demo (Node 20+, no install).
 
 ## Features
 
@@ -57,15 +51,23 @@ Start of Period  (balance just before your salary lands)
   Estimates are tagged "est.", and paid items say "paid".
 - **Timeline notes.** The daily routine pins notes on the period's progress bar (amber = something to
   do, green = good news) and lists them at the bottom.
-- **Push notifications** (Web Push with VAPID, written from scratch with WebCrypto: no dependencies).
-  The routine queues a message in the database and the server sends it within a minute. Messages can
-  be scheduled for later.
+- **Push notifications**: the daily brief, plus reminders scheduled for later ("remind me Friday at
+  8 to move the supermarket collection").
 - **Installable phone app (PWA)** with light and dark mode, offline copy, no pinch zoom or bounce.
 - **Private by default.** Sign-in is an emailed one-time code for your address only: Cloudflare
   Access (checked again by the Worker), or Supabase Auth on Vercel.
 - **Two ways to host it:** Cloudflare (Workers + D1 + Access), or Vercel + Supabase. Same app, same
   features.
 - **A Claude artifact** that renders the same budget with the same code, inside Claude.
+
+## Using it
+
+Talk to Claude in your finance repo, the same place the routine runs. For example:
+- "I've cancelled Disney+." It comes off the plan, and Claude watches for it coming back.
+- "Add a monthly haircut, about £40 mid-month." It becomes a planned bill.
+- "How did this period go negative?" or "What's driving the year-end number?" You get a breakdown.
+- "I'm borrowing £100 from my partner until payday." It goes in as income now and a repayment on payday.
+- "Move the notes to the bottom of the screen." Claude changes the app and redeploys it.
 
 ## Screenshots
 
@@ -78,93 +80,28 @@ Start of Period  (balance just before your salary lands)
 | <img src="docs/screenshots/7-loans.png" width="240" alt="Loans"> | <img src="docs/screenshots/8-dark-period.png" width="240" alt="Dark mode"> | <img src="docs/screenshots/9-dark-spending.png" width="240" alt="Dark mode breakdown"> |
 | **Loans:** how much is paid off and when each one clears. | **Dark mode** follows your phone. | |
 
-## How it fits together
+## Privacy
 
-```
-                  ┌─────────────────────────────── Claude (Claude Code on the web) ─────────────────────────────┐
-  bank connector ─┤  Daily routine (07:50): read balances + transactions, check email, update the budget JSON   │
-  email connector ┤  CLAUDE.md = working memory (your debts, bills, rules, decisions)                         │
-                  └───────────────┬──────────────────────────────────────────────┬──────────────────────────────┘
-                                  │ writes budget JSON                           │ writes budget JSON
-                                  ▼                                              ▼
-                   Claude artifact database                     Cloudflare D1 (docs, push_subs, notifications)
-                   `budget/current`                                              │
-                                  │                                              ▼
-                                  ▼                              Cloudflare Worker behind Cloudflare Access
-                   artifact.html + panel.js ◄── same code ──►   serves the PWA, /api/budget, push sign-up,
-                   (view inside Claude)                          cron: sends queued notifications
-                                                                                 │
-                                                                                 ▼
-                                                                  Your phone (Home Screen app + push)
-```
+This repo is code only. Your budget, statements and settings live in your own private repo and your
+own database, and only a signed-in address you've allowed can see the budget. Claude reads your bank
+and email read-only: it never moves money or sends email. How it's put together and secured:
+[docs/architecture.md](docs/architecture.md).
 
-On Vercel + Supabase the right-hand side is Supabase Postgres instead of D1 and Vercel Functions
-instead of the Worker, with Supabase Auth for sign-in and Supabase's `pg_cron` calling the delivery
-endpoint every minute.
+## Repo layout
 
-| Path | What it is |
+| Path | What |
 |---|---|
-| [`app/`](app/) | The Cloudflare Worker and the phone app (`public/`). `panel.js` + `panel.css` hold all the rendering and the projection engine. |
-| [`app/schema.sql`](app/schema.sql) | The D1 tables. |
-| [`api/`](api/), [`vercel.json`](vercel.json) | The Vercel Functions: the same API, backed by Supabase. |
-| [`platforms/vercel-supabase/`](platforms/vercel-supabase/) | Supabase schema (and the every-minute schedule), the Supabase sign-in, the Vercel build step. |
-| [`artifact/artifact.html`](artifact/artifact.html) | The Claude artifact shell that loads the same `panel.js` / `panel.css`. |
-| [`templates/CLAUDE.md`](templates/CLAUDE.md) | A starting point for Claude's working memory about your finances. |
-| [`templates/daily-routine.md`](templates/daily-routine.md) | The prompt for the daily routine. |
-| [`tools/backfill.py`](tools/backfill.py) | Builds past periods from a bank statement CSV. |
-| [`tools/gen-vapid.mjs`](tools/gen-vapid.mjs) | Generates the push notification keys. |
-| [`tools/preview.mjs`](tools/preview.mjs) | Runs the app locally with example data. |
-| [`examples/demo-budget.json`](examples/demo-budget.json) | A complete, made-up budget document. |
-| [`docs/`](docs/) | Setup guide, data model, and how the Claude side works. |
+| [`AGENTS.md`](AGENTS.md) | The setup playbook for coding agents. |
+| [`app/`](app/) | The phone app. |
+| [`server/`](server/) | The API and push notifications, shared by every host. |
+| [`platforms/`](platforms/) | One folder per host: adapter code, schema, `SETUP.md` runbook. |
+| [`claude/`](claude/) | Templates for Claude's memory and the daily routine; the Claude artifact. |
+| [`tools/`](tools/) | Create, validate, seed, backfill, preview. |
+| [`docs/`](docs/) | [Data model](docs/data-model.md), [architecture](docs/architecture.md), screenshots. |
+| [`examples/`](examples/) | A complete, made-up budget. |
+| [`tests/`](tests/) | `npm test`. |
 
-## Try it in two minutes
-
-You need Node 18 or newer. No install step:
-
-```sh
-node tools/preview.mjs
-# open http://localhost:8787
-```
-
-This serves the app with the demo budget. Point it at your own file with
-`node tools/preview.mjs path/to/budget.json`.
-
-## Set it up for yourself
-
-Pick a host:
-
-- **Cloudflare** (the original): **[docs/setup.md](docs/setup.md)**. A domain on Cloudflare, a D1
-  database, a Cloudflare Access application for your email, VAPID keys, then `npx wrangler deploy`.
-- **Vercel + Supabase**: **[docs/vercel-supabase.md](docs/vercel-supabase.md)**. A Supabase project
-  (tables, one user, sign-ups off), VAPID keys, then import the repo into Vercel with a few
-  environment variables. No domain needed.
-
-Then, whichever host:
-
-1. **Your data**: a private repo for your finances with `CLAUDE.md` (from the template) and your
-   first budget document (start from the demo, or backfill history from a statement).
-2. **Claude**: Claude Code on the web with a bank connector and an email connector, the Budgeter
-   artifact, and the daily routine created from the template prompt.
-
-How the Claude side works, and how to talk to it, is in **[docs/claude.md](docs/claude.md)**.
-The budget JSON is documented in **[docs/data-model.md](docs/data-model.md)**.
-
-## Costs
-
-Either host fits in its free plan: Cloudflare (Workers, D1, Access for up to 50 users; you'll need
-a domain on Cloudflare), or Vercel Hobby + Supabase Free (no domain needed). The Claude side needs a Claude plan that includes Claude Code on the web and
-scheduled routines, plus whatever your bank connector charges.
-
-## Keep your data private
-
-This repo contains **code only**. Your budget document, `CLAUDE.md`, statements and the routine prompt
-hold your real finances: keep them in a **private** repo, and never commit the VAPID private key, a
-Cloudflare API token or a Supabase secret key. Your budget is only served to a signed-in address
-you've allowed.
-
-It's UK-flavoured: pounds, `en-GB` dates, UK tax years, and a payday rule of "last Friday of the
-month, brought forward off bank holidays" (Christmas, Boxing Day, New Year's Day and Good Friday).
-Change `paydayOf` in `panel.js` if yours differs; see [docs/setup.md](docs/setup.md#customising).
+UK defaults (pounds, UK tax year, paid on the last Friday of the month): your agent can change them.
 
 ## Licence
 

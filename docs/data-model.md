@@ -1,8 +1,9 @@
 # The budget document
 
-One JSON document holds the whole budget. It's stored twice, with identical content: in the app's
-database (`docs` table, row `current`: D1 on Cloudflare, Supabase on Vercel) for the phone app, and in the Claude artifact's database (`budget/current`) for
-the artifact. [`examples/demo-budget.json`](../examples/demo-budget.json) is a complete example.
+One JSON document holds the whole budget. The app's database stores it (table `docs`, row `current`),
+and the optional Claude artifact keeps a copy in its own database (`budget/current`).
+[`examples/demo-budget.json`](../examples/demo-budget.json) is a complete example, and
+`node tools/validate.mjs <file>` checks a document against everything below.
 
 Dates are ISO strings (`YYYY-MM-DD`) and amounts are positive numbers in pounds: whether an item is
 money in or money out depends on the list it's in (`income` or `expenses`). Negative amounts are

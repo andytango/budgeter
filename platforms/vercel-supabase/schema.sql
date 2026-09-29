@@ -41,19 +41,3 @@ create or replace function touch_updated_at() returns trigger language plpgsql a
 begin new.updated_at = now(); return new; end $$;
 drop trigger if exists docs_touch on docs;
 create trigger docs_touch before update on docs for each row execute function touch_updated_at();
-
--- ── Every minute: deliver queued notifications ───────────────────────────────────────────────────
--- Vercel's free (Hobby) cron only runs once a day, so Supabase calls the delivery endpoint instead.
--- Replace the two values, then run this part too. (On Vercel Pro you can use Vercel Cron instead:
--- see docs/vercel-supabase.md.)
---
--- create extension if not exists pg_cron;
--- create extension if not exists pg_net;
--- select cron.schedule('budget-deliver', '* * * * *', $$
---   select net.http_post(
---     url := 'https://budget.example.com/api/cron/deliver',
---     headers := jsonb_build_object('Authorization', 'Bearer REPLACE_ME_CRON_SECRET')
---   )
--- $$);
---
--- To stop it: select cron.unschedule('budget-deliver');

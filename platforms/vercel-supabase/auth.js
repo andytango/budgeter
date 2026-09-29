@@ -1,22 +1,30 @@
-// Sign-in for the Vercel + Supabase build: replaces app/public/auth.js at build time.
+// Sign-in for Vercel + Supabase: tools/create.mjs puts this in place of the no-op app/auth.js.
 //
 // Supabase Auth emails you a one-time code (a code rather than a link, because a link opens Safari
 // instead of the Home Screen app). The session is kept in this browser and refreshed as needed, so
 // you sign in about once a month. Only existing users can sign in (no sign-ups), and the server
 // additionally only accepts the addresses in ALLOWED_EMAILS.
 (function () {
-  const URL_ = "%%SUPABASE_URL%%";
-  const KEY = "%%SUPABASE_PUBLISHABLE_KEY%%";
-  const STORE = "budget-session";
+  const STORE = "budget-session", CONFIG = "budget-auth-config";
 
-  const load = () => { try { return JSON.parse(localStorage.getItem(STORE)) || null; } catch { return null; } };
-  const save = (s) => { try { s ? localStorage.setItem(STORE, JSON.stringify(s)) : localStorage.removeItem(STORE); } catch {} };
-  let session = load();
+  const load = (k) => { try { return JSON.parse(localStorage.getItem(k)) || null; } catch { return null; } };
+  const save = (k, v) => { try { v ? localStorage.setItem(k, JSON.stringify(v)) : localStorage.removeItem(k); } catch {} };
+  let session = load(STORE);
+
+  // The project's public settings, from /api/config. Kept for offline starts and refreshed each launch.
+  let config = load(CONFIG);
+  const fresh = fetch("/api/config").then((r) => (r.ok ? r.json() : null)).then((c) => {
+    if (c && c.supabaseUrl && c.publishableKey) { config = c; save(CONFIG, c); }
+    return config;
+  }).catch(() => config);
+  const settings = async () => config || (await fresh);
 
   async function auth(path, body) {
-    const res = await fetch(URL_ + "/auth/v1/" + path, {
+    const { supabaseUrl, publishableKey } = (await settings()) || {};
+    if (!supabaseUrl) throw new Error("Sign-in isn't configured");
+    const res = await fetch(supabaseUrl.replace(/\/+$/, "") + "/auth/v1/" + path, {
       method: "POST",
-      headers: { apikey: KEY, "content-type": "application/json" },
+      headers: { apikey: publishableKey, "content-type": "application/json" },
       body: JSON.stringify(body),
     });
     const data = await res.json().catch(() => ({}));
@@ -26,7 +34,7 @@
 
   const keep = (d) => {
     session = { access_token: d.access_token, refresh_token: d.refresh_token, expires_at: d.expires_at || Math.floor(Date.now() / 1000) + (d.expires_in || 3600) };
-    save(session);
+    save(STORE, session);
   };
 
   // A valid access token, refreshing it if it's (nearly) expired. Offline, the old one is used and the
@@ -37,7 +45,7 @@
     if (session.expires_at - 60 > Date.now() / 1000) return session.access_token;
     refreshing = refreshing || auth("token?grant_type=refresh_token", { refresh_token: session.refresh_token })
       .then(keep)
-      .catch((e) => { if (e.status >= 400 && e.status < 500) { session = null; save(null); } })
+      .catch((e) => { if (e.status >= 400 && e.status < 500) { session = null; save(STORE, null); } })
       .finally(() => { refreshing = null; });
     await refreshing;
     return session && session.access_token;
@@ -48,7 +56,7 @@
   // Shows the sign-in form in place of the budget; resolves once signed in.
   let pending = null;
   function signIn() {
-    session = null; save(null);
+    session = null; save(STORE, null);
     if (pending) return pending;
     pending = new Promise((resolve) => {
       const app = document.getElementById("app");
@@ -110,6 +118,6 @@
       const headers = Object.assign({}, opts.headers, t ? { Authorization: "Bearer " + t } : {});
       return fetch(path, Object.assign({}, opts, { headers }));
     },
-    signOut() { session = null; save(null); location.reload(); },
+    signOut() { session = null; save(STORE, null); location.reload(); },
   };
 })();

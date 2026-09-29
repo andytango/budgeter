@@ -1,10 +1,10 @@
 node_modules/
 .wrangler/
+.vercel/
 .dev.vars
-seed.sql
+.env*
+# Never commit personal data here: statements, seeds, backfill output, generated apps.
 *.csv
+seed.sql
 history.json
 backfill.json
-dist/
-.vercel/
-.env*
