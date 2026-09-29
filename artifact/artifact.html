@@ -1,4 +1,4 @@
-<title>Budget Panel</title>
+<title>Budgeter</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@500;600;700;800&display=swap">
@@ -13,10 +13,10 @@
 <script>
 (async () => {
   const db = window.claude && window.claude.use ? await window.claude.use("db") : null;
-  if (!db) { BudgetPanel.fail("Open this page in Claude to see the latest budget."); return; }
+  if (!db) { Budgeter.fail("Open this page in Claude to see the latest budget."); return; }
   db.doc("budget/current").onSnapshot(
-    (snap) => { if (snap.exists) BudgetPanel.render(snap.data()); else BudgetPanel.fail("No budget saved yet. Claude fills this in each morning."); },
-    () => BudgetPanel.fail("The budget couldn't be loaded. Reload the page to try again.")
+    (snap) => { if (snap.exists) Budgeter.render(snap.data()); else Budgeter.fail("No budget saved yet. Claude fills this in each morning."); },
+    () => Budgeter.fail("The budget couldn't be loaded. Reload the page to try again.")
   );
 })();
 </script>

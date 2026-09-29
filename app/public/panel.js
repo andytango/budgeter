@@ -1,6 +1,6 @@
-// Budget Panel: the pay-period budget, projections of future periods, a 12-period year view
+// Budgeter: the pay-period budget, projections of future periods, a 12-period year view
 // and the loans. Shared by the phone app (index.html) and the Claude artifact (artifact.html).
-// Both call BudgetPanel.render(doc) with the budget document, or BudgetPanel.fail(message).
+// Both call Budgeter.render(doc) with the budget document, or Budgeter.fail(message).
 (function () {
   "use strict";
   const AHEAD = 60; // future pay periods to project (five years; enough for four full tax years ahead)
@@ -350,7 +350,7 @@
   // Prompt to turn on notifications (PWA only), until they're on or dismissed for a fortnight.
   const LATER = "budget-push-later";
   function pushCard() {
-    const push = window.BudgetPanel.push;
+    const push = window.Budgeter.push;
     if (!push || push.state !== "off") return "";
     let later = 0;
     try { later = Number(localStorage.getItem(LATER)) || 0; } catch (e) { later = 0; }
@@ -385,9 +385,9 @@
     }
     const tabs = Object.keys(TITLES).map((t) =>
       '<button type="button" role="tab" data-tab="' + t + '" aria-selected="' + (state.tab === t) + '">' + { period: "Period", year: "Year", loans: "Loans" }[t] + "</button>").join("");
-    const refresh = window.BudgetPanel.onRefresh
+    const refresh = window.Budgeter.onRefresh
       ? '<button type="button" class="refresh" data-refresh aria-label="Refresh">' + REFRESH + "</button>" : "";
-    const push = window.BudgetPanel.push;
+    const push = window.Budgeter.push;
     const bell = push
       ? '<button type="button" class="refresh bell ' + push.state + '" data-bell aria-pressed="' + (push.state === "on") + '" aria-label="' +
         { on: "Notifications on. Tap to send a test", off: "Turn on notifications", denied: "Notifications are blocked in Settings" }[push.state] + '">' + BELL + "</button>" : "";
@@ -414,10 +414,10 @@
 
   let refreshing = false;
   async function refresh(btn) {
-    if (refreshing || !window.BudgetPanel.onRefresh) return;
+    if (refreshing || !window.Budgeter.onRefresh) return;
     refreshing = true;
     btn.classList.add("spinning");
-    try { await window.BudgetPanel.onRefresh(); } finally {
+    try { await window.Budgeter.onRefresh(); } finally {
       refreshing = false;
       const b = $(".refresh");
       if (b) b.classList.remove("spinning");
@@ -427,7 +427,7 @@
   document.addEventListener("click", (e) => {
     const bl = e.target.closest("[data-bell]");
     if (bl) {
-      const push = window.BudgetPanel.push;
+      const push = window.Budgeter.push;
       if (push && push.state !== "denied") push.toggle().catch(() => {});
       else alert("Notifications are blocked for this app. Turn them on in Settings → Notifications → Budget.");
       return;
@@ -468,7 +468,7 @@
     if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) step(dx < 0 ? 1 : -1);
   }, { passive: true });
 
-  window.BudgetPanel = {
+  window.Budgeter = {
     render(d) {
       const first = !doc;
       doc = d;

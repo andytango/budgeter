@@ -21,7 +21,7 @@ example `my-finances`) and copy this project into it as a folder:
 ```
 my-finances/
 ├── CLAUDE.md          ← from templates/CLAUDE.md, filled in over time
-└── budget-panel/      ← this repo
+└── budgeter/          ← this repo
 ```
 
 Claude Code on the web will run in this private repo, so the daily routine can read `CLAUDE.md` and
@@ -30,16 +30,16 @@ deploy changes to the app.
 ## 2. Create the database
 
 ```sh
-cd budget-panel/app
+cd budgeter/app
 npm install
 npx wrangler login                      # or set CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID
-npx wrangler d1 create budget-panel-db  # prints a database_id
+npx wrangler d1 create budgeter-db  # prints a database_id
 ```
 
 Put the `database_id` into `app/wrangler.jsonc`, then create the tables:
 
 ```sh
-npx wrangler d1 execute budget-panel-db --remote --file=schema.sql
+npx wrangler d1 execute budgeter-db --remote --file=schema.sql
 ```
 
 ## 3. Push notification keys
@@ -101,7 +101,7 @@ Start from the demo to check everything works, then replace it with your own (se
 
 ```sh
 node ../tools/make-seed.mjs ../examples/demo-budget.json > ../seed.sql
-npx wrangler d1 execute budget-panel-db --remote --file=../seed.sql
+npx wrangler d1 execute budgeter-db --remote --file=../seed.sql
 rm ../seed.sql
 ```
 

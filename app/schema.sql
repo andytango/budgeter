@@ -1,5 +1,5 @@
--- D1 schema for the Budget Panel Worker.
--- Apply with: npx wrangler d1 execute budget-panel-db --remote --file=schema.sql
+-- D1 schema for the Budgeter Worker.
+-- Apply with: npx wrangler d1 execute budgeter-db --remote --file=schema.sql
 
 -- The budget document. Row 'current' holds the whole budget JSON (see docs/data-model.md).
 CREATE TABLE IF NOT EXISTS docs (

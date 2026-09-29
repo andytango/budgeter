@@ -28,4 +28,4 @@ createServer(async (req, res) => {
   } catch {
     res.writeHead(404); res.end("Not found");
   }
-}).listen(8787, "127.0.0.1", () => console.log("Budget Panel preview on http://localhost:8787 using " + data));
+}).listen(8787, "127.0.0.1", () => console.log("Budgeter preview on http://localhost:8787 using " + data));

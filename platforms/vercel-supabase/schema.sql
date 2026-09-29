@@ -1,4 +1,4 @@
--- Supabase (Postgres) schema for the Budget Panel on Vercel.
+-- Supabase (Postgres) schema for Budgeter on Vercel.
 -- Run it in the Supabase dashboard: SQL Editor → New query → paste → Run.
 
 -- The budget document. Row 'current' holds the whole budget JSON (see docs/data-model.md).

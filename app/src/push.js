@@ -1,4 +1,4 @@
-// Web Push for the Budget Panel: VAPID (RFC 8292) and aes128gcm payload encryption (RFC 8291),
+// Web Push for Budgeter: VAPID (RFC 8292) and aes128gcm payload encryption (RFC 8291),
 // written against WebCrypto so it runs in a Worker with no dependencies.
 
 const enc = new TextEncoder();

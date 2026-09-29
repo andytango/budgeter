@@ -5,7 +5,7 @@ html, body { overscroll-behavior: none; }
 body { margin: 0; }
 [hidden] { display: none !important; }
 .status a { color: var(--ink); font-weight: 700; }
-/* A sim-game budget panel: sage by day, a night palette when the phone is in dark mode. */
+/* A sim-game budget screen: sage by day, a night palette when the phone is in dark mode. */
 :root {
   color-scheme: light;
   --frame: #dee8e4;          /* SimCity 4 button / control-panel sage */

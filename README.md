@@ -1,16 +1,13 @@
-# Budget Panel
+# Budgeter
 
 A personal budget that Claude keeps up to date for you every morning, shown as a SimCity 4-style
 budget screen on your phone.
 
-<p>
-  <img src="docs/screenshots/light-1-period.png" width="200" alt="The current pay period: start of period, income, expenses and period end cash">
-  <img src="docs/screenshots/light-2-period-breakdown.png" width="200" alt="The period's income and expenses, group by group">
-  <img src="docs/screenshots/light-5-tax-year.png" width="200" alt="The tax year view">
-  <img src="docs/screenshots/dark-1-period.png" width="200" alt="Dark mode">
-</p>
+![Budgeter on a phone: the current pay period, this period's spending, the tax year view and dark mode](docs/screenshots/hero.jpg)
 
-*All the numbers in these screenshots are made up ([`examples/demo-budget.json`](examples/demo-budget.json)).*
+*Everyone and every number in these screenshots is made up: a household with a mortgage, a partner
+who pays a share of the bills, a couple of cards and a car on finance
+([`examples/demo-budget.json`](examples/demo-budget.json)).*
 
 ## What it is
 
@@ -27,7 +24,7 @@ Each morning a scheduled Claude routine:
 5. sends a push notification to your phone with the headline number and the one thing that needs
    doing.
 
-You look at the result on your phone, in the Budget Panel app, or in a Claude artifact.
+You look at the result on your phone, in the Budgeter app, or in a Claude artifact.
 
 ## The model
 
@@ -69,6 +66,17 @@ Start of Period  (balance just before your salary lands)
 - **Two ways to host it:** Cloudflare (Workers + D1 + Access), or Vercel + Supabase. Same app, same
   features.
 - **A Claude artifact** that renders the same budget with the same code, inside Claude.
+
+## Screenshots
+
+| | | |
+|:-:|:-:|:-:|
+| <img src="docs/screenshots/1-period.png" width="240" alt="The current pay period"> | <img src="docs/screenshots/2-breakdown.png" width="240" alt="Income and expenses by group"> | <img src="docs/screenshots/3-spending.png" width="240" alt="Every discretionary spend, itemised"> |
+| **This period.** Where you'll land the day before payday, with notes from the daily check. | **Tap the total** for income and expenses by group. | **Every spend itemised**, including your partner's half and refunds. |
+| <img src="docs/screenshots/4-next-period.png" width="240" alt="Next month's forecast"> | <img src="docs/screenshots/5-past-period.png" width="240" alt="A past period"> | <img src="docs/screenshots/6-tax-year.png" width="240" alt="The tax year"> |
+| **Swipe forward** for forecasts: bills and debt payments from the plan. | **Swipe back** through past periods, built from your statements. | **The tax year**, and each one after it for five years. |
+| <img src="docs/screenshots/7-loans.png" width="240" alt="Loans"> | <img src="docs/screenshots/8-dark-period.png" width="240" alt="Dark mode"> | <img src="docs/screenshots/9-dark-spending.png" width="240" alt="Dark mode breakdown"> |
+| **Loans:** how much is paid off and when each one clears. | **Dark mode** follows your phone. | |
 
 ## How it fits together
 
@@ -135,7 +143,7 @@ Then, whichever host:
 
 1. **Your data**: a private repo for your finances with `CLAUDE.md` (from the template) and your
    first budget document (start from the demo, or backfill history from a statement).
-2. **Claude**: Claude Code on the web with a bank connector and an email connector, the Budget Panel
+2. **Claude**: Claude Code on the web with a bank connector and an email connector, the Budgeter
    artifact, and the daily routine created from the template prompt.
 
 How the Claude side works, and how to talk to it, is in **[docs/claude.md](docs/claude.md)**.

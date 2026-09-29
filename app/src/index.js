@@ -1,4 +1,4 @@
-// Budget Panel: serves the PWA and its data, only to requests that Cloudflare Access has signed in.
+// Budgeter: serves the PWA and its data, only to requests that Cloudflare Access has signed in.
 //
 // Access sits in front of the whole hostname and adds a signed JWT to every request it lets through.
 // This Worker checks that JWT too, so the data stays private even if Access is ever misconfigured or

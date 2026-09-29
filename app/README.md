@@ -1,4 +1,4 @@
-# Budget Panel app
+# Budgeter app
 
 The phone app (PWA) and the Cloudflare Worker that serves it. Setup is in [../docs/setup.md](../docs/setup.md).
 

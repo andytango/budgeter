@@ -1,7 +1,7 @@
 // Copy your own values into the REPLACE_ME fields (see docs/setup.md).
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "budget-panel",
+  "name": "budgeter",
   "main": "src/index.js",
   "compatibility_date": "2026-09-01",
   // Only reachable through your custom domain, which Cloudflare Access protects.
@@ -9,7 +9,7 @@
   "preview_urls": false,
   "assets": { "directory": "./public", "binding": "ASSETS", "run_worker_first": true },
   "d1_databases": [
-    { "binding": "DB", "database_name": "budget-panel-db", "database_id": "REPLACE_ME_D1_DATABASE_ID" }
+    { "binding": "DB", "database_name": "budgeter-db", "database_id": "REPLACE_ME_D1_DATABASE_ID" }
   ],
   // Sends queued push notifications every minute.
   "triggers": { "crons": ["* * * * *"] },

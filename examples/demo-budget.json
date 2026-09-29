@@ -1,31 +1,31 @@
 {
- "asOf": "2026-09-27",
- "updatedLabel": "27 Sep",
+ "asOf": "2026-10-09",
+ "updatedLabel": "9 Oct",
  "periodStart": "2026-09-24",
  "periodEnd": "2026-10-29",
  "payday": "2026-10-30",
- "opening": 214.75,
- "balance": 3222.17,
+ "opening": 286.4,
+ "balance": 1628.8,
  "income": [
   {
    "group": "Salary",
    "items": [
     {
      "name": "September pay",
-     "amount": 3150.0,
+     "amount": 3412.66,
      "done": true,
      "due": "2026-09-25"
     }
    ]
   },
   {
-   "group": "Partner",
+   "group": "Alex",
    "items": [
     {
-     "name": "Bill share from partner",
-     "amount": 650.0,
-     "due": "2026-10-01",
-     "est": true
+     "name": "Bill share from Alex",
+     "amount": 725.0,
+     "done": true,
+     "due": "2026-10-01"
     }
    ]
   }
@@ -35,19 +35,22 @@
    "group": "Housing",
    "items": [
     {
-     "name": "Mortgage",
-     "amount": 1050.0,
-     "due": "2026-10-01"
-    },
-    {
-     "name": "Service charge",
-     "amount": 150.0,
-     "due": "2026-10-05"
+     "name": "Mortgage (Nationwide)",
+     "amount": 1084.37,
+     "due": "2026-10-01",
+     "done": true
     },
     {
      "name": "Council tax",
-     "amount": 165.0,
-     "due": "2026-10-07"
+     "amount": 187.0,
+     "due": "2026-10-01",
+     "done": true
+    },
+    {
+     "name": "Home insurance (Direct Line)",
+     "amount": 21.84,
+     "due": "2026-10-08",
+     "done": true
     }
    ]
   },
@@ -55,109 +58,146 @@
    "group": "Debt Repayments",
    "items": [
     {
-     "name": "Credit card",
-     "amount": 200.0,
-     "due": "2026-10-01",
-     "debt": "Credit card"
+     "name": "Amex",
+     "amount": 250.0,
+     "due": "2026-10-03",
+     "debt": "Amex",
+     "done": true
     },
     {
-     "name": "Interest-free card",
-     "amount": 100.0,
-     "due": "2026-10-01",
-     "debt": "Interest-free card"
+     "name": "Barclaycard (0% transfer)",
+     "amount": 120.0,
+     "due": "2026-10-12",
+     "debt": "Barclaycard"
     },
     {
-     "name": "Car finance",
-     "amount": 220.0,
-     "due": "2026-10-15",
+     "name": "Car finance (Black Horse)",
+     "amount": 239.41,
+     "due": "2026-10-20",
      "debt": "Car finance"
     }
    ]
   },
   {
-   "group": "Cleaner",
+   "group": "Savings",
    "items": [
     {
-     "name": "Cleaner (weekly)",
-     "amount": 45.0,
+     "name": "Emergency fund",
+     "amount": 300.0,
      "due": "2026-09-25",
-     "est": true,
      "done": true
     },
     {
-     "name": "Cleaner (weekly)",
-     "amount": 45.0,
-     "due": "2026-10-02",
+     "name": "Holiday pot",
+     "amount": 200.0,
+     "due": "2026-09-25",
+     "done": true
+    }
+   ]
+  },
+  {
+   "group": "Groceries",
+   "items": [
+    {
+     "name": "Tesco weekly shop",
+     "amount": 74.18,
+     "due": "2026-09-26",
+     "done": true
+    },
+    {
+     "name": "Tesco weekly shop",
+     "amount": 81.06,
+     "due": "2026-10-03",
+     "done": true
+    },
+    {
+     "name": "Tesco weekly shop",
+     "amount": 75.0,
+     "due": "2026-10-10",
      "est": true
     },
     {
-     "name": "Cleaner (weekly)",
-     "amount": 45.0,
-     "due": "2026-10-09",
+     "name": "Tesco weekly shop",
+     "amount": 75.0,
+     "due": "2026-10-17",
      "est": true
     },
     {
-     "name": "Cleaner (weekly)",
-     "amount": 45.0,
-     "due": "2026-10-16",
-     "est": true
-    },
-    {
-     "name": "Cleaner (weekly)",
-     "amount": 45.0,
-     "due": "2026-10-23",
+     "name": "Tesco weekly shop",
+     "amount": 75.0,
+     "due": "2026-10-24",
      "est": true
     }
    ]
   },
   {
-   "group": "Utilities & Phone",
+   "group": "Bills",
    "items": [
     {
-     "name": "Energy",
-     "amount": 110.0,
+     "name": "TV Licence",
+     "amount": 14.95,
      "due": "2026-10-01",
-     "est": true
+     "done": true
     },
     {
-     "name": "Water",
-     "amount": 38.0,
-     "due": "2026-10-10"
+     "name": "Octopus Energy",
+     "amount": 128.0,
+     "due": "2026-10-02",
+     "done": true
     },
     {
-     "name": "Broadband",
-     "amount": 30.0,
-     "due": "2026-10-12"
+     "name": "giffgaff",
+     "amount": 12.0,
+     "due": "2026-10-09",
+     "done": true
     },
     {
-     "name": "Mobile",
-     "amount": 15.0,
-     "due": "2026-10-13"
+     "name": "Wessex Water",
+     "amount": 41.0,
+     "due": "2026-10-15"
+    },
+    {
+     "name": "Virgin Media broadband",
+     "amount": 47.5,
+     "due": "2026-10-22"
     }
    ]
   },
   {
-   "group": "Insurance & Health",
+   "group": "Car",
    "items": [
     {
-     "name": "Dentist plan",
-     "amount": 18.5,
-     "due": "2026-10-01"
+     "name": "Car insurance (Admiral)",
+     "amount": 48.12,
+     "due": "2026-10-11"
     },
     {
-     "name": "Car insurance",
-     "amount": 42.0,
-     "due": "2026-10-02"
+     "name": "MOT and service",
+     "amount": 249.0,
+     "due": "2026-10-19",
+     "est": true
+    }
+   ]
+  },
+  {
+   "group": "Health & Pets",
+   "items": [
+    {
+     "name": "Dental plan",
+     "amount": 19.5,
+     "due": "2026-10-01",
+     "done": true
     },
     {
-     "name": "Gym",
-     "amount": 35.0,
-     "due": "2026-10-03"
+     "name": "PureGym",
+     "amount": 27.99,
+     "due": "2026-10-04",
+     "done": true
     },
     {
-     "name": "Pet insurance",
-     "amount": 28.0,
-     "due": "2026-10-17"
+     "name": "ManyPets (Biscuit)",
+     "amount": 31.76,
+     "due": "2026-10-18"
     }
    ]
   },
@@ -165,29 +205,25 @@
    "group": "Subscriptions",
    "items": [
     {
-     "name": "News",
-     "amount": 9.0,
-     "due": "2026-10-01"
+     "name": "iCloud+",
+     "amount": 2.99,
+     "due": "2026-09-26",
+     "done": true
     },
     {
-     "name": "Domain renewal (annual)",
-     "amount": 14.99,
-     "due": "2026-10-12"
-    },
-    {
-     "name": "Music streaming",
-     "amount": 11.99,
+     "name": "Spotify Duo",
+     "amount": 16.99,
      "due": "2026-10-14"
     },
     {
-     "name": "Video streaming",
-     "amount": 10.99,
-     "due": "2026-10-14"
+     "name": "Netflix",
+     "amount": 12.99,
+     "due": "2026-10-21"
     },
     {
-     "name": "Cloud storage",
-     "amount": 7.99,
-     "due": "2026-10-17"
+     "name": "iCloud+",
+     "amount": 2.99,
+     "due": "2026-10-26"
     }
    ]
   },
@@ -196,107 +232,187 @@
    "discretionary": true,
    "items": [
     {
-     "name": "Supermarket",
-     "amount": 46.2,
+     "name": "Pret A Manger",
+     "amount": 23.85,
+     "count": 4,
      "done": true,
      "due": "2026-09-25"
     },
     {
-     "name": "Coffee shop",
-     "amount": 7.4,
-     "count": 2,
+     "name": "The Old Market Tavern",
+     "amount": 31.4,
      "done": true,
      "due": "2026-09-26"
     },
     {
-     "name": "Hardware store",
-     "amount": 38.99,
-     "done": true,
-     "due": "2026-09-26"
-    },
-    {
-     "name": "Film rental",
-     "amount": 3.49,
-     "done": true,
-     "due": "2026-09-26"
-    },
-    {
-     "name": "Pub",
-     "amount": 24.6,
-     "done": true,
-     "due": "2026-09-26"
-    },
-    {
-     "name": "Partner's share (split bills)",
-     "amount": -23.1,
+     "name": "Trainline (London return)",
+     "amount": 64.3,
      "done": true,
      "due": "2026-09-27"
+    },
+    {
+     "name": "Boots",
+     "amount": 12.49,
+     "done": true,
+     "due": "2026-09-28"
+    },
+    {
+     "name": "Shell",
+     "amount": 58.72,
+     "done": true,
+     "due": "2026-09-29"
+    },
+    {
+     "name": "Waterstones",
+     "amount": 18.99,
+     "done": true,
+     "due": "2026-10-01"
+    },
+    {
+     "name": "Amazon",
+     "amount": 24.99,
+     "done": true,
+     "due": "2026-10-02"
+    },
+    {
+     "name": "Wagamama",
+     "amount": 46.8,
+     "done": true,
+     "due": "2026-10-03"
+    },
+    {
+     "name": "Vue Cinemas",
+     "amount": 21.98,
+     "done": true,
+     "due": "2026-10-04"
+    },
+    {
+     "name": "Alex's half (Wagamama)",
+     "amount": -23.4,
+     "done": true,
+     "due": "2026-10-04"
+    },
+    {
+     "name": "B&Q",
+     "amount": 37.15,
+     "done": true,
+     "due": "2026-10-04"
+    },
+    {
+     "name": "Uniqlo",
+     "amount": 39.9,
+     "done": true,
+     "due": "2026-10-05"
+    },
+    {
+     "name": "Amazon refund",
+     "amount": -24.99,
+     "done": true,
+     "due": "2026-10-06"
+    },
+    {
+     "name": "Greggs",
+     "amount": 9.15,
+     "count": 3,
+     "done": true,
+     "due": "2026-10-07"
+    },
+    {
+     "name": "Sainsbury's Local",
+     "amount": 22.6,
+     "count": 3,
+     "done": true,
+     "due": "2026-10-08"
+    },
+    {
+     "name": "Deliveroo",
+     "amount": 27.45,
+     "done": true,
+     "due": "2026-10-08"
     }
    ]
   }
  ],
  "debts": [
   {
-   "name": "Credit card",
-   "rate": "22.9% APR",
-   "apr": 22.9,
-   "monthly": 200,
-   "balance": 1400.0,
-   "start": 2500.0
+   "name": "Amex",
+   "rate": "24.9% APR",
+   "apr": 24.9,
+   "monthly": 250,
+   "balance": 1842.17,
+   "start": 3200.0
   },
   {
-   "name": "Interest-free card",
-   "rate": "0%",
+   "name": "Barclaycard",
+   "rate": "0% until Jun 2027",
    "apr": 0,
-   "monthly": 100,
-   "balance": 1800.0,
-   "start": 3000.0
+   "monthly": 120,
+   "balance": 2460.0,
+   "start": 3600.0
   },
   {
    "name": "Car finance",
-   "rate": "6.9% APR",
-   "apr": 6.9,
-   "monthly": 220,
-   "balance": 4200.0,
-   "start": 9000.0
+   "rate": "9.9% APR",
+   "apr": 9.9,
+   "monthly": 239.41,
+   "balance": 6873.4,
+   "start": 12500.0
   }
  ],
- "note": "Started the period on **£215**. With every bill still to come paid you're heading for **£1,436** on Thu 29 Oct. Discretionary so far: **£98**.",
+ "alerts": [
+  {
+   "date": "2026-10-07",
+   "kind": "good",
+   "text": "Amazon refund of £24.99 landed"
+  },
+  {
+   "date": "2026-10-12",
+   "kind": "action",
+   "text": "Get car insurance quotes: Admiral renews 2 Nov"
+  },
+  {
+   "date": "2026-10-19",
+   "kind": "info",
+   "text": "MOT and service at Kwik Fit, about £249"
+  }
+ ],
+ "note": "On track for **£594** on Thu 29 Oct, the day before payday. Discretionary so far **£391**, £115 of it eating out.",
  "plan": {
   "income": [
    {
     "group": "Salary",
     "name": "{month} pay",
-    "amount": 3150.0,
+    "amount": 3412.66,
     "payday": true,
     "est": true
    },
    {
-    "group": "Partner",
-    "name": "Bill share from partner",
-    "amount": 650.0,
+    "group": "Alex",
+    "name": "Bill share from Alex",
+    "amount": 725.0,
     "day": 1,
+    "est": true
+   },
+   {
+    "group": "Salary",
+    "name": "Christmas bonus",
+    "amount": 1150.0,
+    "date": "2026-12-18",
     "est": true
    }
   ],
   "expenses": [
    {
     "group": "Housing",
-    "name": "Mortgage",
-    "amount": 1050.0,
+    "name": "Mortgage (Nationwide)",
+    "amount": 1084.37,
     "day": 1
    },
    {
     "group": "Housing",
-    "name": "Service charge",
-    "amount": 150.0,
-    "day": 5
-   },
-   {
-    "group": "Housing",
     "name": "Council tax",
-    "amount": 165.0,
-    "day": 7,
+    "amount": 187.0,
+    "day": 1,
     "months": [
      4,
      5,
@@ -311,133 +427,159 @@
     ]
    },
    {
-    "group": "Debt Repayments",
-    "name": "Credit card",
-    "amount": 200.0,
-    "day": 1,
-    "debt": "Credit card"
+    "group": "Housing",
+    "name": "Home insurance (Direct Line)",
+    "amount": 21.84,
+    "day": 8
    },
    {
     "group": "Debt Repayments",
-    "name": "Interest-free card",
-    "amount": 100.0,
-    "day": 1,
-    "debt": "Interest-free card"
+    "name": "Amex",
+    "amount": 250.0,
+    "day": 3,
+    "debt": "Amex"
    },
    {
     "group": "Debt Repayments",
-    "name": "Car finance",
-    "amount": 220.0,
-    "day": 15,
+    "name": "Barclaycard (0% transfer)",
+    "amount": 120.0,
+    "day": 12,
+    "debt": "Barclaycard"
+   },
+   {
+    "group": "Debt Repayments",
+    "name": "Car finance (Black Horse)",
+    "amount": 239.41,
+    "day": 20,
     "debt": "Car finance"
    },
    {
-    "group": "Cleaner",
-    "name": "Cleaner (weekly)",
-    "amount": 45.0,
-    "weekly": 5,
+    "group": "Savings",
+    "name": "Emergency fund",
+    "amount": 300.0,
+    "payday": true
+   },
+   {
+    "group": "Savings",
+    "name": "Holiday pot",
+    "amount": 200.0,
+    "payday": true
+   },
+   {
+    "group": "Groceries",
+    "name": "Tesco weekly shop",
+    "amount": 75.0,
+    "weekly": 6,
     "est": true
    },
    {
-    "group": "Utilities & Phone",
-    "name": "Energy",
-    "amount": 110.0,
-    "day": 1,
+    "group": "Bills",
+    "name": "Octopus Energy",
+    "amount": 128.0,
+    "day": 2,
     "est": true
    },
    {
-    "group": "Utilities & Phone",
-    "name": "Water",
-    "amount": 38.0,
-    "day": 10
+    "group": "Bills",
+    "name": "Wessex Water",
+    "amount": 41.0,
+    "day": 15
    },
    {
-    "group": "Insurance & Health",
-    "name": "Gym",
-    "amount": 35.0,
-    "day": 3
+    "group": "Bills",
+    "name": "Virgin Media broadband",
+    "amount": 47.5,
+    "day": 22
    },
    {
-    "group": "Utilities & Phone",
-    "name": "Broadband",
-    "amount": 30.0,
-    "day": 12
+    "group": "Bills",
+    "name": "giffgaff",
+    "amount": 12.0,
+    "day": 9
    },
    {
-    "group": "Utilities & Phone",
-    "name": "Mobile",
-    "amount": 15.0,
-    "day": 13
-   },
-   {
-    "group": "Insurance & Health",
-    "name": "Car insurance",
-    "amount": 42.0,
-    "day": 2
-   },
-   {
-    "group": "Insurance & Health",
-    "name": "Dentist plan",
-    "amount": 18.5,
+    "group": "Bills",
+    "name": "TV Licence",
+    "amount": 14.95,
     "day": 1
    },
    {
-    "group": "Insurance & Health",
-    "name": "Pet insurance",
-    "amount": 28.0,
-    "day": 17
+    "group": "Car",
+    "name": "Car insurance (Admiral)",
+    "amount": 48.12,
+    "day": 11
+   },
+   {
+    "group": "Car",
+    "name": "MOT and service",
+    "amount": 249.0,
+    "date": "2026-10-19",
+    "everyYears": 1,
+    "est": true
+   },
+   {
+    "group": "Health & Pets",
+    "name": "PureGym",
+    "amount": 27.99,
+    "day": 4
+   },
+   {
+    "group": "Health & Pets",
+    "name": "Dental plan",
+    "amount": 19.5,
+    "day": 1
+   },
+   {
+    "group": "Health & Pets",
+    "name": "ManyPets (Biscuit)",
+    "amount": 31.76,
+    "day": 18
    },
    {
     "group": "Subscriptions",
-    "name": "Music streaming",
-    "amount": 11.99,
+    "name": "Spotify Duo",
+    "amount": 16.99,
     "day": 14
    },
    {
     "group": "Subscriptions",
-    "name": "Video streaming",
-    "amount": 10.99,
-    "day": 14
+    "name": "Netflix",
+    "amount": 12.99,
+    "day": 21
    },
    {
     "group": "Subscriptions",
-    "name": "Cloud storage",
-    "amount": 7.99,
-    "day": 17
+    "name": "iCloud+",
+    "amount": 2.99,
+    "day": 26
    },
    {
     "group": "Subscriptions",
-    "name": "News",
-    "amount": 9.0,
-    "day": 1
-   },
-   {
-    "group": "Subscriptions",
-    "name": "Domain renewal (annual)",
-    "amount": 14.99,
-    "date": "2026-10-12",
+    "name": "Microsoft 365 Family (annual)",
+    "amount": 104.99,
+    "date": "2026-11-19",
     "everyYears": 1
    },
    {
     "group": "Subscriptions",
-    "name": "Office software (annual)",
-    "amount": 79.99,
-    "date": "2027-01-13",
+    "name": "Duolingo Super (annual)",
+    "amount": 84.99,
+    "date": "2027-02-03",
     "everyYears": 1
    },
    {
     "group": "Subscriptions",
-    "name": "Bank plan (annual)",
-    "amount": 120.0,
-    "date": "2027-05-19",
+    "name": "Amazon Prime (annual)",
+    "amount": 95.0,
+    "date": "2027-03-08",
     "everyYears": 1
    },
    {
     "group": "Debt Repayments",
-    "name": "Credit card (extra payment)",
+    "name": "Amex (from the bonus)",
     "amount": 600.0,
-    "date": "2026-10-30",
-    "debt": "Credit card"
+    "date": "2026-12-18",
+    "debt": "Amex"
    }
   ]
  },
@@ -446,26 +588,26 @@
    "periodStart": "2026-03-26",
    "periodEnd": "2026-04-23",
    "payday": "2026-04-24",
-   "opening": 520.0,
-   "balance": 640.0,
+   "opening": 598.1,
+   "balance": 640.35,
    "income": [
     {
      "group": "Salary",
      "items": [
       {
        "name": "March pay",
-       "amount": 3150.0,
+       "amount": 3412.66,
        "done": true,
        "due": "2026-03-27"
       }
      ]
     },
     {
-     "group": "Partner",
+     "group": "Alex",
      "items": [
       {
-       "name": "Bill share from partner",
-       "amount": 650.0,
+       "name": "Bill share from Alex",
+       "amount": 725.0,
        "done": true,
        "due": "2026-04-01"
       }
@@ -477,22 +619,22 @@
      "group": "Housing",
      "items": [
       {
-       "name": "Mortgage",
-       "amount": 1050.0,
+       "name": "Mortgage (Nationwide)",
+       "amount": 1084.37,
        "done": true,
        "due": "2026-04-01"
       },
       {
-       "name": "Service charge",
-       "amount": 150.0,
+       "name": "Council tax",
+       "amount": 187.0,
        "done": true,
-       "due": "2026-04-05"
+       "due": "2026-04-01"
       },
       {
-       "name": "Council tax",
-       "amount": 165.0,
+       "name": "Home insurance (Direct Line)",
+       "amount": 21.84,
        "done": true,
-       "due": "2026-04-07"
+       "due": "2026-04-08"
       }
      ]
     },
@@ -500,109 +642,137 @@
      "group": "Debt Repayments",
      "items": [
       {
-       "name": "Credit card",
-       "amount": 200.0,
-       "done": true,
-       "due": "2026-04-01"
-      },
-      {
-       "name": "Interest-free card",
-       "amount": 100.0,
-       "done": true,
-       "due": "2026-04-01"
-      },
-      {
-       "name": "Car finance",
-       "amount": 220.0,
-       "done": true,
-       "due": "2026-04-15"
-      }
-     ]
-    },
-    {
-     "group": "Cleaner",
-     "items": [
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-03-27"
-      },
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
+       "name": "Amex",
+       "amount": 250.0,
        "done": true,
        "due": "2026-04-03"
       },
       {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-04-10"
-      },
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-04-17"
-      }
-     ]
-    },
-    {
-     "group": "Utilities & Phone",
-     "items": [
-      {
-       "name": "Energy",
-       "amount": 110.0,
-       "done": true,
-       "due": "2026-04-01"
-      },
-      {
-       "name": "Water",
-       "amount": 38.0,
-       "done": true,
-       "due": "2026-04-10"
-      },
-      {
-       "name": "Broadband",
-       "amount": 30.0,
+       "name": "Barclaycard (0% transfer)",
+       "amount": 120.0,
        "done": true,
        "due": "2026-04-12"
       },
       {
-       "name": "Mobile",
-       "amount": 15.0,
+       "name": "Car finance (Black Horse)",
+       "amount": 239.41,
        "done": true,
-       "due": "2026-04-13"
+       "due": "2026-04-20"
       }
      ]
     },
     {
-     "group": "Insurance & Health",
+     "group": "Savings",
      "items": [
       {
-       "name": "Dentist plan",
-       "amount": 18.5,
+       "name": "Emergency fund",
+       "amount": 300.0,
+       "done": true,
+       "due": "2026-03-27"
+      },
+      {
+       "name": "Holiday pot",
+       "amount": 200.0,
+       "done": true,
+       "due": "2026-03-27"
+      }
+     ]
+    },
+    {
+     "group": "Groceries",
+     "items": [
+      {
+       "name": "Tesco weekly shop",
+       "amount": 75.02,
+       "done": true,
+       "due": "2026-03-28"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 78.35,
+       "done": true,
+       "due": "2026-04-04"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 89.65,
+       "done": true,
+       "due": "2026-04-11"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 75.44,
+       "done": true,
+       "due": "2026-04-18"
+      }
+     ]
+    },
+    {
+     "group": "Bills",
+     "items": [
+      {
+       "name": "TV Licence",
+       "amount": 14.95,
        "done": true,
        "due": "2026-04-01"
       },
       {
-       "name": "Car insurance",
-       "amount": 42.0,
+       "name": "Octopus Energy",
+       "amount": 112.25,
        "done": true,
        "due": "2026-04-02"
       },
       {
-       "name": "Gym",
-       "amount": 35.0,
+       "name": "giffgaff",
+       "amount": 12.0,
        "done": true,
-       "due": "2026-04-03"
+       "due": "2026-04-09"
       },
       {
-       "name": "Pet insurance",
-       "amount": 28.0,
+       "name": "Wessex Water",
+       "amount": 41.0,
        "done": true,
-       "due": "2026-04-17"
+       "due": "2026-04-15"
+      },
+      {
+       "name": "Virgin Media broadband",
+       "amount": 47.5,
+       "done": true,
+       "due": "2026-04-22"
+      }
+     ]
+    },
+    {
+     "group": "Car",
+     "items": [
+      {
+       "name": "Car insurance (Admiral)",
+       "amount": 48.12,
+       "done": true,
+       "due": "2026-04-11"
+      }
+     ]
+    },
+    {
+     "group": "Health & Pets",
+     "items": [
+      {
+       "name": "Dental plan",
+       "amount": 19.5,
+       "done": true,
+       "due": "2026-04-01"
+      },
+      {
+       "name": "PureGym",
+       "amount": 27.99,
+       "done": true,
+       "due": "2026-04-04"
+      },
+      {
+       "name": "ManyPets (Biscuit)",
+       "amount": 31.76,
+       "done": true,
+       "due": "2026-04-18"
       }
      ]
     },
@@ -610,28 +780,16 @@
      "group": "Subscriptions",
      "items": [
       {
-       "name": "News",
-       "amount": 9.0,
-       "done": true,
-       "due": "2026-04-01"
-      },
-      {
-       "name": "Music streaming",
-       "amount": 11.99,
+       "name": "Spotify Duo",
+       "amount": 16.99,
        "done": true,
        "due": "2026-04-14"
       },
       {
-       "name": "Video streaming",
-       "amount": 10.99,
+       "name": "Netflix",
+       "amount": 12.99,
        "done": true,
-       "due": "2026-04-14"
-      },
-      {
-       "name": "Cloud storage",
-       "amount": 7.99,
-       "done": true,
-       "due": "2026-04-17"
+       "due": "2026-04-21"
       }
      ]
     },
@@ -640,76 +798,135 @@
      "discretionary": true,
      "items": [
       {
-       "name": "Supermarket",
-       "amount": 456.84,
+       "name": "Wagamama",
+       "amount": 48.2,
        "done": true,
-       "due": "2026-03-28",
-       "count": 6
+       "due": "2026-03-29"
       },
       {
-       "name": "Petrol",
-       "amount": 202.03,
-       "done": true,
-       "due": "2026-04-18",
-       "count": 2
-      },
-      {
-       "name": "Restaurant",
-       "amount": 185.3,
-       "done": true,
-       "due": "2026-04-16",
-       "count": 2
-      },
-      {
-       "name": "Hardware store",
-       "amount": 146.35,
-       "done": true,
-       "due": "2026-04-03",
-       "count": 2
-      },
-      {
-       "name": "Gift",
-       "amount": 98.21,
-       "done": true,
-       "due": "2026-04-09"
-      },
-      {
-       "name": "Coffee shop",
-       "amount": 61.63,
+       "name": "Amazon",
+       "amount": 129.31,
        "done": true,
        "due": "2026-03-29",
-       "count": 6
+       "count": 4
       },
       {
-       "name": "Pharmacy",
-       "amount": 61.39,
+       "name": "The Old Market Tavern",
+       "amount": 62.08,
        "done": true,
        "due": "2026-03-31",
        "count": 2
       },
       {
-       "name": "Takeaway",
-       "amount": 41.73,
+       "name": "Uber",
+       "amount": 26.14,
        "done": true,
-       "due": "2026-04-14"
+       "due": "2026-04-02",
+       "count": 2
       },
       {
-       "name": "Cinema",
-       "amount": 41.28,
+       "name": "Shell",
+       "amount": 124.79,
        "done": true,
-       "due": "2026-04-17"
+       "due": "2026-04-03",
+       "count": 2
       },
       {
-       "name": "Bakery",
-       "amount": 9.82,
+       "name": "Pret A Manger",
+       "amount": 32.19,
        "done": true,
-       "due": "2026-04-09"
+       "due": "2026-04-04",
+       "count": 5
       },
       {
-       "name": "Partner's share (split bills)",
-       "amount": -46.05,
+       "name": "Nando's",
+       "amount": 31.24,
        "done": true,
-       "due": "2026-04-20"
+       "due": "2026-04-06"
+      },
+      {
+       "name": "Costa Coffee",
+       "amount": 18.16,
+       "done": true,
+       "due": "2026-04-08",
+       "count": 4
+      },
+      {
+       "name": "Trainline",
+       "amount": 127.29,
+       "done": true,
+       "due": "2026-04-08",
+       "count": 3
+      },
+      {
+       "name": "Vue Cinemas",
+       "amount": 20.69,
+       "done": true,
+       "due": "2026-04-08"
+      },
+      {
+       "name": "John Lewis",
+       "amount": 76.55,
+       "done": true,
+       "due": "2026-04-08"
+      },
+      {
+       "name": "Tesco top-up",
+       "amount": 79.77,
+       "done": true,
+       "due": "2026-04-09",
+       "count": 4
+      },
+      {
+       "name": "B&Q",
+       "amount": 25.68,
+       "done": true,
+       "due": "2026-04-10"
+      },
+      {
+       "name": "Waterstones",
+       "amount": 15.89,
+       "done": true,
+       "due": "2026-04-16"
+      },
+      {
+       "name": "Alex's half (split bills)",
+       "amount": -45.02,
+       "done": true,
+       "due": "2026-04-19"
+      },
+      {
+       "name": "Greggs",
+       "amount": 5.92,
+       "done": true,
+       "due": "2026-04-22"
+      },
+      {
+       "name": "Deliveroo",
+       "amount": 87.11,
+       "done": true,
+       "due": "2026-04-22",
+       "count": 3
+      },
+      {
+       "name": "Sainsbury's Local",
+       "amount": 84.76,
+       "done": true,
+       "due": "2026-04-23",
+       "count": 6
+      },
+      {
+       "name": "Boots",
+       "amount": 14.91,
+       "done": true,
+       "due": "2026-04-23",
+       "count": 2
+      },
+      {
+       "name": "Pets at Home",
+       "amount": 23.62,
+       "done": true,
+       "due": "2026-04-23"
       }
      ]
     }
@@ -719,26 +936,26 @@
    "periodStart": "2026-04-23",
    "periodEnd": "2026-05-28",
    "payday": "2026-05-29",
-   "opening": 640.0,
-   "balance": 245.6,
+   "opening": 640.35,
+   "balance": 522.1,
    "income": [
     {
      "group": "Salary",
      "items": [
       {
        "name": "April pay",
-       "amount": 3150.0,
+       "amount": 3412.66,
        "done": true,
        "due": "2026-04-24"
       }
      ]
     },
     {
-     "group": "Partner",
+     "group": "Alex",
      "items": [
       {
-       "name": "Bill share from partner",
-       "amount": 650.0,
+       "name": "Bill share from Alex",
+       "amount": 725.0,
        "done": true,
        "due": "2026-05-01"
       }
@@ -750,22 +967,22 @@
      "group": "Housing",
      "items": [
       {
-       "name": "Mortgage",
-       "amount": 1050.0,
+       "name": "Mortgage (Nationwide)",
+       "amount": 1084.37,
        "done": true,
        "due": "2026-05-01"
       },
       {
-       "name": "Service charge",
-       "amount": 150.0,
+       "name": "Council tax",
+       "amount": 187.0,
        "done": true,
-       "due": "2026-05-05"
+       "due": "2026-05-01"
       },
       {
-       "name": "Council tax",
-       "amount": 165.0,
+       "name": "Home insurance (Direct Line)",
+       "amount": 21.84,
        "done": true,
-       "due": "2026-05-07"
+       "due": "2026-05-08"
       }
      ]
     },
@@ -773,115 +990,143 @@
      "group": "Debt Repayments",
      "items": [
       {
-       "name": "Credit card",
-       "amount": 200.0,
+       "name": "Amex",
+       "amount": 250.0,
        "done": true,
-       "due": "2026-05-01"
+       "due": "2026-05-03"
       },
       {
-       "name": "Interest-free card",
-       "amount": 100.0,
+       "name": "Barclaycard (0% transfer)",
+       "amount": 120.0,
        "done": true,
-       "due": "2026-05-01"
+       "due": "2026-05-12"
       },
       {
-       "name": "Car finance",
-       "amount": 220.0,
+       "name": "Car finance (Black Horse)",
+       "amount": 239.41,
        "done": true,
-       "due": "2026-05-15"
+       "due": "2026-05-20"
       }
      ]
     },
     {
-     "group": "Cleaner",
+     "group": "Savings",
      "items": [
       {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
+       "name": "Emergency fund",
+       "amount": 300.0,
        "done": true,
        "due": "2026-04-24"
       },
       {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
+       "name": "Holiday pot",
+       "amount": 200.0,
+       "done": true,
+       "due": "2026-04-24"
+      }
+     ]
+    },
+    {
+     "group": "Groceries",
+     "items": [
+      {
+       "name": "Tesco weekly shop",
+       "amount": 71.6,
+       "done": true,
+       "due": "2026-04-25"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 73.78,
+       "done": true,
+       "due": "2026-05-02"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 72.11,
+       "done": true,
+       "due": "2026-05-09"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 89.5,
+       "done": true,
+       "due": "2026-05-16"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 62.17,
+       "done": true,
+       "due": "2026-05-23"
+      }
+     ]
+    },
+    {
+     "group": "Bills",
+     "items": [
+      {
+       "name": "TV Licence",
+       "amount": 14.95,
        "done": true,
        "due": "2026-05-01"
       },
       {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
+       "name": "Octopus Energy",
+       "amount": 99.83,
        "done": true,
-       "due": "2026-05-08"
+       "due": "2026-05-02"
       },
       {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
+       "name": "giffgaff",
+       "amount": 12.0,
+       "done": true,
+       "due": "2026-05-09"
+      },
+      {
+       "name": "Wessex Water",
+       "amount": 41.0,
        "done": true,
        "due": "2026-05-15"
       },
       {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
+       "name": "Virgin Media broadband",
+       "amount": 47.5,
        "done": true,
        "due": "2026-05-22"
       }
      ]
     },
     {
-     "group": "Utilities & Phone",
+     "group": "Car",
      "items": [
       {
-       "name": "Energy",
-       "amount": 110.0,
+       "name": "Car insurance (Admiral)",
+       "amount": 48.12,
        "done": true,
-       "due": "2026-05-01"
-      },
-      {
-       "name": "Water",
-       "amount": 38.0,
-       "done": true,
-       "due": "2026-05-10"
-      },
-      {
-       "name": "Broadband",
-       "amount": 30.0,
-       "done": true,
-       "due": "2026-05-12"
-      },
-      {
-       "name": "Mobile",
-       "amount": 15.0,
-       "done": true,
-       "due": "2026-05-13"
+       "due": "2026-05-11"
       }
      ]
     },
     {
-     "group": "Insurance & Health",
+     "group": "Health & Pets",
      "items": [
       {
-       "name": "Dentist plan",
-       "amount": 18.5,
+       "name": "Dental plan",
+       "amount": 19.5,
        "done": true,
        "due": "2026-05-01"
       },
       {
-       "name": "Car insurance",
-       "amount": 42.0,
+       "name": "PureGym",
+       "amount": 27.99,
        "done": true,
-       "due": "2026-05-02"
+       "due": "2026-05-04"
       },
       {
-       "name": "Gym",
-       "amount": 35.0,
+       "name": "ManyPets (Biscuit)",
+       "amount": 31.76,
        "done": true,
-       "due": "2026-05-03"
-      },
-      {
-       "name": "Pet insurance",
-       "amount": 28.0,
-       "done": true,
-       "due": "2026-05-17"
+       "due": "2026-05-18"
       }
      ]
     },
@@ -889,28 +1134,28 @@
      "group": "Subscriptions",
      "items": [
       {
-       "name": "News",
-       "amount": 9.0,
+       "name": "iCloud+",
+       "amount": 2.99,
        "done": true,
-       "due": "2026-05-01"
+       "due": "2026-04-26"
       },
       {
-       "name": "Music streaming",
-       "amount": 11.99,
+       "name": "Spotify Duo",
+       "amount": 16.99,
        "done": true,
        "due": "2026-05-14"
       },
       {
-       "name": "Video streaming",
-       "amount": 10.99,
+       "name": "Netflix",
+       "amount": 12.99,
        "done": true,
-       "due": "2026-05-14"
+       "due": "2026-05-21"
       },
       {
-       "name": "Cloud storage",
-       "amount": 7.99,
+       "name": "iCloud+",
+       "amount": 2.99,
        "done": true,
-       "due": "2026-05-17"
+       "due": "2026-05-26"
       }
      ]
     },
@@ -919,82 +1164,141 @@
      "discretionary": true,
      "items": [
       {
-       "name": "Supermarket",
-       "amount": 549.57,
+       "name": "The Old Market Tavern",
+       "amount": 71.67,
        "done": true,
-       "due": "2026-05-05",
-       "count": 7
+       "due": "2026-04-24",
+       "count": 3
       },
       {
-       "name": "Train tickets",
-       "amount": 332.02,
+       "name": "Nando's",
+       "amount": 30.35,
        "done": true,
-       "due": "2026-05-23",
+       "due": "2026-04-26"
+      },
+      {
+       "name": "Deliveroo",
+       "amount": 84.97,
+       "done": true,
+       "due": "2026-04-26",
+       "count": 3
+      },
+      {
+       "name": "Shell",
+       "amount": 115.99,
+       "done": true,
+       "due": "2026-04-26",
        "count": 2
       },
       {
-       "name": "Pub",
-       "amount": 308.43,
+       "name": "Barber (Ruffians)",
+       "amount": 29.89,
        "done": true,
-       "due": "2026-04-26",
+       "due": "2026-04-28"
+      },
+      {
+       "name": "Greggs",
+       "amount": 18.86,
+       "done": true,
+       "due": "2026-04-29",
        "count": 4
       },
       {
-       "name": "Restaurant",
-       "amount": 218.32,
+       "name": "Screwfix",
+       "amount": 35.85,
        "done": true,
-       "due": "2026-05-14",
-       "count": 2
+       "due": "2026-05-08"
       },
       {
-       "name": "Takeaway",
-       "amount": 141.6,
+       "name": "John Lewis",
+       "amount": 87.53,
+       "done": true,
+       "due": "2026-05-09"
+      },
+      {
+       "name": "Pets at Home",
+       "amount": 39.89,
+       "done": true,
+       "due": "2026-05-10"
+      },
+      {
+       "name": "B&Q",
+       "amount": 15.94,
+       "done": true,
+       "due": "2026-05-11"
+      },
+      {
+       "name": "Vue Cinemas",
+       "amount": 21.11,
+       "done": true,
+       "due": "2026-05-14"
+      },
+      {
+       "name": "Tesco top-up",
+       "amount": 104.35,
+       "done": true,
+       "due": "2026-05-15",
+       "count": 4
+      },
+      {
+       "name": "Boots",
+       "amount": 30.47,
        "done": true,
        "due": "2026-05-16",
        "count": 2
       },
       {
-       "name": "Garden centre",
-       "amount": 64.46,
+       "name": "Costa Coffee",
+       "amount": 7.83,
        "done": true,
-       "due": "2026-05-01"
+       "due": "2026-05-18",
+       "count": 2
       },
       {
-       "name": "Clothes shop",
-       "amount": 58.75,
+       "name": "Sainsbury's Local",
+       "amount": 40.63,
        "done": true,
-       "due": "2026-05-12"
+       "due": "2026-05-18",
+       "count": 3
       },
       {
-       "name": "Coffee shop",
-       "amount": 48.62,
+       "name": "Wagamama",
+       "amount": 36.95,
        "done": true,
-       "due": "2026-04-28",
-       "count": 4
+       "due": "2026-05-20"
       },
       {
-       "name": "Cinema",
-       "amount": 43.81,
+       "name": "Waterstones",
+       "amount": 16.35,
        "done": true,
-       "due": "2026-05-22"
+       "due": "2026-05-20"
       },
       {
-       "name": "Pharmacy",
-       "amount": 27.17,
+       "name": "Pret A Manger",
+       "amount": 39.22,
        "done": true,
-       "due": "2026-04-28"
+       "due": "2026-05-23",
+       "count": 5
       },
       {
-       "name": "Corner shop",
-       "amount": 10.7,
+       "name": "Trainline",
+       "amount": 211.89,
        "done": true,
-       "due": "2026-05-13"
+       "due": "2026-05-24",
+       "count": 3
       },
       {
-       "name": "Partner's share (split bills)",
-       "amount": -75.52,
+       "name": "Alex's half (split bills)",
+       "amount": -18.57,
        "done": true,
-       "due": "2026-05-25"
+       "due": "2026-05-24"
+      },
+      {
+       "name": "Amazon",
+       "amount": 84.35,
+       "done": true,
+       "due": "2026-05-28",
+       "count": 3
       }
      ]
     }
@@ -1004,26 +1308,26 @@
    "periodStart": "2026-05-28",
    "periodEnd": "2026-06-25",
    "payday": "2026-06-26",
-   "opening": 245.6,
-   "balance": 402.15,
+   "opening": 522.1,
+   "balance": 611.45,
    "income": [
     {
      "group": "Salary",
      "items": [
       {
        "name": "May pay",
-       "amount": 3150.0,
+       "amount": 3412.66,
        "done": true,
        "due": "2026-05-29"
       }
      ]
     },
     {
-     "group": "Partner",
+     "group": "Alex",
      "items": [
       {
-       "name": "Bill share from partner",
-       "amount": 650.0,
+       "name": "Bill share from Alex",
+       "amount": 725.0,
        "done": true,
        "due": "2026-06-01"
       }
@@ -1035,22 +1339,22 @@
      "group": "Housing",
      "items": [
       {
-       "name": "Mortgage",
-       "amount": 1050.0,
+       "name": "Mortgage (Nationwide)",
+       "amount": 1084.37,
        "done": true,
        "due": "2026-06-01"
       },
       {
-       "name": "Service charge",
-       "amount": 150.0,
+       "name": "Council tax",
+       "amount": 187.0,
        "done": true,
-       "due": "2026-06-05"
+       "due": "2026-06-01"
       },
       {
-       "name": "Council tax",
-       "amount": 165.0,
+       "name": "Home insurance (Direct Line)",
+       "amount": 21.84,
        "done": true,
-       "due": "2026-06-07"
+       "due": "2026-06-08"
       }
      ]
     },
@@ -1058,109 +1362,137 @@
      "group": "Debt Repayments",
      "items": [
       {
-       "name": "Credit card",
-       "amount": 200.0,
-       "done": true,
-       "due": "2026-06-01"
-      },
-      {
-       "name": "Interest-free card",
-       "amount": 100.0,
-       "done": true,
-       "due": "2026-06-01"
-      },
-      {
-       "name": "Car finance",
-       "amount": 220.0,
-       "done": true,
-       "due": "2026-06-15"
-      }
-     ]
-    },
-    {
-     "group": "Cleaner",
-     "items": [
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-05-29"
-      },
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-06-05"
-      },
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-06-12"
-      },
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-06-19"
-      }
-     ]
-    },
-    {
-     "group": "Utilities & Phone",
-     "items": [
-      {
-       "name": "Energy",
-       "amount": 110.0,
-       "done": true,
-       "due": "2026-06-01"
-      },
-      {
-       "name": "Water",
-       "amount": 38.0,
-       "done": true,
-       "due": "2026-06-10"
-      },
-      {
-       "name": "Broadband",
-       "amount": 30.0,
-       "done": true,
-       "due": "2026-06-12"
-      },
-      {
-       "name": "Mobile",
-       "amount": 15.0,
-       "done": true,
-       "due": "2026-06-13"
-      }
-     ]
-    },
-    {
-     "group": "Insurance & Health",
-     "items": [
-      {
-       "name": "Dentist plan",
-       "amount": 18.5,
-       "done": true,
-       "due": "2026-06-01"
-      },
-      {
-       "name": "Car insurance",
-       "amount": 42.0,
-       "done": true,
-       "due": "2026-06-02"
-      },
-      {
-       "name": "Gym",
-       "amount": 35.0,
+       "name": "Amex",
+       "amount": 250.0,
        "done": true,
        "due": "2026-06-03"
       },
       {
-       "name": "Pet insurance",
-       "amount": 28.0,
+       "name": "Barclaycard (0% transfer)",
+       "amount": 120.0,
        "done": true,
-       "due": "2026-06-17"
+       "due": "2026-06-12"
+      },
+      {
+       "name": "Car finance (Black Horse)",
+       "amount": 239.41,
+       "done": true,
+       "due": "2026-06-20"
+      }
+     ]
+    },
+    {
+     "group": "Savings",
+     "items": [
+      {
+       "name": "Emergency fund",
+       "amount": 300.0,
+       "done": true,
+       "due": "2026-05-29"
+      },
+      {
+       "name": "Holiday pot",
+       "amount": 200.0,
+       "done": true,
+       "due": "2026-05-29"
+      }
+     ]
+    },
+    {
+     "group": "Groceries",
+     "items": [
+      {
+       "name": "Tesco weekly shop",
+       "amount": 86.15,
+       "done": true,
+       "due": "2026-05-30"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 72.72,
+       "done": true,
+       "due": "2026-06-06"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 70.76,
+       "done": true,
+       "due": "2026-06-13"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 85.66,
+       "done": true,
+       "due": "2026-06-20"
+      }
+     ]
+    },
+    {
+     "group": "Bills",
+     "items": [
+      {
+       "name": "TV Licence",
+       "amount": 14.95,
+       "done": true,
+       "due": "2026-06-01"
+      },
+      {
+       "name": "Octopus Energy",
+       "amount": 120.32,
+       "done": true,
+       "due": "2026-06-02"
+      },
+      {
+       "name": "giffgaff",
+       "amount": 12.0,
+       "done": true,
+       "due": "2026-06-09"
+      },
+      {
+       "name": "Wessex Water",
+       "amount": 41.0,
+       "done": true,
+       "due": "2026-06-15"
+      },
+      {
+       "name": "Virgin Media broadband",
+       "amount": 47.5,
+       "done": true,
+       "due": "2026-06-22"
+      }
+     ]
+    },
+    {
+     "group": "Car",
+     "items": [
+      {
+       "name": "Car insurance (Admiral)",
+       "amount": 48.12,
+       "done": true,
+       "due": "2026-06-11"
+      }
+     ]
+    },
+    {
+     "group": "Health & Pets",
+     "items": [
+      {
+       "name": "Dental plan",
+       "amount": 19.5,
+       "done": true,
+       "due": "2026-06-01"
+      },
+      {
+       "name": "PureGym",
+       "amount": 27.99,
+       "done": true,
+       "due": "2026-06-04"
+      },
+      {
+       "name": "ManyPets (Biscuit)",
+       "amount": 31.76,
+       "done": true,
+       "due": "2026-06-18"
       }
      ]
     },
@@ -1168,28 +1500,16 @@
      "group": "Subscriptions",
      "items": [
       {
-       "name": "News",
-       "amount": 9.0,
-       "done": true,
-       "due": "2026-06-01"
-      },
-      {
-       "name": "Music streaming",
-       "amount": 11.99,
+       "name": "Spotify Duo",
+       "amount": 16.99,
        "done": true,
        "due": "2026-06-14"
       },
       {
-       "name": "Video streaming",
-       "amount": 10.99,
+       "name": "Netflix",
+       "amount": 12.99,
        "done": true,
-       "due": "2026-06-14"
-      },
-      {
-       "name": "Cloud storage",
-       "amount": 7.99,
-       "done": true,
-       "due": "2026-06-17"
+       "due": "2026-06-21"
       }
      ]
     },
@@ -1198,83 +1518,157 @@
      "discretionary": true,
      "items": [
       {
-       "name": "Train tickets",
-       "amount": 282.02,
+       "name": "Costa Coffee",
+       "amount": 18.36,
        "done": true,
-       "due": "2026-06-14",
-       "count": 2
-      },
-      {
-       "name": "Supermarket",
-       "amount": 280.9,
-       "done": true,
-       "due": "2026-06-02",
+       "due": "2026-05-31",
        "count": 4
       },
       {
-       "name": "Hardware store",
-       "amount": 187.04,
+       "name": "Amazon",
+       "amount": 114.22,
+       "done": true,
+       "due": "2026-06-01",
+       "count": 3
+      },
+      {
+       "name": "Just Eat",
+       "amount": 28.22,
+       "done": true,
+       "due": "2026-06-01"
+      },
+      {
+       "name": "Card Factory",
+       "amount": 9.34,
+       "done": true,
+       "due": "2026-06-01"
+      },
+      {
+       "name": "Vue Cinemas",
+       "amount": 23.01,
+       "done": true,
+       "due": "2026-06-02"
+      },
+      {
+       "name": "Greggs",
+       "amount": 18.56,
+       "done": true,
+       "due": "2026-06-03",
+       "count": 4
+      },
+      {
+       "name": "Uniqlo",
+       "amount": 30.23,
+       "done": true,
+       "due": "2026-06-03"
+      },
+      {
+       "name": "Tesco top-up",
+       "amount": 19.04,
+       "done": true,
+       "due": "2026-06-03"
+      },
+      {
+       "name": "Deliveroo",
+       "amount": 95.92,
+       "done": true,
+       "due": "2026-06-05",
+       "count": 3
+      },
+      {
+       "name": "Boots",
+       "amount": 33.61,
+       "done": true,
+       "due": "2026-06-06",
+       "count": 2
+      },
+      {
+       "name": "B&Q",
+       "amount": 37.57,
+       "done": true,
+       "due": "2026-06-07"
+      },
+      {
+       "name": "Pets at Home",
+       "amount": 36.18,
+       "done": true,
+       "due": "2026-06-07"
+      },
+      {
+       "name": "Trainline",
+       "amount": 70.23,
+       "done": true,
+       "due": "2026-06-08"
+      },
+      {
+       "name": "Wagamama",
+       "amount": 46.66,
+       "done": true,
+       "due": "2026-06-10"
+      },
+      {
+       "name": "Uber",
+       "amount": 28.85,
        "done": true,
        "due": "2026-06-12",
        "count": 2
       },
       {
-       "name": "Pub",
-       "amount": 161.16,
+       "name": "John Lewis",
+       "amount": 31.03,
        "done": true,
-       "due": "2026-06-02",
-       "count": 3
+       "due": "2026-06-13"
       },
       {
-       "name": "Restaurant",
-       "amount": 95.74,
+       "name": "Alex's half (split bills)",
+       "amount": -39.47,
        "done": true,
-       "due": "2026-06-17"
+       "due": "2026-06-21"
       },
       {
-       "name": "Gift",
-       "amount": 66.22,
+       "name": "Pret A Manger",
+       "amount": 33.43,
        "done": true,
-       "due": "2026-05-31"
+       "due": "2026-06-23",
+       "count": 6
       },
       {
-       "name": "Taxi",
-       "amount": 61.72,
+       "name": "Sainsbury's Local",
+       "amount": 83.33,
        "done": true,
-       "due": "2026-06-04",
-       "count": 3
+       "due": "2026-06-23",
+       "count": 8
       },
       {
-       "name": "Corner shop",
-       "amount": 50.26,
+       "name": "The Old Market Tavern",
+       "amount": 42.74,
        "done": true,
-       "due": "2026-06-09",
-       "count": 3
+       "due": "2026-06-23",
+       "count": 2
       },
       {
-       "name": "Coffee shop",
-       "amount": 43.72,
+       "name": "Shell",
+       "amount": 62.16,
        "done": true,
-       "due": "2026-06-05",
-       "count": 5
+       "due": "2026-06-23"
       },
       {
-       "name": "Bookshop",
-       "amount": 22.85,
+       "name": "Barber (Ruffians)",
+       "amount": 30.6,
        "done": true,
-       "due": "2026-06-10"
+       "due": "2026-06-24"
       },
       {
-       "name": "Cinema",
-       "amount": 21.21,
+       "name": "Nando's",
+       "amount": 27.1,
        "done": true,
-       "due": "2026-06-08"
+       "due": "2026-06-25"
       },
       {
-       "name": "Partner's share (split bills)",
-       "amount": -50.86,
+       "name": "Zizzi",
+       "amount": 56.36,
        "done": true,
-       "due": "2026-06-22"
+       "due": "2026-06-25"
       }
      ]
     }
@@ -1284,26 +1678,26 @@
    "periodStart": "2026-06-25",
    "periodEnd": "2026-07-30",
    "payday": "2026-07-31",
-   "opening": 402.15,
-   "balance": 188.4,
+   "opening": 611.45,
+   "balance": 448.9,
    "income": [
     {
      "group": "Salary",
      "items": [
       {
        "name": "June pay",
-       "amount": 3150.0,
+       "amount": 3412.66,
        "done": true,
        "due": "2026-06-26"
       }
      ]
     },
     {
-     "group": "Partner",
+     "group": "Alex",
      "items": [
       {
-       "name": "Bill share from partner",
-       "amount": 650.0,
+       "name": "Bill share from Alex",
+       "amount": 725.0,
        "done": true,
        "due": "2026-07-01"
       }
@@ -1315,22 +1709,22 @@
      "group": "Housing",
      "items": [
       {
-       "name": "Mortgage",
-       "amount": 1050.0,
+       "name": "Mortgage (Nationwide)",
+       "amount": 1084.37,
        "done": true,
        "due": "2026-07-01"
       },
       {
-       "name": "Service charge",
-       "amount": 150.0,
+       "name": "Council tax",
+       "amount": 187.0,
        "done": true,
-       "due": "2026-07-05"
+       "due": "2026-07-01"
       },
       {
-       "name": "Council tax",
-       "amount": 165.0,
+       "name": "Home insurance (Direct Line)",
+       "amount": 21.84,
        "done": true,
-       "due": "2026-07-07"
+       "due": "2026-07-08"
       }
      ]
     },
@@ -1338,115 +1732,143 @@
      "group": "Debt Repayments",
      "items": [
       {
-       "name": "Credit card",
-       "amount": 200.0,
-       "done": true,
-       "due": "2026-07-01"
-      },
-      {
-       "name": "Interest-free card",
-       "amount": 100.0,
-       "done": true,
-       "due": "2026-07-01"
-      },
-      {
-       "name": "Car finance",
-       "amount": 220.0,
-       "done": true,
-       "due": "2026-07-15"
-      }
-     ]
-    },
-    {
-     "group": "Cleaner",
-     "items": [
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-06-26"
-      },
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
+       "name": "Amex",
+       "amount": 250.0,
        "done": true,
        "due": "2026-07-03"
       },
       {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-07-10"
-      },
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-07-17"
-      },
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-07-24"
-      }
-     ]
-    },
-    {
-     "group": "Utilities & Phone",
-     "items": [
-      {
-       "name": "Energy",
-       "amount": 110.0,
-       "done": true,
-       "due": "2026-07-01"
-      },
-      {
-       "name": "Water",
-       "amount": 38.0,
-       "done": true,
-       "due": "2026-07-10"
-      },
-      {
-       "name": "Broadband",
-       "amount": 30.0,
+       "name": "Barclaycard (0% transfer)",
+       "amount": 120.0,
        "done": true,
        "due": "2026-07-12"
       },
       {
-       "name": "Mobile",
-       "amount": 15.0,
+       "name": "Car finance (Black Horse)",
+       "amount": 239.41,
        "done": true,
-       "due": "2026-07-13"
+       "due": "2026-07-20"
       }
      ]
     },
     {
-     "group": "Insurance & Health",
+     "group": "Savings",
      "items": [
       {
-       "name": "Dentist plan",
-       "amount": 18.5,
+       "name": "Emergency fund",
+       "amount": 300.0,
+       "done": true,
+       "due": "2026-06-26"
+      },
+      {
+       "name": "Holiday pot",
+       "amount": 200.0,
+       "done": true,
+       "due": "2026-06-26"
+      }
+     ]
+    },
+    {
+     "group": "Groceries",
+     "items": [
+      {
+       "name": "Tesco weekly shop",
+       "amount": 69.32,
+       "done": true,
+       "due": "2026-06-27"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 67.7,
+       "done": true,
+       "due": "2026-07-04"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 69.69,
+       "done": true,
+       "due": "2026-07-11"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 87.54,
+       "done": true,
+       "due": "2026-07-18"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 83.93,
+       "done": true,
+       "due": "2026-07-25"
+      }
+     ]
+    },
+    {
+     "group": "Bills",
+     "items": [
+      {
+       "name": "TV Licence",
+       "amount": 14.95,
        "done": true,
        "due": "2026-07-01"
       },
       {
-       "name": "Car insurance",
-       "amount": 42.0,
+       "name": "Octopus Energy",
+       "amount": 121.54,
        "done": true,
        "due": "2026-07-02"
       },
       {
-       "name": "Gym",
-       "amount": 35.0,
+       "name": "giffgaff",
+       "amount": 12.0,
        "done": true,
-       "due": "2026-07-03"
+       "due": "2026-07-09"
       },
       {
-       "name": "Pet insurance",
-       "amount": 28.0,
+       "name": "Wessex Water",
+       "amount": 41.0,
        "done": true,
-       "due": "2026-07-17"
+       "due": "2026-07-15"
+      },
+      {
+       "name": "Virgin Media broadband",
+       "amount": 47.5,
+       "done": true,
+       "due": "2026-07-22"
+      }
+     ]
+    },
+    {
+     "group": "Car",
+     "items": [
+      {
+       "name": "Car insurance (Admiral)",
+       "amount": 48.12,
+       "done": true,
+       "due": "2026-07-11"
+      }
+     ]
+    },
+    {
+     "group": "Health & Pets",
+     "items": [
+      {
+       "name": "Dental plan",
+       "amount": 19.5,
+       "done": true,
+       "due": "2026-07-01"
+      },
+      {
+       "name": "PureGym",
+       "amount": 27.99,
+       "done": true,
+       "due": "2026-07-04"
+      },
+      {
+       "name": "ManyPets (Biscuit)",
+       "amount": 31.76,
+       "done": true,
+       "due": "2026-07-18"
       }
      ]
     },
@@ -1454,28 +1876,28 @@
      "group": "Subscriptions",
      "items": [
       {
-       "name": "News",
-       "amount": 9.0,
+       "name": "iCloud+",
+       "amount": 2.99,
        "done": true,
-       "due": "2026-07-01"
+       "due": "2026-06-26"
       },
       {
-       "name": "Music streaming",
-       "amount": 11.99,
+       "name": "Spotify Duo",
+       "amount": 16.99,
        "done": true,
        "due": "2026-07-14"
       },
       {
-       "name": "Video streaming",
-       "amount": 10.99,
+       "name": "Netflix",
+       "amount": 12.99,
        "done": true,
-       "due": "2026-07-14"
+       "due": "2026-07-21"
       },
       {
-       "name": "Cloud storage",
-       "amount": 7.99,
+       "name": "iCloud+",
+       "amount": 2.99,
        "done": true,
-       "due": "2026-07-17"
+       "due": "2026-07-26"
       }
      ]
     },
@@ -1484,80 +1906,158 @@
      "discretionary": true,
      "items": [
       {
-       "name": "Supermarket",
-       "amount": 675.4,
-       "done": true,
-       "due": "2026-07-26",
-       "count": 8
-      },
-      {
-       "name": "Restaurant",
-       "amount": 270.7,
-       "done": true,
-       "due": "2026-07-06",
-       "count": 2
-      },
-      {
-       "name": "Clothes shop",
-       "amount": 136.64,
-       "done": true,
-       "due": "2026-07-10"
-      },
-      {
-       "name": "Petrol",
-       "amount": 126.69,
-       "done": true,
-       "due": "2026-07-08"
-      },
-      {
-       "name": "Taxi",
-       "amount": 110.22,
-       "done": true,
-       "due": "2026-07-12",
-       "count": 2
-      },
-      {
-       "name": "Gift",
-       "amount": 71.18,
+       "name": "Uber",
+       "amount": 18.71,
        "done": true,
        "due": "2026-06-27"
       },
       {
-       "name": "Takeaway",
-       "amount": 59.6,
+       "name": "Costa Coffee",
+       "amount": 16.84,
        "done": true,
-       "due": "2026-07-28"
+       "due": "2026-06-29",
+       "count": 4
       },
       {
-       "name": "Bakery",
-       "amount": 57.3,
+       "name": "B&Q",
+       "amount": 37.04,
        "done": true,
-       "due": "2026-07-01",
+       "due": "2026-06-30"
+      },
+      {
+       "name": "Waterstones",
+       "amount": 18.37,
+       "done": true,
+       "due": "2026-07-04"
+      },
+      {
+       "name": "Just Eat",
+       "amount": 30.83,
+       "done": true,
+       "due": "2026-07-04"
+      },
+      {
+       "name": "easyJet (Lisbon, 2 seats)",
+       "amount": 238.46,
+       "done": true,
+       "due": "2026-07-04"
+      },
+      {
+       "name": "The Old Market Tavern",
+       "amount": 46.44,
+       "done": true,
+       "due": "2026-07-05",
+       "count": 2
+      },
+      {
+       "name": "Screwfix",
+       "amount": 25.14,
+       "done": true,
+       "due": "2026-07-06"
+      },
+      {
+       "name": "Pret A Manger",
+       "amount": 29.98,
+       "done": true,
+       "due": "2026-07-08",
+       "count": 5
+      },
+      {
+       "name": "Deliveroo",
+       "amount": 59.61,
+       "done": true,
+       "due": "2026-07-08",
+       "count": 2
+      },
+      {
+       "name": "Amazon",
+       "amount": 43.82,
+       "done": true,
+       "due": "2026-07-08",
+       "count": 2
+      },
+      {
+       "name": "Tesco top-up",
+       "amount": 68.37,
+       "done": true,
+       "due": "2026-07-08",
+       "count": 4
+      },
+      {
+       "name": "Shell",
+       "amount": 106.03,
+       "done": true,
+       "due": "2026-07-11",
+       "count": 2
+      },
+      {
+       "name": "Zizzi",
+       "amount": 46.54,
+       "done": true,
+       "due": "2026-07-11"
+      },
+      {
+       "name": "Barber (Ruffians)",
+       "amount": 29.42,
+       "done": true,
+       "due": "2026-07-12"
+      },
+      {
+       "name": "Trainline",
+       "amount": 136.97,
+       "done": true,
+       "due": "2026-07-18",
        "count": 3
       },
       {
-       "name": "Cinema",
-       "amount": 51.41,
+       "name": "Boots",
+       "amount": 17.15,
        "done": true,
-       "due": "2026-07-18"
+       "due": "2026-07-24"
       },
       {
-       "name": "Pub",
-       "amount": 46.37,
+       "name": "Pets at Home",
+       "amount": 35.32,
        "done": true,
-       "due": "2026-07-17"
+       "due": "2026-07-25"
       },
       {
-       "name": "Bookshop",
-       "amount": 23.6,
+       "name": "Alex's half (split bills)",
+       "amount": -54.09,
+       "done": true,
+       "due": "2026-07-26"
+      },
+      {
+       "name": "Greggs",
+       "amount": 14.91,
+       "done": true,
+       "due": "2026-07-28",
+       "count": 3
+      },
+      {
+       "name": "Sainsbury's Local",
+       "amount": 23.4,
+       "done": true,
+       "due": "2026-07-28",
+       "count": 2
+      },
+      {
+       "name": "Uniqlo",
+       "amount": 31.23,
+       "done": true,
+       "due": "2026-07-29"
+      },
+      {
+       "name": "Card Factory",
+       "amount": 10.18,
+       "done": true,
+       "due": "2026-07-29"
+      },
+      {
+       "name": "John Lewis",
+       "amount": 88.42,
        "done": true,
        "due": "2026-07-30"
-      },
-      {
-       "name": "Partner's share (split bills)",
-       "amount": -81.83,
-       "done": true,
-       "due": "2026-07-27"
       }
      ]
     }
@@ -1567,26 +2067,26 @@
    "periodStart": "2026-07-30",
    "periodEnd": "2026-08-27",
    "payday": "2026-08-28",
-   "opening": 188.4,
-   "balance": 356.9,
+   "opening": 448.9,
+   "balance": 331.75,
    "income": [
     {
      "group": "Salary",
      "items": [
       {
        "name": "July pay",
-       "amount": 3150.0,
+       "amount": 3412.66,
        "done": true,
        "due": "2026-07-31"
       }
      ]
     },
     {
-     "group": "Partner",
+     "group": "Alex",
      "items": [
       {
-       "name": "Bill share from partner",
-       "amount": 650.0,
+       "name": "Bill share from Alex",
+       "amount": 725.0,
        "done": true,
        "due": "2026-08-01"
       }
@@ -1598,22 +2098,22 @@
      "group": "Housing",
      "items": [
       {
-       "name": "Mortgage",
-       "amount": 1050.0,
+       "name": "Mortgage (Nationwide)",
+       "amount": 1084.37,
        "done": true,
        "due": "2026-08-01"
       },
       {
-       "name": "Service charge",
-       "amount": 150.0,
+       "name": "Council tax",
+       "amount": 187.0,
        "done": true,
-       "due": "2026-08-05"
+       "due": "2026-08-01"
       },
       {
-       "name": "Council tax",
-       "amount": 165.0,
+       "name": "Home insurance (Direct Line)",
+       "amount": 21.84,
        "done": true,
-       "due": "2026-08-07"
+       "due": "2026-08-08"
       }
      ]
     },
@@ -1621,109 +2121,137 @@
      "group": "Debt Repayments",
      "items": [
       {
-       "name": "Credit card",
-       "amount": 200.0,
-       "done": true,
-       "due": "2026-08-01"
-      },
-      {
-       "name": "Interest-free card",
-       "amount": 100.0,
-       "done": true,
-       "due": "2026-08-01"
-      },
-      {
-       "name": "Car finance",
-       "amount": 220.0,
-       "done": true,
-       "due": "2026-08-15"
-      }
-     ]
-    },
-    {
-     "group": "Cleaner",
-     "items": [
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-07-31"
-      },
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-08-07"
-      },
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-08-14"
-      },
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-08-21"
-      }
-     ]
-    },
-    {
-     "group": "Utilities & Phone",
-     "items": [
-      {
-       "name": "Energy",
-       "amount": 110.0,
-       "done": true,
-       "due": "2026-08-01"
-      },
-      {
-       "name": "Water",
-       "amount": 38.0,
-       "done": true,
-       "due": "2026-08-10"
-      },
-      {
-       "name": "Broadband",
-       "amount": 30.0,
-       "done": true,
-       "due": "2026-08-12"
-      },
-      {
-       "name": "Mobile",
-       "amount": 15.0,
-       "done": true,
-       "due": "2026-08-13"
-      }
-     ]
-    },
-    {
-     "group": "Insurance & Health",
-     "items": [
-      {
-       "name": "Dentist plan",
-       "amount": 18.5,
-       "done": true,
-       "due": "2026-08-01"
-      },
-      {
-       "name": "Car insurance",
-       "amount": 42.0,
-       "done": true,
-       "due": "2026-08-02"
-      },
-      {
-       "name": "Gym",
-       "amount": 35.0,
+       "name": "Amex",
+       "amount": 250.0,
        "done": true,
        "due": "2026-08-03"
       },
       {
-       "name": "Pet insurance",
-       "amount": 28.0,
+       "name": "Barclaycard (0% transfer)",
+       "amount": 120.0,
        "done": true,
-       "due": "2026-08-17"
+       "due": "2026-08-12"
+      },
+      {
+       "name": "Car finance (Black Horse)",
+       "amount": 239.41,
+       "done": true,
+       "due": "2026-08-20"
+      }
+     ]
+    },
+    {
+     "group": "Savings",
+     "items": [
+      {
+       "name": "Emergency fund",
+       "amount": 300.0,
+       "done": true,
+       "due": "2026-07-31"
+      },
+      {
+       "name": "Holiday pot",
+       "amount": 200.0,
+       "done": true,
+       "due": "2026-07-31"
+      }
+     ]
+    },
+    {
+     "group": "Groceries",
+     "items": [
+      {
+       "name": "Tesco weekly shop",
+       "amount": 71.24,
+       "done": true,
+       "due": "2026-08-01"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 89.17,
+       "done": true,
+       "due": "2026-08-08"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 90.32,
+       "done": true,
+       "due": "2026-08-15"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 86.97,
+       "done": true,
+       "due": "2026-08-22"
+      }
+     ]
+    },
+    {
+     "group": "Bills",
+     "items": [
+      {
+       "name": "TV Licence",
+       "amount": 14.95,
+       "done": true,
+       "due": "2026-08-01"
+      },
+      {
+       "name": "Octopus Energy",
+       "amount": 120.04,
+       "done": true,
+       "due": "2026-08-02"
+      },
+      {
+       "name": "giffgaff",
+       "amount": 12.0,
+       "done": true,
+       "due": "2026-08-09"
+      },
+      {
+       "name": "Wessex Water",
+       "amount": 41.0,
+       "done": true,
+       "due": "2026-08-15"
+      },
+      {
+       "name": "Virgin Media broadband",
+       "amount": 47.5,
+       "done": true,
+       "due": "2026-08-22"
+      }
+     ]
+    },
+    {
+     "group": "Car",
+     "items": [
+      {
+       "name": "Car insurance (Admiral)",
+       "amount": 48.12,
+       "done": true,
+       "due": "2026-08-11"
+      }
+     ]
+    },
+    {
+     "group": "Health & Pets",
+     "items": [
+      {
+       "name": "Dental plan",
+       "amount": 19.5,
+       "done": true,
+       "due": "2026-08-01"
+      },
+      {
+       "name": "PureGym",
+       "amount": 27.99,
+       "done": true,
+       "due": "2026-08-04"
+      },
+      {
+       "name": "ManyPets (Biscuit)",
+       "amount": 31.76,
+       "done": true,
+       "due": "2026-08-18"
       }
      ]
     },
@@ -1731,28 +2259,22 @@
      "group": "Subscriptions",
      "items": [
       {
-       "name": "News",
-       "amount": 9.0,
-       "done": true,
-       "due": "2026-08-01"
-      },
-      {
-       "name": "Music streaming",
-       "amount": 11.99,
+       "name": "Spotify Duo",
+       "amount": 16.99,
        "done": true,
        "due": "2026-08-14"
       },
       {
-       "name": "Video streaming",
-       "amount": 10.99,
+       "name": "Netflix",
+       "amount": 12.99,
        "done": true,
-       "due": "2026-08-14"
+       "due": "2026-08-21"
       },
       {
-       "name": "Cloud storage",
-       "amount": 7.99,
+       "name": "iCloud+",
+       "amount": 2.99,
        "done": true,
-       "due": "2026-08-17"
+       "due": "2026-08-26"
       }
      ]
     },
@@ -1761,95 +2283,122 @@
      "discretionary": true,
      "items": [
       {
-       "name": "Pub",
-       "amount": 291.61,
+       "name": "The Old Market Tavern",
+       "amount": 16.55,
        "done": true,
-       "due": "2026-08-11",
-       "count": 4
+       "due": "2026-08-02"
       },
       {
-       "name": "Supermarket",
-       "amount": 202.82,
+       "name": "Just Eat",
+       "amount": 26.48,
        "done": true,
-       "due": "2026-08-19",
-       "count": 3
+       "due": "2026-08-02"
       },
       {
-       "name": "Petrol",
-       "amount": 188.04,
+       "name": "B&Q",
+       "amount": 28.24,
        "done": true,
-       "due": "2026-08-15",
-       "count": 2
+       "due": "2026-08-03"
       },
       {
-       "name": "Restaurant",
-       "amount": 182.58,
-       "done": true,
-       "due": "2026-08-12",
-       "count": 2
-      },
-      {
-       "name": "Hardware store",
-       "amount": 114.5,
-       "done": true,
-       "due": "2026-08-10"
-      },
-      {
-       "name": "Train tickets",
-       "amount": 107.96,
+       "name": "Uber",
+       "amount": 11.67,
        "done": true,
        "due": "2026-08-05"
       },
       {
-       "name": "Takeaway",
-       "amount": 49.04,
+       "name": "Pret A Manger",
+       "amount": 6.83,
        "done": true,
-       "due": "2026-08-14"
+       "due": "2026-08-06"
       },
       {
-       "name": "Corner shop",
-       "amount": 45.03,
+       "name": "Sainsbury's Local",
+       "amount": 11.69,
        "done": true,
-       "due": "2026-08-11",
+       "due": "2026-08-08",
        "count": 2
       },
       {
-       "name": "Pharmacy",
-       "amount": 38.74,
+       "name": "Airbnb (Lisbon)",
+       "amount": 412.8,
        "done": true,
-       "due": "2026-08-02",
-       "count": 2
+       "due": "2026-08-08"
       },
       {
-       "name": "Garden centre",
-       "amount": 36.21,
+       "name": "Lisbon: food and trams",
+       "amount": 186.35,
        "done": true,
-       "due": "2026-08-17"
+       "due": "2026-08-08"
       },
       {
-       "name": "Taxi",
-       "amount": 20.12,
+       "name": "Boots",
+       "amount": 5.98,
        "done": true,
-       "due": "2026-08-04"
+       "due": "2026-08-10"
       },
       {
-       "name": "Coffee shop",
-       "amount": 11.68,
+       "name": "Amazon",
+       "amount": 41.96,
        "done": true,
-       "due": "2026-08-15",
-       "count": 2
+       "due": "2026-08-10"
       },
       {
-       "name": "Bakery",
-       "amount": 11.02,
+       "name": "Nando's",
+       "amount": 23.88,
+       "done": true,
+       "due": "2026-08-12"
+      },
+      {
+       "name": "John Lewis",
+       "amount": 79.03,
        "done": true,
        "due": "2026-08-15"
       },
       {
-       "name": "Partner's share (split bills)",
-       "amount": -89.32,
+       "name": "Tesco top-up",
+       "amount": 68.47,
        "done": true,
-       "due": "2026-08-24"
+       "due": "2026-08-16",
+       "count": 4
+      },
+      {
+       "name": "Wagamama",
+       "amount": 35.13,
+       "done": true,
+       "due": "2026-08-18"
+      },
+      {
+       "name": "Pets at Home",
+       "amount": 29.24,
+       "done": true,
+       "due": "2026-08-19"
+      },
+      {
+       "name": "Alex's half (split bills)",
+       "amount": -35.77,
+       "done": true,
+       "due": "2026-08-23"
+      },
+      {
+       "name": "Trainline",
+       "amount": 108.96,
+       "done": true,
+       "due": "2026-08-25",
+       "count": 3
+      },
+      {
+       "name": "Costa Coffee",
+       "amount": 12.12,
+       "done": true,
+       "due": "2026-08-26",
+       "count": 3
+      },
+      {
+       "name": "Zizzi",
+       "amount": 49.05,
+       "done": true,
+       "due": "2026-08-26"
       }
      ]
     }
@@ -1859,26 +2408,26 @@
    "periodStart": "2026-08-27",
    "periodEnd": "2026-09-24",
    "payday": "2026-09-25",
-   "opening": 356.9,
-   "balance": 214.75,
+   "opening": 331.75,
+   "balance": 286.4,
    "income": [
     {
      "group": "Salary",
      "items": [
       {
        "name": "August pay",
-       "amount": 3150.0,
+       "amount": 3412.66,
        "done": true,
        "due": "2026-08-28"
       }
      ]
     },
     {
-     "group": "Partner",
+     "group": "Alex",
      "items": [
       {
-       "name": "Bill share from partner",
-       "amount": 650.0,
+       "name": "Bill share from Alex",
+       "amount": 725.0,
        "done": true,
        "due": "2026-09-01"
       }
@@ -1890,22 +2439,22 @@
      "group": "Housing",
      "items": [
       {
-       "name": "Mortgage",
-       "amount": 1050.0,
+       "name": "Mortgage (Nationwide)",
+       "amount": 1084.37,
        "done": true,
        "due": "2026-09-01"
       },
       {
-       "name": "Service charge",
-       "amount": 150.0,
+       "name": "Council tax",
+       "amount": 187.0,
        "done": true,
-       "due": "2026-09-05"
+       "due": "2026-09-01"
       },
       {
-       "name": "Council tax",
-       "amount": 165.0,
+       "name": "Home insurance (Direct Line)",
+       "amount": 21.84,
        "done": true,
-       "due": "2026-09-07"
+       "due": "2026-09-08"
       }
      ]
     },
@@ -1913,109 +2462,137 @@
      "group": "Debt Repayments",
      "items": [
       {
-       "name": "Credit card",
-       "amount": 200.0,
-       "done": true,
-       "due": "2026-09-01"
-      },
-      {
-       "name": "Interest-free card",
-       "amount": 100.0,
-       "done": true,
-       "due": "2026-09-01"
-      },
-      {
-       "name": "Car finance",
-       "amount": 220.0,
-       "done": true,
-       "due": "2026-09-15"
-      }
-     ]
-    },
-    {
-     "group": "Cleaner",
-     "items": [
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-08-28"
-      },
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-09-04"
-      },
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-09-11"
-      },
-      {
-       "name": "Cleaner (weekly)",
-       "amount": 45.0,
-       "done": true,
-       "due": "2026-09-18"
-      }
-     ]
-    },
-    {
-     "group": "Utilities & Phone",
-     "items": [
-      {
-       "name": "Energy",
-       "amount": 110.0,
-       "done": true,
-       "due": "2026-09-01"
-      },
-      {
-       "name": "Water",
-       "amount": 38.0,
-       "done": true,
-       "due": "2026-09-10"
-      },
-      {
-       "name": "Broadband",
-       "amount": 30.0,
-       "done": true,
-       "due": "2026-09-12"
-      },
-      {
-       "name": "Mobile",
-       "amount": 15.0,
-       "done": true,
-       "due": "2026-09-13"
-      }
-     ]
-    },
-    {
-     "group": "Insurance & Health",
-     "items": [
-      {
-       "name": "Dentist plan",
-       "amount": 18.5,
-       "done": true,
-       "due": "2026-09-01"
-      },
-      {
-       "name": "Car insurance",
-       "amount": 42.0,
-       "done": true,
-       "due": "2026-09-02"
-      },
-      {
-       "name": "Gym",
-       "amount": 35.0,
+       "name": "Amex",
+       "amount": 250.0,
        "done": true,
        "due": "2026-09-03"
       },
       {
-       "name": "Pet insurance",
-       "amount": 28.0,
+       "name": "Barclaycard (0% transfer)",
+       "amount": 120.0,
        "done": true,
-       "due": "2026-09-17"
+       "due": "2026-09-12"
+      },
+      {
+       "name": "Car finance (Black Horse)",
+       "amount": 239.41,
+       "done": true,
+       "due": "2026-09-20"
+      }
+     ]
+    },
+    {
+     "group": "Savings",
+     "items": [
+      {
+       "name": "Emergency fund",
+       "amount": 300.0,
+       "done": true,
+       "due": "2026-08-28"
+      },
+      {
+       "name": "Holiday pot",
+       "amount": 200.0,
+       "done": true,
+       "due": "2026-08-28"
+      }
+     ]
+    },
+    {
+     "group": "Groceries",
+     "items": [
+      {
+       "name": "Tesco weekly shop",
+       "amount": 76.58,
+       "done": true,
+       "due": "2026-08-29"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 73.21,
+       "done": true,
+       "due": "2026-09-05"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 62.14,
+       "done": true,
+       "due": "2026-09-12"
+      },
+      {
+       "name": "Tesco weekly shop",
+       "amount": 75.2,
+       "done": true,
+       "due": "2026-09-19"
+      }
+     ]
+    },
+    {
+     "group": "Bills",
+     "items": [
+      {
+       "name": "TV Licence",
+       "amount": 14.95,
+       "done": true,
+       "due": "2026-09-01"
+      },
+      {
+       "name": "Octopus Energy",
+       "amount": 105.3,
+       "done": true,
+       "due": "2026-09-02"
+      },
+      {
+       "name": "giffgaff",
+       "amount": 12.0,
+       "done": true,
+       "due": "2026-09-09"
+      },
+      {
+       "name": "Wessex Water",
+       "amount": 41.0,
+       "done": true,
+       "due": "2026-09-15"
+      },
+      {
+       "name": "Virgin Media broadband",
+       "amount": 47.5,
+       "done": true,
+       "due": "2026-09-22"
+      }
+     ]
+    },
+    {
+     "group": "Car",
+     "items": [
+      {
+       "name": "Car insurance (Admiral)",
+       "amount": 48.12,
+       "done": true,
+       "due": "2026-09-11"
+      }
+     ]
+    },
+    {
+     "group": "Health & Pets",
+     "items": [
+      {
+       "name": "Dental plan",
+       "amount": 19.5,
+       "done": true,
+       "due": "2026-09-01"
+      },
+      {
+       "name": "PureGym",
+       "amount": 27.99,
+       "done": true,
+       "due": "2026-09-04"
+      },
+      {
+       "name": "ManyPets (Biscuit)",
+       "amount": 31.76,
+       "done": true,
+       "due": "2026-09-18"
       }
      ]
     },
@@ -2023,28 +2600,16 @@
      "group": "Subscriptions",
      "items": [
       {
-       "name": "News",
-       "amount": 9.0,
-       "done": true,
-       "due": "2026-09-01"
-      },
-      {
-       "name": "Music streaming",
-       "amount": 11.99,
+       "name": "Spotify Duo",
+       "amount": 16.99,
        "done": true,
        "due": "2026-09-14"
       },
       {
-       "name": "Video streaming",
-       "amount": 10.99,
+       "name": "Netflix",
+       "amount": 12.99,
        "done": true,
-       "due": "2026-09-14"
-      },
-      {
-       "name": "Cloud storage",
-       "amount": 7.99,
-       "done": true,
-       "due": "2026-09-17"
+       "due": "2026-09-21"
       }
      ]
     },
@@ -2053,103 +2618,154 @@
      "discretionary": true,
      "items": [
       {
-       "name": "Supermarket",
-       "amount": 680.14,
+       "name": "Just Eat",
+       "amount": 24.81,
        "done": true,
-       "due": "2026-09-23",
-       "count": 9
+       "due": "2026-08-28"
       },
       {
-       "name": "Restaurant",
-       "amount": 246.79,
+       "name": "Nando's",
+       "amount": 31.3,
+       "done": true,
+       "due": "2026-08-29"
+      },
+      {
+       "name": "Barber (Ruffians)",
+       "amount": 29.09,
+       "done": true,
+       "due": "2026-08-31"
+      },
+      {
+       "name": "Greggs",
+       "amount": 14.56,
+       "done": true,
+       "due": "2026-09-02",
+       "count": 3
+      },
+      {
+       "name": "The Old Market Tavern",
+       "amount": 82.96,
+       "done": true,
+       "due": "2026-09-03",
+       "count": 3
+      },
+      {
+       "name": "Sainsbury's Local",
+       "amount": 98.87,
+       "done": true,
+       "due": "2026-09-04",
+       "count": 7
+      },
+      {
+       "name": "Vue Cinemas",
+       "amount": 22.55,
+       "done": true,
+       "due": "2026-09-04"
+      },
+      {
+       "name": "Uber",
+       "amount": 11.06,
+       "done": true,
+       "due": "2026-09-06"
+      },
+      {
+       "name": "Waterstones",
+       "amount": 19.0,
+       "done": true,
+       "due": "2026-09-06"
+      },
+      {
+       "name": "Costa Coffee",
+       "amount": 14.4,
+       "done": true,
+       "due": "2026-09-08",
+       "count": 4
+      },
+      {
+       "name": "Trainline",
+       "amount": 148.99,
+       "done": true,
+       "due": "2026-09-09",
+       "count": 3
+      },
+      {
+       "name": "Shell",
+       "amount": 123.6,
+       "done": true,
+       "due": "2026-09-09",
+       "count": 2
+      },
+      {
+       "name": "Wagamama",
+       "amount": 40.64,
+       "done": true,
+       "due": "2026-09-10"
+      },
+      {
+       "name": "Uniqlo",
+       "amount": 55.65,
+       "done": true,
+       "due": "2026-09-11"
+      },
+      {
+       "name": "B&Q",
+       "amount": 47.46,
+       "done": true,
+       "due": "2026-09-12"
+      },
+      {
+       "name": "Amazon",
+       "amount": 89.57,
        "done": true,
        "due": "2026-09-13",
        "count": 2
       },
       {
-       "name": "Pub",
-       "amount": 174.48,
+       "name": "Screwfix",
+       "amount": 35.2,
        "done": true,
-       "due": "2026-09-23",
-       "count": 2
+       "due": "2026-09-14"
       },
       {
-       "name": "Train tickets",
-       "amount": 120.65,
+       "name": "Zizzi",
+       "amount": 66.28,
        "done": true,
-       "due": "2026-09-13"
+       "due": "2026-09-14"
       },
       {
-       "name": "Petrol",
-       "amount": 106.65,
+       "name": "Boots",
+       "amount": 13.92,
        "done": true,
-       "due": "2026-09-13"
+       "due": "2026-09-15"
       },
       {
-       "name": "Hardware store",
-       "amount": 98.8,
+       "name": "John Lewis",
+       "amount": 91.38,
        "done": true,
-       "due": "2026-09-02",
-       "count": 2
+       "due": "2026-09-18"
       },
       {
-       "name": "Garden centre",
-       "amount": 86.43,
+       "name": "Tesco top-up",
+       "amount": 15.77,
        "done": true,
-       "due": "2026-08-31"
+       "due": "2026-09-19"
       },
       {
-       "name": "Bakery",
-       "amount": 32.7,
+       "name": "Alex's half (split bills)",
+       "amount": -42.86,
        "done": true,
-       "due": "2026-08-29",
-       "count": 2
+       "due": "2026-09-20"
       },
       {
-       "name": "Coffee shop",
-       "amount": 23.36,
+       "name": "Deliveroo",
+       "amount": 80.96,
        "done": true,
-       "due": "2026-09-07",
-       "count": 2
-      },
-      {
-       "name": "Taxi",
-       "amount": 20.09,
-       "done": true,
-       "due": "2026-09-16"
-      },
-      {
-       "name": "Corner shop",
-       "amount": 7.55,
-       "done": true,
-       "due": "2026-09-03"
-      },
-      {
-       "name": "Partner's share (split bills)",
-       "amount": -76.96,
-       "done": true,
-       "due": "2026-09-21"
+       "due": "2026-09-24",
+       "count": 3
       }
      ]
     }
    ]
-  }
- ],
- "alerts": [
-  {
-   "date": "2026-09-27",
-   "kind": "good",
-   "text": "Gym membership cancelled: £35/month gone"
-  },
-  {
-   "date": "2026-10-02",
-   "kind": "action",
-   "text": "Renew the TV licence before it lapses"
-  },
-  {
-   "date": "2026-10-09",
-   "kind": "info",
-   "text": "Energy tariff changes this week"
   }
  ]
 }

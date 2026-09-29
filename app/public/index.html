@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-<title>Budget Panel</title>
+<title>Budgeter</title>
 <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
 <!-- Icons are inline: iOS fetches the Home Screen icon without the Cloudflare Access cookie, so a URL gets the login page. -->
 <!-- Dark Home Screen icon (pale green £ on deep green). iOS may ignore media here; the light one below is the fallback. -->
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@500;600;700;800&display=swap">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Budget">
+<meta name="apple-mobile-web-app-title" content="Budgeter">
 <meta name="theme-color" content="#dee8e4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#151d1c" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="/panel.css">
@@ -39,13 +39,13 @@ document.addEventListener("gesturestart", (e) => e.preventDefault());
       if (res.status === 401 && Auth) return Auth.signIn().then(load);
       const type = res.headers.get("content-type") || "";
       if (!res.ok || !type.includes("application/json")) throw new Error("signin");
-      BudgetPanel.render(await res.json());
+      Budgeter.render(await res.json());
     } catch (e) {
-      BudgetPanel.fail('Your sign-in has expired or you are offline. <a href="/" onclick="location.reload();return false">Tap to sign in again</a>.');
+      Budgeter.fail('Your sign-in has expired or you are offline. <a href="/" onclick="location.reload();return false">Tap to sign in again</a>.');
     }
   }
   // Refresh button: fetch the latest budget and check for a newer version of the app.
-  BudgetPanel.onRefresh = async () => {
+  Budgeter.onRefresh = async () => {
     const reg = "serviceWorker" in navigator ? await navigator.serviceWorker.getRegistration().catch(() => null) : null;
     await Promise.all([load(), reg ? reg.update().catch(() => {}) : null]);
   };
@@ -55,13 +55,13 @@ document.addEventListener("gesturestart", (e) => e.preventDefault());
   const post = (path, body) => api(path, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
   const keyBytes = (s) => Uint8Array.from(atob((s + "=".repeat((4 - (s.length % 4)) % 4)).replace(/-/g, "+").replace(/_/g, "/")), (c) => c.charCodeAt(0));
   if (pushOK) {
-    BudgetPanel.push = {
+    Budgeter.push = {
       state: Notification.permission === "denied" ? "denied" : "off",
       async toggle() {
-        const push = BudgetPanel.push;
+        const push = Budgeter.push;
         // Ask first: iOS only shows the prompt straight from a tap.
         const perm = Notification.permission === "granted" ? "granted" : await Notification.requestPermission();
-        if (perm !== "granted") { push.state = "denied"; BudgetPanel.redraw(); return; }
+        if (perm !== "granted") { push.state = "denied"; Budgeter.redraw(); return; }
         const reg = await navigator.serviceWorker.ready;
         let sub = await reg.pushManager.getSubscription();
         if (!sub) {
@@ -70,14 +70,14 @@ document.addEventListener("gesturestart", (e) => e.preventDefault());
         }
         await post("/api/push/subscribe", sub.toJSON());
         push.state = "on";
-        BudgetPanel.redraw();
+        Budgeter.redraw();
         await post("/api/push/test", { endpoint: sub.endpoint });
       },
     };
     navigator.serviceWorker.ready.then((reg) => reg.pushManager.getSubscription()).then((sub) => {
       if (!sub || Notification.permission !== "granted") return;
-      BudgetPanel.push.state = "on";
-      BudgetPanel.redraw();
+      Budgeter.push.state = "on";
+      Budgeter.redraw();
       post("/api/push/subscribe", sub.toJSON()).catch(() => {}); // keep the server's copy current
     }).catch(() => {});
   }

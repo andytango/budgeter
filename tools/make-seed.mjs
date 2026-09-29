@@ -1,6 +1,6 @@
 // Turns a budget JSON file into SQL that loads it into D1 as the 'current' document (Node 18+).
 //   node tools/make-seed.mjs examples/demo-budget.json > seed.sql
-//   cd app && npx wrangler d1 execute budget-panel-db --remote --file=../seed.sql
+//   cd app && npx wrangler d1 execute budgeter-db --remote --file=../seed.sql
 // seed.sql contains your budget: don't commit it.
 import { readFileSync } from "node:fs";
 

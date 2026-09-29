@@ -55,7 +55,7 @@ In **Authentication**:
    link, because a link would open Safari rather than the Home Screen app. For example:
 
    ```html
-   <h2>Your Budget Panel code</h2>
+   <h2>Your Budgeter code</h2>
    <p>Enter this code in the app: <strong>{{ .Token }}</strong></p>
    ```
 
@@ -75,7 +75,7 @@ one anywhere in the repo.
 ## 4. Deploy to Vercel
 
 1. Vercel → **Add New → Project** → import your private finance repo.
-2. **Root Directory**: the folder that holds this project (e.g. `budget-panel`). Leave the framework
+2. **Root Directory**: the folder that holds this project (e.g. `budgeter`). Leave the framework
    preset as it is; [`vercel.json`](../vercel.json) sets the build.
 3. **Environment Variables**:
 

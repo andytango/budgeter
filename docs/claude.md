@@ -27,7 +27,7 @@ current. Commit it, so the daily routine sees the latest version.
 Two options:
 
 - **From scratch:** "Here are my bills, pay and debts: build my budget document for the current pay
-  period, based on `budget-panel/examples/demo-budget.json`." Claude creates `plan`, `debts` and the
+  period, based on `budgeter/examples/demo-budget.json`." Claude creates `plan`, `debts` and the
   current period, and itemises what's already been spent from your bank connector.
 - **With history:** export a statement CSV from your bank, copy
   [`tools/backfill.example.json`](../tools/backfill.example.json) to `backfill.json` (keep it out of
@@ -44,8 +44,8 @@ Then load it into the database ([Cloudflare](setup.md#6-load-a-budget),
 The same budget can be shown inside Claude as an artifact, using the same `panel.js` and `panel.css`
 as the phone app. Ask Claude:
 
-> Publish `budget-panel/artifact/artifact.html` as an artifact with `panel.js` and `panel.css` from
-> `budget-panel/app/public` as its files, with a database, and save my budget JSON in the database as
+> Publish `budgeter/artifact/artifact.html` as an artifact with `panel.js` and `panel.css` from
+> `budgeter/app/public` as its files, with a database, and save my budget JSON in the database as
 > `budget/current`.
 
 Note the artifact's URL in `CLAUDE.md` and in the routine prompt. The artifact starts private to you.

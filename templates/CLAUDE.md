@@ -26,13 +26,13 @@ Last updated: YYYY-MM-DD.
 - **Daily routine** "Daily budget check" (trigger `{{TRIGGER_ID}}`), {{TIME}} {{TIMEZONE}}. Update its
   prompt when the rules below change.
 
-## Budget Panel
-- Phone app: https://{{YOUR_DOMAIN}} (Cloudflare Worker `budget-panel`, behind Cloudflare Access,
-  allowed email: me only). Code: `budget-panel/` (a copy of the open-source repo).
+## Budgeter
+- Phone app: https://{{YOUR_DOMAIN}} (Cloudflare Worker `budgeter`, behind Cloudflare Access,
+  allowed email: me only). Code: `budgeter/` (a copy of the open-source repo).
 - Claude artifact: {{ARTIFACT_URL}} (data in the artifact database doc `budget/current`).
-- D1 database `budget-panel-db` (id `{{D1_DATABASE_ID}}`): `docs` row `current` = the budget JSON;
+- D1 database `budgeter-db` (id `{{D1_DATABASE_ID}}`): `docs` row `current` = the budget JSON;
   `push_subs`; `notifications` (insert a row to notify my phone; a future `created_at` schedules it).
-- Deploy code: `cd budget-panel/app && npx wrangler deploy`. Data changes need no deploy.
+- Deploy code: `cd budgeter/app && npx wrangler deploy`. Data changes need no deploy.
 - *(Vercel + Supabase instead:* phone app https://{{YOUR_DOMAIN}} on Vercel, sign-in by emailed code
   (Supabase Auth, `ALLOWED_EMAILS` = me only). Supabase project `{{SUPABASE_PROJECT_REF}}`: `docs` row
   `current` (column `body`, jsonb) = the budget JSON; `push_subs`; `notifications` (insert a row to
