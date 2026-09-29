@@ -1,0 +1,2155 @@
+{
+ "asOf": "2026-09-27",
+ "updatedLabel": "27 Sep",
+ "periodStart": "2026-09-24",
+ "periodEnd": "2026-10-29",
+ "payday": "2026-10-30",
+ "opening": 214.75,
+ "balance": 3222.17,
+ "income": [
+  {
+   "group": "Salary",
+   "items": [
+    {
+     "name": "September pay",
+     "amount": 3150.0,
+     "done": true,
+     "due": "2026-09-25"
+    }
+   ]
+  },
+  {
+   "group": "Partner",
+   "items": [
+    {
+     "name": "Bill share from partner",
+     "amount": 650.0,
+     "due": "2026-10-01",
+     "est": true
+    }
+   ]
+  }
+ ],
+ "expenses": [
+  {
+   "group": "Housing",
+   "items": [
+    {
+     "name": "Mortgage",
+     "amount": 1050.0,
+     "due": "2026-10-01"
+    },
+    {
+     "name": "Service charge",
+     "amount": 150.0,
+     "due": "2026-10-05"
+    },
+    {
+     "name": "Council tax",
+     "amount": 165.0,
+     "due": "2026-10-07"
+    }
+   ]
+  },
+  {
+   "group": "Debt Repayments",
+   "items": [
+    {
+     "name": "Credit card",
+     "amount": 200.0,
+     "due": "2026-10-01",
+     "debt": "Credit card"
+    },
+    {
+     "name": "Interest-free card",
+     "amount": 100.0,
+     "due": "2026-10-01",
+     "debt": "Interest-free card"
+    },
+    {
+     "name": "Car finance",
+     "amount": 220.0,
+     "due": "2026-10-15",
+     "debt": "Car finance"
+    }
+   ]
+  },
+  {
+   "group": "Cleaner",
+   "items": [
+    {
+     "name": "Cleaner (weekly)",
+     "amount": 45.0,
+     "due": "2026-09-25",
+     "est": true,
+     "done": true
+    },
+    {
+     "name": "Cleaner (weekly)",
+     "amount": 45.0,
+     "due": "2026-10-02",
+     "est": true
+    },
+    {
+     "name": "Cleaner (weekly)",
+     "amount": 45.0,
+     "due": "2026-10-09",
+     "est": true
+    },
+    {
+     "name": "Cleaner (weekly)",
+     "amount": 45.0,
+     "due": "2026-10-16",
+     "est": true
+    },
+    {
+     "name": "Cleaner (weekly)",
+     "amount": 45.0,
+     "due": "2026-10-23",
+     "est": true
+    }
+   ]
+  },
+  {
+   "group": "Utilities & Phone",
+   "items": [
+    {
+     "name": "Energy",
+     "amount": 110.0,
+     "due": "2026-10-01",
+     "est": true
+    },
+    {
+     "name": "Water",
+     "amount": 38.0,
+     "due": "2026-10-10"
+    },
+    {
+     "name": "Broadband",
+     "amount": 30.0,
+     "due": "2026-10-12"
+    },
+    {
+     "name": "Mobile",
+     "amount": 15.0,
+     "due": "2026-10-13"
+    }
+   ]
+  },
+  {
+   "group": "Insurance & Health",
+   "items": [
+    {
+     "name": "Dentist plan",
+     "amount": 18.5,
+     "due": "2026-10-01"
+    },
+    {
+     "name": "Car insurance",
+     "amount": 42.0,
+     "due": "2026-10-02"
+    },
+    {
+     "name": "Gym",
+     "amount": 35.0,
+     "due": "2026-10-03"
+    },
+    {
+     "name": "Pet insurance",
+     "amount": 28.0,
+     "due": "2026-10-17"
+    }
+   ]
+  },
+  {
+   "group": "Subscriptions",
+   "items": [
+    {
+     "name": "News",
+     "amount": 9.0,
+     "due": "2026-10-01"
+    },
+    {
+     "name": "Domain renewal (annual)",
+     "amount": 14.99,
+     "due": "2026-10-12"
+    },
+    {
+     "name": "Music streaming",
+     "amount": 11.99,
+     "due": "2026-10-14"
+    },
+    {
+     "name": "Video streaming",
+     "amount": 10.99,
+     "due": "2026-10-14"
+    },
+    {
+     "name": "Cloud storage",
+     "amount": 7.99,
+     "due": "2026-10-17"
+    }
+   ]
+  },
+  {
+   "group": "Discretionary",
+   "discretionary": true,
+   "items": [
+    {
+     "name": "Supermarket",
+     "amount": 46.2,
+     "done": true,
+     "due": "2026-09-25"
+    },
+    {
+     "name": "Coffee shop",
+     "amount": 7.4,
+     "count": 2,
+     "done": true,
+     "due": "2026-09-26"
+    },
+    {
+     "name": "Hardware store",
+     "amount": 38.99,
+     "done": true,
+     "due": "2026-09-26"
+    },
+    {
+     "name": "Film rental",
+     "amount": 3.49,
+     "done": true,
+     "due": "2026-09-26"
+    },
+    {
+     "name": "Pub",
+     "amount": 24.6,
+     "done": true,
+     "due": "2026-09-26"
+    },
+    {
+     "name": "Partner's share (split bills)",
+     "amount": -23.1,
+     "done": true,
+     "due": "2026-09-27"
+    }
+   ]
+  }
+ ],
+ "debts": [
+  {
+   "name": "Credit card",
+   "rate": "22.9% APR",
+   "apr": 22.9,
+   "monthly": 200,
+   "balance": 1400.0,
+   "start": 2500.0
+  },
+  {
+   "name": "Interest-free card",
+   "rate": "0%",
+   "apr": 0,
+   "monthly": 100,
+   "balance": 1800.0,
+   "start": 3000.0
+  },
+  {
+   "name": "Car finance",
+   "rate": "6.9% APR",
+   "apr": 6.9,
+   "monthly": 220,
+   "balance": 4200.0,
+   "start": 9000.0
+  }
+ ],
+ "note": "Started the period on **£215**. With every bill still to come paid you're heading for **£1,436** on Thu 29 Oct. Discretionary so far: **£98**.",
+ "plan": {
+  "income": [
+   {
+    "group": "Salary",
+    "name": "{month} pay",
+    "amount": 3150.0,
+    "payday": true,
+    "est": true
+   },
+   {
+    "group": "Partner",
+    "name": "Bill share from partner",
+    "amount": 650.0,
+    "day": 1,
+    "est": true
+   }
+  ],
+  "expenses": [
+   {
+    "group": "Housing",
+    "name": "Mortgage",
+    "amount": 1050.0,
+    "day": 1
+   },
+   {
+    "group": "Housing",
+    "name": "Service charge",
+    "amount": 150.0,
+    "day": 5
+   },
+   {
+    "group": "Housing",
+    "name": "Council tax",
+    "amount": 165.0,
+    "day": 7,
+    "months": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     1
+    ]
+   },
+   {
+    "group": "Debt Repayments",
+    "name": "Credit card",
+    "amount": 200.0,
+    "day": 1,
+    "debt": "Credit card"
+   },
+   {
+    "group": "Debt Repayments",
+    "name": "Interest-free card",
+    "amount": 100.0,
+    "day": 1,
+    "debt": "Interest-free card"
+   },
+   {
+    "group": "Debt Repayments",
+    "name": "Car finance",
+    "amount": 220.0,
+    "day": 15,
+    "debt": "Car finance"
+   },
+   {
+    "group": "Cleaner",
+    "name": "Cleaner (weekly)",
+    "amount": 45.0,
+    "weekly": 5,
+    "est": true
+   },
+   {
+    "group": "Utilities & Phone",
+    "name": "Energy",
+    "amount": 110.0,
+    "day": 1,
+    "est": true
+   },
+   {
+    "group": "Utilities & Phone",
+    "name": "Water",
+    "amount": 38.0,
+    "day": 10
+   },
+   {
+    "group": "Insurance & Health",
+    "name": "Gym",
+    "amount": 35.0,
+    "day": 3
+   },
+   {
+    "group": "Utilities & Phone",
+    "name": "Broadband",
+    "amount": 30.0,
+    "day": 12
+   },
+   {
+    "group": "Utilities & Phone",
+    "name": "Mobile",
+    "amount": 15.0,
+    "day": 13
+   },
+   {
+    "group": "Insurance & Health",
+    "name": "Car insurance",
+    "amount": 42.0,
+    "day": 2
+   },
+   {
+    "group": "Insurance & Health",
+    "name": "Dentist plan",
+    "amount": 18.5,
+    "day": 1
+   },
+   {
+    "group": "Insurance & Health",
+    "name": "Pet insurance",
+    "amount": 28.0,
+    "day": 17
+   },
+   {
+    "group": "Subscriptions",
+    "name": "Music streaming",
+    "amount": 11.99,
+    "day": 14
+   },
+   {
+    "group": "Subscriptions",
+    "name": "Video streaming",
+    "amount": 10.99,
+    "day": 14
+   },
+   {
+    "group": "Subscriptions",
+    "name": "Cloud storage",
+    "amount": 7.99,
+    "day": 17
+   },
+   {
+    "group": "Subscriptions",
+    "name": "News",
+    "amount": 9.0,
+    "day": 1
+   },
+   {
+    "group": "Subscriptions",
+    "name": "Domain renewal (annual)",
+    "amount": 14.99,
+    "date": "2026-10-12",
+    "everyYears": 1
+   },
+   {
+    "group": "Subscriptions",
+    "name": "Office software (annual)",
+    "amount": 79.99,
+    "date": "2027-01-13",
+    "everyYears": 1
+   },
+   {
+    "group": "Subscriptions",
+    "name": "Bank plan (annual)",
+    "amount": 120.0,
+    "date": "2027-05-19",
+    "everyYears": 1
+   },
+   {
+    "group": "Debt Repayments",
+    "name": "Credit card (extra payment)",
+    "amount": 600.0,
+    "date": "2026-10-30",
+    "debt": "Credit card"
+   }
+  ]
+ },
+ "history": [
+  {
+   "periodStart": "2026-03-26",
+   "periodEnd": "2026-04-23",
+   "payday": "2026-04-24",
+   "opening": 520.0,
+   "balance": 640.0,
+   "income": [
+    {
+     "group": "Salary",
+     "items": [
+      {
+       "name": "March pay",
+       "amount": 3150.0,
+       "done": true,
+       "due": "2026-03-27"
+      }
+     ]
+    },
+    {
+     "group": "Partner",
+     "items": [
+      {
+       "name": "Bill share from partner",
+       "amount": 650.0,
+       "done": true,
+       "due": "2026-04-01"
+      }
+     ]
+    }
+   ],
+   "expenses": [
+    {
+     "group": "Housing",
+     "items": [
+      {
+       "name": "Mortgage",
+       "amount": 1050.0,
+       "done": true,
+       "due": "2026-04-01"
+      },
+      {
+       "name": "Service charge",
+       "amount": 150.0,
+       "done": true,
+       "due": "2026-04-05"
+      },
+      {
+       "name": "Council tax",
+       "amount": 165.0,
+       "done": true,
+       "due": "2026-04-07"
+      }
+     ]
+    },
+    {
+     "group": "Debt Repayments",
+     "items": [
+      {
+       "name": "Credit card",
+       "amount": 200.0,
+       "done": true,
+       "due": "2026-04-01"
+      },
+      {
+       "name": "Interest-free card",
+       "amount": 100.0,
+       "done": true,
+       "due": "2026-04-01"
+      },
+      {
+       "name": "Car finance",
+       "amount": 220.0,
+       "done": true,
+       "due": "2026-04-15"
+      }
+     ]
+    },
+    {
+     "group": "Cleaner",
+     "items": [
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-03-27"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-04-03"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-04-10"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-04-17"
+      }
+     ]
+    },
+    {
+     "group": "Utilities & Phone",
+     "items": [
+      {
+       "name": "Energy",
+       "amount": 110.0,
+       "done": true,
+       "due": "2026-04-01"
+      },
+      {
+       "name": "Water",
+       "amount": 38.0,
+       "done": true,
+       "due": "2026-04-10"
+      },
+      {
+       "name": "Broadband",
+       "amount": 30.0,
+       "done": true,
+       "due": "2026-04-12"
+      },
+      {
+       "name": "Mobile",
+       "amount": 15.0,
+       "done": true,
+       "due": "2026-04-13"
+      }
+     ]
+    },
+    {
+     "group": "Insurance & Health",
+     "items": [
+      {
+       "name": "Dentist plan",
+       "amount": 18.5,
+       "done": true,
+       "due": "2026-04-01"
+      },
+      {
+       "name": "Car insurance",
+       "amount": 42.0,
+       "done": true,
+       "due": "2026-04-02"
+      },
+      {
+       "name": "Gym",
+       "amount": 35.0,
+       "done": true,
+       "due": "2026-04-03"
+      },
+      {
+       "name": "Pet insurance",
+       "amount": 28.0,
+       "done": true,
+       "due": "2026-04-17"
+      }
+     ]
+    },
+    {
+     "group": "Subscriptions",
+     "items": [
+      {
+       "name": "News",
+       "amount": 9.0,
+       "done": true,
+       "due": "2026-04-01"
+      },
+      {
+       "name": "Music streaming",
+       "amount": 11.99,
+       "done": true,
+       "due": "2026-04-14"
+      },
+      {
+       "name": "Video streaming",
+       "amount": 10.99,
+       "done": true,
+       "due": "2026-04-14"
+      },
+      {
+       "name": "Cloud storage",
+       "amount": 7.99,
+       "done": true,
+       "due": "2026-04-17"
+      }
+     ]
+    },
+    {
+     "group": "Discretionary",
+     "discretionary": true,
+     "items": [
+      {
+       "name": "Supermarket",
+       "amount": 456.84,
+       "done": true,
+       "due": "2026-03-28",
+       "count": 6
+      },
+      {
+       "name": "Petrol",
+       "amount": 202.03,
+       "done": true,
+       "due": "2026-04-18",
+       "count": 2
+      },
+      {
+       "name": "Restaurant",
+       "amount": 185.3,
+       "done": true,
+       "due": "2026-04-16",
+       "count": 2
+      },
+      {
+       "name": "Hardware store",
+       "amount": 146.35,
+       "done": true,
+       "due": "2026-04-03",
+       "count": 2
+      },
+      {
+       "name": "Gift",
+       "amount": 98.21,
+       "done": true,
+       "due": "2026-04-09"
+      },
+      {
+       "name": "Coffee shop",
+       "amount": 61.63,
+       "done": true,
+       "due": "2026-03-29",
+       "count": 6
+      },
+      {
+       "name": "Pharmacy",
+       "amount": 61.39,
+       "done": true,
+       "due": "2026-03-31",
+       "count": 2
+      },
+      {
+       "name": "Takeaway",
+       "amount": 41.73,
+       "done": true,
+       "due": "2026-04-14"
+      },
+      {
+       "name": "Cinema",
+       "amount": 41.28,
+       "done": true,
+       "due": "2026-04-17"
+      },
+      {
+       "name": "Bakery",
+       "amount": 9.82,
+       "done": true,
+       "due": "2026-04-09"
+      },
+      {
+       "name": "Partner's share (split bills)",
+       "amount": -46.05,
+       "done": true,
+       "due": "2026-04-20"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "periodStart": "2026-04-23",
+   "periodEnd": "2026-05-28",
+   "payday": "2026-05-29",
+   "opening": 640.0,
+   "balance": 245.6,
+   "income": [
+    {
+     "group": "Salary",
+     "items": [
+      {
+       "name": "April pay",
+       "amount": 3150.0,
+       "done": true,
+       "due": "2026-04-24"
+      }
+     ]
+    },
+    {
+     "group": "Partner",
+     "items": [
+      {
+       "name": "Bill share from partner",
+       "amount": 650.0,
+       "done": true,
+       "due": "2026-05-01"
+      }
+     ]
+    }
+   ],
+   "expenses": [
+    {
+     "group": "Housing",
+     "items": [
+      {
+       "name": "Mortgage",
+       "amount": 1050.0,
+       "done": true,
+       "due": "2026-05-01"
+      },
+      {
+       "name": "Service charge",
+       "amount": 150.0,
+       "done": true,
+       "due": "2026-05-05"
+      },
+      {
+       "name": "Council tax",
+       "amount": 165.0,
+       "done": true,
+       "due": "2026-05-07"
+      }
+     ]
+    },
+    {
+     "group": "Debt Repayments",
+     "items": [
+      {
+       "name": "Credit card",
+       "amount": 200.0,
+       "done": true,
+       "due": "2026-05-01"
+      },
+      {
+       "name": "Interest-free card",
+       "amount": 100.0,
+       "done": true,
+       "due": "2026-05-01"
+      },
+      {
+       "name": "Car finance",
+       "amount": 220.0,
+       "done": true,
+       "due": "2026-05-15"
+      }
+     ]
+    },
+    {
+     "group": "Cleaner",
+     "items": [
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-04-24"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-05-01"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-05-08"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-05-15"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-05-22"
+      }
+     ]
+    },
+    {
+     "group": "Utilities & Phone",
+     "items": [
+      {
+       "name": "Energy",
+       "amount": 110.0,
+       "done": true,
+       "due": "2026-05-01"
+      },
+      {
+       "name": "Water",
+       "amount": 38.0,
+       "done": true,
+       "due": "2026-05-10"
+      },
+      {
+       "name": "Broadband",
+       "amount": 30.0,
+       "done": true,
+       "due": "2026-05-12"
+      },
+      {
+       "name": "Mobile",
+       "amount": 15.0,
+       "done": true,
+       "due": "2026-05-13"
+      }
+     ]
+    },
+    {
+     "group": "Insurance & Health",
+     "items": [
+      {
+       "name": "Dentist plan",
+       "amount": 18.5,
+       "done": true,
+       "due": "2026-05-01"
+      },
+      {
+       "name": "Car insurance",
+       "amount": 42.0,
+       "done": true,
+       "due": "2026-05-02"
+      },
+      {
+       "name": "Gym",
+       "amount": 35.0,
+       "done": true,
+       "due": "2026-05-03"
+      },
+      {
+       "name": "Pet insurance",
+       "amount": 28.0,
+       "done": true,
+       "due": "2026-05-17"
+      }
+     ]
+    },
+    {
+     "group": "Subscriptions",
+     "items": [
+      {
+       "name": "News",
+       "amount": 9.0,
+       "done": true,
+       "due": "2026-05-01"
+      },
+      {
+       "name": "Music streaming",
+       "amount": 11.99,
+       "done": true,
+       "due": "2026-05-14"
+      },
+      {
+       "name": "Video streaming",
+       "amount": 10.99,
+       "done": true,
+       "due": "2026-05-14"
+      },
+      {
+       "name": "Cloud storage",
+       "amount": 7.99,
+       "done": true,
+       "due": "2026-05-17"
+      }
+     ]
+    },
+    {
+     "group": "Discretionary",
+     "discretionary": true,
+     "items": [
+      {
+       "name": "Supermarket",
+       "amount": 549.57,
+       "done": true,
+       "due": "2026-05-05",
+       "count": 7
+      },
+      {
+       "name": "Train tickets",
+       "amount": 332.02,
+       "done": true,
+       "due": "2026-05-23",
+       "count": 2
+      },
+      {
+       "name": "Pub",
+       "amount": 308.43,
+       "done": true,
+       "due": "2026-04-26",
+       "count": 4
+      },
+      {
+       "name": "Restaurant",
+       "amount": 218.32,
+       "done": true,
+       "due": "2026-05-14",
+       "count": 2
+      },
+      {
+       "name": "Takeaway",
+       "amount": 141.6,
+       "done": true,
+       "due": "2026-05-16",
+       "count": 2
+      },
+      {
+       "name": "Garden centre",
+       "amount": 64.46,
+       "done": true,
+       "due": "2026-05-01"
+      },
+      {
+       "name": "Clothes shop",
+       "amount": 58.75,
+       "done": true,
+       "due": "2026-05-12"
+      },
+      {
+       "name": "Coffee shop",
+       "amount": 48.62,
+       "done": true,
+       "due": "2026-04-28",
+       "count": 4
+      },
+      {
+       "name": "Cinema",
+       "amount": 43.81,
+       "done": true,
+       "due": "2026-05-22"
+      },
+      {
+       "name": "Pharmacy",
+       "amount": 27.17,
+       "done": true,
+       "due": "2026-04-28"
+      },
+      {
+       "name": "Corner shop",
+       "amount": 10.7,
+       "done": true,
+       "due": "2026-05-13"
+      },
+      {
+       "name": "Partner's share (split bills)",
+       "amount": -75.52,
+       "done": true,
+       "due": "2026-05-25"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "periodStart": "2026-05-28",
+   "periodEnd": "2026-06-25",
+   "payday": "2026-06-26",
+   "opening": 245.6,
+   "balance": 402.15,
+   "income": [
+    {
+     "group": "Salary",
+     "items": [
+      {
+       "name": "May pay",
+       "amount": 3150.0,
+       "done": true,
+       "due": "2026-05-29"
+      }
+     ]
+    },
+    {
+     "group": "Partner",
+     "items": [
+      {
+       "name": "Bill share from partner",
+       "amount": 650.0,
+       "done": true,
+       "due": "2026-06-01"
+      }
+     ]
+    }
+   ],
+   "expenses": [
+    {
+     "group": "Housing",
+     "items": [
+      {
+       "name": "Mortgage",
+       "amount": 1050.0,
+       "done": true,
+       "due": "2026-06-01"
+      },
+      {
+       "name": "Service charge",
+       "amount": 150.0,
+       "done": true,
+       "due": "2026-06-05"
+      },
+      {
+       "name": "Council tax",
+       "amount": 165.0,
+       "done": true,
+       "due": "2026-06-07"
+      }
+     ]
+    },
+    {
+     "group": "Debt Repayments",
+     "items": [
+      {
+       "name": "Credit card",
+       "amount": 200.0,
+       "done": true,
+       "due": "2026-06-01"
+      },
+      {
+       "name": "Interest-free card",
+       "amount": 100.0,
+       "done": true,
+       "due": "2026-06-01"
+      },
+      {
+       "name": "Car finance",
+       "amount": 220.0,
+       "done": true,
+       "due": "2026-06-15"
+      }
+     ]
+    },
+    {
+     "group": "Cleaner",
+     "items": [
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-05-29"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-06-05"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-06-12"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-06-19"
+      }
+     ]
+    },
+    {
+     "group": "Utilities & Phone",
+     "items": [
+      {
+       "name": "Energy",
+       "amount": 110.0,
+       "done": true,
+       "due": "2026-06-01"
+      },
+      {
+       "name": "Water",
+       "amount": 38.0,
+       "done": true,
+       "due": "2026-06-10"
+      },
+      {
+       "name": "Broadband",
+       "amount": 30.0,
+       "done": true,
+       "due": "2026-06-12"
+      },
+      {
+       "name": "Mobile",
+       "amount": 15.0,
+       "done": true,
+       "due": "2026-06-13"
+      }
+     ]
+    },
+    {
+     "group": "Insurance & Health",
+     "items": [
+      {
+       "name": "Dentist plan",
+       "amount": 18.5,
+       "done": true,
+       "due": "2026-06-01"
+      },
+      {
+       "name": "Car insurance",
+       "amount": 42.0,
+       "done": true,
+       "due": "2026-06-02"
+      },
+      {
+       "name": "Gym",
+       "amount": 35.0,
+       "done": true,
+       "due": "2026-06-03"
+      },
+      {
+       "name": "Pet insurance",
+       "amount": 28.0,
+       "done": true,
+       "due": "2026-06-17"
+      }
+     ]
+    },
+    {
+     "group": "Subscriptions",
+     "items": [
+      {
+       "name": "News",
+       "amount": 9.0,
+       "done": true,
+       "due": "2026-06-01"
+      },
+      {
+       "name": "Music streaming",
+       "amount": 11.99,
+       "done": true,
+       "due": "2026-06-14"
+      },
+      {
+       "name": "Video streaming",
+       "amount": 10.99,
+       "done": true,
+       "due": "2026-06-14"
+      },
+      {
+       "name": "Cloud storage",
+       "amount": 7.99,
+       "done": true,
+       "due": "2026-06-17"
+      }
+     ]
+    },
+    {
+     "group": "Discretionary",
+     "discretionary": true,
+     "items": [
+      {
+       "name": "Train tickets",
+       "amount": 282.02,
+       "done": true,
+       "due": "2026-06-14",
+       "count": 2
+      },
+      {
+       "name": "Supermarket",
+       "amount": 280.9,
+       "done": true,
+       "due": "2026-06-02",
+       "count": 4
+      },
+      {
+       "name": "Hardware store",
+       "amount": 187.04,
+       "done": true,
+       "due": "2026-06-12",
+       "count": 2
+      },
+      {
+       "name": "Pub",
+       "amount": 161.16,
+       "done": true,
+       "due": "2026-06-02",
+       "count": 3
+      },
+      {
+       "name": "Restaurant",
+       "amount": 95.74,
+       "done": true,
+       "due": "2026-06-17"
+      },
+      {
+       "name": "Gift",
+       "amount": 66.22,
+       "done": true,
+       "due": "2026-05-31"
+      },
+      {
+       "name": "Taxi",
+       "amount": 61.72,
+       "done": true,
+       "due": "2026-06-04",
+       "count": 3
+      },
+      {
+       "name": "Corner shop",
+       "amount": 50.26,
+       "done": true,
+       "due": "2026-06-09",
+       "count": 3
+      },
+      {
+       "name": "Coffee shop",
+       "amount": 43.72,
+       "done": true,
+       "due": "2026-06-05",
+       "count": 5
+      },
+      {
+       "name": "Bookshop",
+       "amount": 22.85,
+       "done": true,
+       "due": "2026-06-10"
+      },
+      {
+       "name": "Cinema",
+       "amount": 21.21,
+       "done": true,
+       "due": "2026-06-08"
+      },
+      {
+       "name": "Partner's share (split bills)",
+       "amount": -50.86,
+       "done": true,
+       "due": "2026-06-22"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "periodStart": "2026-06-25",
+   "periodEnd": "2026-07-30",
+   "payday": "2026-07-31",
+   "opening": 402.15,
+   "balance": 188.4,
+   "income": [
+    {
+     "group": "Salary",
+     "items": [
+      {
+       "name": "June pay",
+       "amount": 3150.0,
+       "done": true,
+       "due": "2026-06-26"
+      }
+     ]
+    },
+    {
+     "group": "Partner",
+     "items": [
+      {
+       "name": "Bill share from partner",
+       "amount": 650.0,
+       "done": true,
+       "due": "2026-07-01"
+      }
+     ]
+    }
+   ],
+   "expenses": [
+    {
+     "group": "Housing",
+     "items": [
+      {
+       "name": "Mortgage",
+       "amount": 1050.0,
+       "done": true,
+       "due": "2026-07-01"
+      },
+      {
+       "name": "Service charge",
+       "amount": 150.0,
+       "done": true,
+       "due": "2026-07-05"
+      },
+      {
+       "name": "Council tax",
+       "amount": 165.0,
+       "done": true,
+       "due": "2026-07-07"
+      }
+     ]
+    },
+    {
+     "group": "Debt Repayments",
+     "items": [
+      {
+       "name": "Credit card",
+       "amount": 200.0,
+       "done": true,
+       "due": "2026-07-01"
+      },
+      {
+       "name": "Interest-free card",
+       "amount": 100.0,
+       "done": true,
+       "due": "2026-07-01"
+      },
+      {
+       "name": "Car finance",
+       "amount": 220.0,
+       "done": true,
+       "due": "2026-07-15"
+      }
+     ]
+    },
+    {
+     "group": "Cleaner",
+     "items": [
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-06-26"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-07-03"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-07-10"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-07-17"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-07-24"
+      }
+     ]
+    },
+    {
+     "group": "Utilities & Phone",
+     "items": [
+      {
+       "name": "Energy",
+       "amount": 110.0,
+       "done": true,
+       "due": "2026-07-01"
+      },
+      {
+       "name": "Water",
+       "amount": 38.0,
+       "done": true,
+       "due": "2026-07-10"
+      },
+      {
+       "name": "Broadband",
+       "amount": 30.0,
+       "done": true,
+       "due": "2026-07-12"
+      },
+      {
+       "name": "Mobile",
+       "amount": 15.0,
+       "done": true,
+       "due": "2026-07-13"
+      }
+     ]
+    },
+    {
+     "group": "Insurance & Health",
+     "items": [
+      {
+       "name": "Dentist plan",
+       "amount": 18.5,
+       "done": true,
+       "due": "2026-07-01"
+      },
+      {
+       "name": "Car insurance",
+       "amount": 42.0,
+       "done": true,
+       "due": "2026-07-02"
+      },
+      {
+       "name": "Gym",
+       "amount": 35.0,
+       "done": true,
+       "due": "2026-07-03"
+      },
+      {
+       "name": "Pet insurance",
+       "amount": 28.0,
+       "done": true,
+       "due": "2026-07-17"
+      }
+     ]
+    },
+    {
+     "group": "Subscriptions",
+     "items": [
+      {
+       "name": "News",
+       "amount": 9.0,
+       "done": true,
+       "due": "2026-07-01"
+      },
+      {
+       "name": "Music streaming",
+       "amount": 11.99,
+       "done": true,
+       "due": "2026-07-14"
+      },
+      {
+       "name": "Video streaming",
+       "amount": 10.99,
+       "done": true,
+       "due": "2026-07-14"
+      },
+      {
+       "name": "Cloud storage",
+       "amount": 7.99,
+       "done": true,
+       "due": "2026-07-17"
+      }
+     ]
+    },
+    {
+     "group": "Discretionary",
+     "discretionary": true,
+     "items": [
+      {
+       "name": "Supermarket",
+       "amount": 675.4,
+       "done": true,
+       "due": "2026-07-26",
+       "count": 8
+      },
+      {
+       "name": "Restaurant",
+       "amount": 270.7,
+       "done": true,
+       "due": "2026-07-06",
+       "count": 2
+      },
+      {
+       "name": "Clothes shop",
+       "amount": 136.64,
+       "done": true,
+       "due": "2026-07-10"
+      },
+      {
+       "name": "Petrol",
+       "amount": 126.69,
+       "done": true,
+       "due": "2026-07-08"
+      },
+      {
+       "name": "Taxi",
+       "amount": 110.22,
+       "done": true,
+       "due": "2026-07-12",
+       "count": 2
+      },
+      {
+       "name": "Gift",
+       "amount": 71.18,
+       "done": true,
+       "due": "2026-06-27"
+      },
+      {
+       "name": "Takeaway",
+       "amount": 59.6,
+       "done": true,
+       "due": "2026-07-28"
+      },
+      {
+       "name": "Bakery",
+       "amount": 57.3,
+       "done": true,
+       "due": "2026-07-01",
+       "count": 3
+      },
+      {
+       "name": "Cinema",
+       "amount": 51.41,
+       "done": true,
+       "due": "2026-07-18"
+      },
+      {
+       "name": "Pub",
+       "amount": 46.37,
+       "done": true,
+       "due": "2026-07-17"
+      },
+      {
+       "name": "Bookshop",
+       "amount": 23.6,
+       "done": true,
+       "due": "2026-07-30"
+      },
+      {
+       "name": "Partner's share (split bills)",
+       "amount": -81.83,
+       "done": true,
+       "due": "2026-07-27"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "periodStart": "2026-07-30",
+   "periodEnd": "2026-08-27",
+   "payday": "2026-08-28",
+   "opening": 188.4,
+   "balance": 356.9,
+   "income": [
+    {
+     "group": "Salary",
+     "items": [
+      {
+       "name": "July pay",
+       "amount": 3150.0,
+       "done": true,
+       "due": "2026-07-31"
+      }
+     ]
+    },
+    {
+     "group": "Partner",
+     "items": [
+      {
+       "name": "Bill share from partner",
+       "amount": 650.0,
+       "done": true,
+       "due": "2026-08-01"
+      }
+     ]
+    }
+   ],
+   "expenses": [
+    {
+     "group": "Housing",
+     "items": [
+      {
+       "name": "Mortgage",
+       "amount": 1050.0,
+       "done": true,
+       "due": "2026-08-01"
+      },
+      {
+       "name": "Service charge",
+       "amount": 150.0,
+       "done": true,
+       "due": "2026-08-05"
+      },
+      {
+       "name": "Council tax",
+       "amount": 165.0,
+       "done": true,
+       "due": "2026-08-07"
+      }
+     ]
+    },
+    {
+     "group": "Debt Repayments",
+     "items": [
+      {
+       "name": "Credit card",
+       "amount": 200.0,
+       "done": true,
+       "due": "2026-08-01"
+      },
+      {
+       "name": "Interest-free card",
+       "amount": 100.0,
+       "done": true,
+       "due": "2026-08-01"
+      },
+      {
+       "name": "Car finance",
+       "amount": 220.0,
+       "done": true,
+       "due": "2026-08-15"
+      }
+     ]
+    },
+    {
+     "group": "Cleaner",
+     "items": [
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-07-31"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-08-07"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-08-14"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-08-21"
+      }
+     ]
+    },
+    {
+     "group": "Utilities & Phone",
+     "items": [
+      {
+       "name": "Energy",
+       "amount": 110.0,
+       "done": true,
+       "due": "2026-08-01"
+      },
+      {
+       "name": "Water",
+       "amount": 38.0,
+       "done": true,
+       "due": "2026-08-10"
+      },
+      {
+       "name": "Broadband",
+       "amount": 30.0,
+       "done": true,
+       "due": "2026-08-12"
+      },
+      {
+       "name": "Mobile",
+       "amount": 15.0,
+       "done": true,
+       "due": "2026-08-13"
+      }
+     ]
+    },
+    {
+     "group": "Insurance & Health",
+     "items": [
+      {
+       "name": "Dentist plan",
+       "amount": 18.5,
+       "done": true,
+       "due": "2026-08-01"
+      },
+      {
+       "name": "Car insurance",
+       "amount": 42.0,
+       "done": true,
+       "due": "2026-08-02"
+      },
+      {
+       "name": "Gym",
+       "amount": 35.0,
+       "done": true,
+       "due": "2026-08-03"
+      },
+      {
+       "name": "Pet insurance",
+       "amount": 28.0,
+       "done": true,
+       "due": "2026-08-17"
+      }
+     ]
+    },
+    {
+     "group": "Subscriptions",
+     "items": [
+      {
+       "name": "News",
+       "amount": 9.0,
+       "done": true,
+       "due": "2026-08-01"
+      },
+      {
+       "name": "Music streaming",
+       "amount": 11.99,
+       "done": true,
+       "due": "2026-08-14"
+      },
+      {
+       "name": "Video streaming",
+       "amount": 10.99,
+       "done": true,
+       "due": "2026-08-14"
+      },
+      {
+       "name": "Cloud storage",
+       "amount": 7.99,
+       "done": true,
+       "due": "2026-08-17"
+      }
+     ]
+    },
+    {
+     "group": "Discretionary",
+     "discretionary": true,
+     "items": [
+      {
+       "name": "Pub",
+       "amount": 291.61,
+       "done": true,
+       "due": "2026-08-11",
+       "count": 4
+      },
+      {
+       "name": "Supermarket",
+       "amount": 202.82,
+       "done": true,
+       "due": "2026-08-19",
+       "count": 3
+      },
+      {
+       "name": "Petrol",
+       "amount": 188.04,
+       "done": true,
+       "due": "2026-08-15",
+       "count": 2
+      },
+      {
+       "name": "Restaurant",
+       "amount": 182.58,
+       "done": true,
+       "due": "2026-08-12",
+       "count": 2
+      },
+      {
+       "name": "Hardware store",
+       "amount": 114.5,
+       "done": true,
+       "due": "2026-08-10"
+      },
+      {
+       "name": "Train tickets",
+       "amount": 107.96,
+       "done": true,
+       "due": "2026-08-05"
+      },
+      {
+       "name": "Takeaway",
+       "amount": 49.04,
+       "done": true,
+       "due": "2026-08-14"
+      },
+      {
+       "name": "Corner shop",
+       "amount": 45.03,
+       "done": true,
+       "due": "2026-08-11",
+       "count": 2
+      },
+      {
+       "name": "Pharmacy",
+       "amount": 38.74,
+       "done": true,
+       "due": "2026-08-02",
+       "count": 2
+      },
+      {
+       "name": "Garden centre",
+       "amount": 36.21,
+       "done": true,
+       "due": "2026-08-17"
+      },
+      {
+       "name": "Taxi",
+       "amount": 20.12,
+       "done": true,
+       "due": "2026-08-04"
+      },
+      {
+       "name": "Coffee shop",
+       "amount": 11.68,
+       "done": true,
+       "due": "2026-08-15",
+       "count": 2
+      },
+      {
+       "name": "Bakery",
+       "amount": 11.02,
+       "done": true,
+       "due": "2026-08-15"
+      },
+      {
+       "name": "Partner's share (split bills)",
+       "amount": -89.32,
+       "done": true,
+       "due": "2026-08-24"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "periodStart": "2026-08-27",
+   "periodEnd": "2026-09-24",
+   "payday": "2026-09-25",
+   "opening": 356.9,
+   "balance": 214.75,
+   "income": [
+    {
+     "group": "Salary",
+     "items": [
+      {
+       "name": "August pay",
+       "amount": 3150.0,
+       "done": true,
+       "due": "2026-08-28"
+      }
+     ]
+    },
+    {
+     "group": "Partner",
+     "items": [
+      {
+       "name": "Bill share from partner",
+       "amount": 650.0,
+       "done": true,
+       "due": "2026-09-01"
+      }
+     ]
+    }
+   ],
+   "expenses": [
+    {
+     "group": "Housing",
+     "items": [
+      {
+       "name": "Mortgage",
+       "amount": 1050.0,
+       "done": true,
+       "due": "2026-09-01"
+      },
+      {
+       "name": "Service charge",
+       "amount": 150.0,
+       "done": true,
+       "due": "2026-09-05"
+      },
+      {
+       "name": "Council tax",
+       "amount": 165.0,
+       "done": true,
+       "due": "2026-09-07"
+      }
+     ]
+    },
+    {
+     "group": "Debt Repayments",
+     "items": [
+      {
+       "name": "Credit card",
+       "amount": 200.0,
+       "done": true,
+       "due": "2026-09-01"
+      },
+      {
+       "name": "Interest-free card",
+       "amount": 100.0,
+       "done": true,
+       "due": "2026-09-01"
+      },
+      {
+       "name": "Car finance",
+       "amount": 220.0,
+       "done": true,
+       "due": "2026-09-15"
+      }
+     ]
+    },
+    {
+     "group": "Cleaner",
+     "items": [
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-08-28"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-09-04"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-09-11"
+      },
+      {
+       "name": "Cleaner (weekly)",
+       "amount": 45.0,
+       "done": true,
+       "due": "2026-09-18"
+      }
+     ]
+    },
+    {
+     "group": "Utilities & Phone",
+     "items": [
+      {
+       "name": "Energy",
+       "amount": 110.0,
+       "done": true,
+       "due": "2026-09-01"
+      },
+      {
+       "name": "Water",
+       "amount": 38.0,
+       "done": true,
+       "due": "2026-09-10"
+      },
+      {
+       "name": "Broadband",
+       "amount": 30.0,
+       "done": true,
+       "due": "2026-09-12"
+      },
+      {
+       "name": "Mobile",
+       "amount": 15.0,
+       "done": true,
+       "due": "2026-09-13"
+      }
+     ]
+    },
+    {
+     "group": "Insurance & Health",
+     "items": [
+      {
+       "name": "Dentist plan",
+       "amount": 18.5,
+       "done": true,
+       "due": "2026-09-01"
+      },
+      {
+       "name": "Car insurance",
+       "amount": 42.0,
+       "done": true,
+       "due": "2026-09-02"
+      },
+      {
+       "name": "Gym",
+       "amount": 35.0,
+       "done": true,
+       "due": "2026-09-03"
+      },
+      {
+       "name": "Pet insurance",
+       "amount": 28.0,
+       "done": true,
+       "due": "2026-09-17"
+      }
+     ]
+    },
+    {
+     "group": "Subscriptions",
+     "items": [
+      {
+       "name": "News",
+       "amount": 9.0,
+       "done": true,
+       "due": "2026-09-01"
+      },
+      {
+       "name": "Music streaming",
+       "amount": 11.99,
+       "done": true,
+       "due": "2026-09-14"
+      },
+      {
+       "name": "Video streaming",
+       "amount": 10.99,
+       "done": true,
+       "due": "2026-09-14"
+      },
+      {
+       "name": "Cloud storage",
+       "amount": 7.99,
+       "done": true,
+       "due": "2026-09-17"
+      }
+     ]
+    },
+    {
+     "group": "Discretionary",
+     "discretionary": true,
+     "items": [
+      {
+       "name": "Supermarket",
+       "amount": 680.14,
+       "done": true,
+       "due": "2026-09-23",
+       "count": 9
+      },
+      {
+       "name": "Restaurant",
+       "amount": 246.79,
+       "done": true,
+       "due": "2026-09-13",
+       "count": 2
+      },
+      {
+       "name": "Pub",
+       "amount": 174.48,
+       "done": true,
+       "due": "2026-09-23",
+       "count": 2
+      },
+      {
+       "name": "Train tickets",
+       "amount": 120.65,
+       "done": true,
+       "due": "2026-09-13"
+      },
+      {
+       "name": "Petrol",
+       "amount": 106.65,
+       "done": true,
+       "due": "2026-09-13"
+      },
+      {
+       "name": "Hardware store",
+       "amount": 98.8,
+       "done": true,
+       "due": "2026-09-02",
+       "count": 2
+      },
+      {
+       "name": "Garden centre",
+       "amount": 86.43,
+       "done": true,
+       "due": "2026-08-31"
+      },
+      {
+       "name": "Bakery",
+       "amount": 32.7,
+       "done": true,
+       "due": "2026-08-29",
+       "count": 2
+      },
+      {
+       "name": "Coffee shop",
+       "amount": 23.36,
+       "done": true,
+       "due": "2026-09-07",
+       "count": 2
+      },
+      {
+       "name": "Taxi",
+       "amount": 20.09,
+       "done": true,
+       "due": "2026-09-16"
+      },
+      {
+       "name": "Corner shop",
+       "amount": 7.55,
+       "done": true,
+       "due": "2026-09-03"
+      },
+      {
+       "name": "Partner's share (split bills)",
+       "amount": -76.96,
+       "done": true,
+       "due": "2026-09-21"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "alerts": [
+  {
+   "date": "2026-09-27",
+   "kind": "good",
+   "text": "Gym membership cancelled: £35/month gone"
+  },
+  {
+   "date": "2026-10-02",
+   "kind": "action",
+   "text": "Renew the TV licence before it lapses"
+  },
+  {
+   "date": "2026-10-09",
+   "kind": "info",
+   "text": "Energy tariff changes this week"
+  }
+ ]
+}

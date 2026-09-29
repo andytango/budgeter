@@ -1,0 +1,32 @@
+{
+  "_comment": "Rules for tools/backfill.py. Patterns are case-insensitive regular expressions matched against the statement description.",
+  "start": "2026-03-26",
+  "paydays": ["2026-04-24", "2026-05-29", "2026-06-26", "2026-07-31", "2026-08-28", "2026-09-25"],
+  "self_match": "YOUR FULL NAME AS IT APPEARS ON TRANSFERS",
+  "partner": {
+    "match": "PARTNER NAME",
+    "income_group": "Partner",
+    "income_name": "From partner",
+    "share_name": "Partner's share (split bills)",
+    "to_group": "Transfers to partner",
+    "to_name": "To partner"
+  },
+  "income_rules": [
+    { "match": "ACME LTD", "min": 1000, "group": "Salary", "name": "{month} pay" },
+    { "match": "ACME LTD", "group": "Salary", "name": "Salary adjustment" }
+  ],
+  "bill_rules": [
+    { "match": "^Example Building Society", "group": "Housing", "name": "Mortgage" },
+    { "match": "^Example Council", "group": "Housing", "name": "Council tax" },
+    { "match": "Example Card Services", "group": "Debt Repayments", "name": "Credit card" },
+    { "match": "^Example Energy", "group": "Utilities & Phone", "name": "Energy" },
+    { "match": "^Example Mobile", "group": "Utilities & Phone", "name": "Phone" }
+  ],
+  "subscriptions": { "Netflix": "Netflix", "Spotify": "Spotify" },
+  "renames": { "Deliveroo*London": "Deliveroo" },
+  "split_bills": { "FRIEND NAME": "Friend (split bill)" },
+  "ignore": ["^Balance migration"],
+  "order_in": ["Salary", "Partner", "Other income"],
+  "order_out": ["Transfers to partner", "Housing", "Debt Repayments", "Utilities & Phone", "Subscriptions", "Discretionary"],
+  "columns": {}
+}

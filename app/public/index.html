@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Budget Panel</title>
+<link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+<!-- Icons are inline: iOS fetches the Home Screen icon without the Cloudflare Access cookie, so a URL gets the login page. -->
+<!-- Dark Home Screen icon (pale green £ on deep green). iOS may ignore media here; the light one below is the fallback. -->
+<link rel="apple-touch-icon" sizes="180x180" media="(prefers-color-scheme: dark)" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAHvElEQVR4nOzd+1OUVRzH8QOKctldFnBFBCEuJhdBUAYSNScts8G0bDKV0sxfnMbJfulP6C+oxqapmRrvNlZTkpqGqCgqXkBucpXb7rIsLCKwN26diV9M/e6elQfsOft5Dc4w8oUZZt77XNnnzE7Ymc4AnmU2AyAgDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiAhDiD5exxLkhPTkhKTEuI1YSFz58wJCgri/0KDg/mX7HaH0+1yudzDTofZYu3stnR0mVo7u5jf8NM41r6Sm5WamhwfFxoSQs2Ehobwj8nPUxISJj+xO52VtfU3q6rrmlqY7AL8anVInVazviC/YHlOuE7Lpqa3z3bxesX5smtMXn4Ux9aNr29cu4YpymrrLy4pvXa7kslolj7TwGSn12k/2/Nh3rIsprSwkJDs9DRNWFhNQxOTjvxxpCYnHfjko4Xz57Npk7goNi5mwa17NUwukscRYzB8vneXNiyMTbOY+YZow7w7NXVMIoFMXiHBcz/dvWPyvHQG5C3LXJO3gklE5jj2FW2PjopiM2j7prfiYxYwWUgbx+rcnLSUJDaz+DW0ne+8zWQh7UWw9atWMt8NDA6ae6wDjwbtTle0ISpCp+MHEz79hKT4uOz01Mq6+0z95IwjJyM9dkG0T99Sfrfy7yvlHebuJ/4/OHjupnVrN6xZxYQVrntVjjjkPFvZ/d7mSH24+PzBw8fOlJYNDA09/aXR0TF+pbziXk1S/CK92HVVvU5X19zaPzDAVE7CY46oCH1yQrz4/PE//rxb6+WF3m3tPXj4ON/pMDH52cpfcJt5EsaRmpwoPszvspZcuyEyaXs48P2JU2NjYyLD2RmpAQEBTOUkjINv/8WHfz9fIj7c0PKA348VmdRrtVlpS5jKSXhA+lLsQsHJYYfd1zvvl2/eXrk8+5lfco+4+ZlOV7ely2xp7zK1G01M5SSMIyoyQnCyrtHnv8loae9oNxoTYmP55w6ny9TTY+q2dJq724ymDqN5fHycSUTCOMSvl7d1Pc+L+7e/SiJ0Wp7C0+e9kpEtjnnCmw2ux2ZjvqttbGb+QbY4dBofbsB291gZ0GSLw6e78/zslAFNtjhCfLlBPzI6yoAmWxyBgaKXntwjKMML/33fivovYE47vOMNSIgDSIgDSIgDSIgDSIgDSIgDSIgDSIgDSIgDSIgDSOp7eIshMvLLLw6wGVfd0PjVj0eYP8GWA0iIA0iIA0iIA0iIA0iIA0iIA0iIA0jqi8PudFwoK/cwkLtsqV4r9JQVzz/nCWar370DSn1xDNsdJ4vPehhYnBgvEsfI6KjnnwPYrQAJcQAJcQBJwjgCAoSeZTUxIdWDVqaDhHGE0YsvPW5wyM7AIwnj0IcLncc+86mj8DjZ4tCEhc4KnCUyOTCIOLyQLY6IcNEHFw88esTAI9niiAzXCU5iy+GVbA+pTYyLFZysV2jtz0ULY8K1U11r8v9Jti1H9tI0kbFOk1mp5YP379rB92VDdnuvrb+nz2bp7bVY+0w9VpOlR+2PJZUqDv4iFlzo7/rdKqaElIT4yaMcTWgo/3jpv9stfq+u1/bQyoux9pZXVjmdLqYqUsWRn50pMjYyMnJVoZVgczxuqGIMBv7B/n3+WNmtO0xtpIpj+dIMkbGS8ht2h4MpIePlFJGxdqNRjU8ulCeOLRvWz4vQex1raH3wy9kLTAm5WRmCe7HWjk6mQpLEkbQo7o3VBV7HrLb+b4+cmJiYYFPGz1B2bC4UHG5saWMqJEMc/Dh0/8dFc4K8/C4ut/u7oyeH7crsUPZse1fwacmDw8O1zcqcNs8w1cexODFhX9EH/EzB8xjfZvxw4pRSa6CsK8hPT0kWHK6oqlHpOa2641iVm7Nzy6ag2V5+i9vVNYd+Pa3IQWhgYOD7hW++tjJPcJ7vwi7dqGDqpNY4+A22oi2FKzKXeh7ju5Kfi89dvnmLTRnfROWkp63ITBe/fcM1tbWbVbs2gyrjWJKcuHfbVr3O+22UuubWBYZ52wo3sucSHBys04TqNJrY6PlBQUHMd2dKrzDVUmUcmUsWi5TB5aSnshfnTk2tqlfuwd+QTheX23Wy+BxTM8QxXc5euqr2xX4Qx7Sob25V9dHGJMShvLYu4zeHjkmwjCjiUJilt+/rn4663W6mfohDSdUNTfw6rFK3fF84xKEMfkf+dEnpmYuqP854HOKYqrHxscra+tMll43dFiYXxPH83CPu2qbW4gsXZV23HHGI4he1HC630+kattvbjebapubq+41Maup7vDXMGGw5gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gIQ4gPQPAAAA//8KURK1AAAABklEQVQDAHZULinaNoMCAAAAAElFTkSuQmCC">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@500;600;700;800&display=swap">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Budget">
+<meta name="theme-color" content="#dee8e4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151d1c" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="/panel.css">
+
+</head>
+<body>
+<main class="panel" id="app"><p class="status">Loading…</p></main>
+
+<script src="/panel.js"></script>
+<script>
+document.addEventListener("gesturestart", (e) => e.preventDefault());
+(function () {
+  async function load() {
+    try {
+      const res = await fetch("/api/budget", { credentials: "same-origin", cache: "no-store", headers: { Accept: "application/json" } });
+      const type = res.headers.get("content-type") || "";
+      if (!res.ok || !type.includes("application/json")) throw new Error("signin");
+      BudgetPanel.render(await res.json());
+    } catch (e) {
+      BudgetPanel.fail('Your sign-in has expired or you are offline. <a href="/" onclick="location.reload();return false">Tap to sign in again</a>.');
+    }
+  }
+  // Refresh button: fetch the latest budget and check for a newer version of the app.
+  BudgetPanel.onRefresh = async () => {
+    const reg = "serviceWorker" in navigator ? await navigator.serviceWorker.getRegistration().catch(() => null) : null;
+    await Promise.all([load(), reg ? reg.update().catch(() => {}) : null]);
+  };
+  // Push notifications (iOS: only once the app is on the Home Screen). The bell in the header
+  // subscribes this phone; tapping it again sends a test notification.
+  const pushOK = "serviceWorker" in navigator && "PushManager" in window && "Notification" in window;
+  const post = (path, body) => fetch(path, { method: "POST", credentials: "same-origin", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
+  const keyBytes = (s) => Uint8Array.from(atob((s + "=".repeat((4 - (s.length % 4)) % 4)).replace(/-/g, "+").replace(/_/g, "/")), (c) => c.charCodeAt(0));
+  if (pushOK) {
+    BudgetPanel.push = {
+      state: Notification.permission === "denied" ? "denied" : "off",
+      async toggle() {
+        const push = BudgetPanel.push;
+        // Ask first: iOS only shows the prompt straight from a tap.
+        const perm = Notification.permission === "granted" ? "granted" : await Notification.requestPermission();
+        if (perm !== "granted") { push.state = "denied"; BudgetPanel.redraw(); return; }
+        const reg = await navigator.serviceWorker.ready;
+        let sub = await reg.pushManager.getSubscription();
+        if (!sub) {
+          const { key } = await (await fetch("/api/push/key", { credentials: "same-origin" })).json();
+          sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: keyBytes(key) });
+        }
+        await post("/api/push/subscribe", sub.toJSON());
+        push.state = "on";
+        BudgetPanel.redraw();
+        await post("/api/push/test", { endpoint: sub.endpoint });
+      },
+    };
+    navigator.serviceWorker.ready.then((reg) => reg.pushManager.getSubscription()).then((sub) => {
+      if (!sub || Notification.permission !== "granted") return;
+      BudgetPanel.push.state = "on";
+      BudgetPanel.redraw();
+      post("/api/push/subscribe", sub.toJSON()).catch(() => {}); // keep the server's copy current
+    }).catch(() => {});
+  }
+  load();
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") load(); });
+  if ("serviceWorker" in navigator) {
+    // A newer app version took over (e.g. found by the refresh button): reload to run it.
+    // Only when a worker was already in control, so the first install doesn't trigger a reload.
+    if (navigator.serviceWorker.controller) navigator.serviceWorker.addEventListener("controllerchange", () => location.reload());
+    navigator.serviceWorker.register("/sw.js").catch(() => {});
+  }
+})();
+</script>
+
+</body>
+</html>
