@@ -2,7 +2,7 @@
 
 A personal budget that Claude keeps up to date for you every morning, on your phone.
 
-![Budgeter on a phone: the current pay period, this period's spending, the tax year view and dark mode](docs/screenshots/hero.jpg)
+![Budgeter on a phone: the current pay period, this period's spending, the tax year view and dark mode](docs/images/hero.jpg)
 
 ## What it is
 
@@ -68,11 +68,11 @@ Talk to Claude in your finance repo, the same place the routine runs. For exampl
 
 | | | |
 |:-:|:-:|:-:|
-| <img src="docs/screenshots/1-period.png" width="240" alt="The current pay period"> | <img src="docs/screenshots/2-breakdown.png" width="240" alt="Income and expenses by group"> | <img src="docs/screenshots/3-spending.png" width="240" alt="Every discretionary spend, itemised"> |
+| <img src="docs/images/1-period.png" width="240" alt="The current pay period"> | <img src="docs/images/2-breakdown.png" width="240" alt="Income and expenses by group"> | <img src="docs/images/3-spending.png" width="240" alt="Every discretionary spend, itemised"> |
 | **This period.** Where you'll land the day before payday, with notes from the daily check. | **Tap the total** for income and expenses by group. | **Every spend itemised**, including your partner's half and refunds. |
-| <img src="docs/screenshots/4-next-period.png" width="240" alt="Next month's forecast"> | <img src="docs/screenshots/5-past-period.png" width="240" alt="A past period"> | <img src="docs/screenshots/6-tax-year.png" width="240" alt="The tax year"> |
+| <img src="docs/images/4-next-period.png" width="240" alt="Next month's forecast"> | <img src="docs/images/5-past-period.png" width="240" alt="A past period"> | <img src="docs/images/6-tax-year.png" width="240" alt="The tax year"> |
 | **Swipe forward** for forecasts: bills and debt payments from the plan. | **Swipe back** through past periods, built from your statements. | **The tax year**, and each one after it for five years. |
-| <img src="docs/screenshots/7-loans.png" width="240" alt="Loans"> | <img src="docs/screenshots/8-dark-period.png" width="240" alt="Dark mode"> | <img src="docs/screenshots/9-dark-spending.png" width="240" alt="Dark mode breakdown"> |
+| <img src="docs/images/7-loans.png" width="240" alt="Loans"> | <img src="docs/images/8-dark-period.png" width="240" alt="Dark mode"> | <img src="docs/images/9-dark-spending.png" width="240" alt="Dark mode breakdown"> |
 | **Loans:** how much is paid off and when each one clears. | **Dark mode** follows your phone. | |
 
 ## Privacy

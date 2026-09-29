@@ -3,7 +3,7 @@
     python3 tools/make-demo.py [output.json]
 
 Deterministic (fixed seed). Six finished pay periods of history, the current period as of Fri 9 Oct 2026,
-a plan, debts and timeline notes. The screenshots in docs/screenshots come from this file
+a plan, debts and timeline notes. The screenshots in docs/images come from this file
 (tools/screenshots.mjs), with the device clock set to 9 Oct 2026.
 """
 import json, random, datetime as dt, sys

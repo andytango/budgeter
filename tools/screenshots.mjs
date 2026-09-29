@@ -1,4 +1,4 @@
-// Regenerates docs/screenshots from examples/demo-budget.json (needs Playwright: npm i -D playwright).
+// Regenerates docs/images from examples/demo-budget.json (needs Playwright: npm i -D playwright).
 //   node tools/screenshots.mjs [out-dir]
 // Phone-sized PNGs (390×844 @2x, light and dark, device clock set to Fri 9 Oct 2026 to match the demo)
 // plus hero.jpg, four phones side by side for the README.
@@ -8,7 +8,7 @@ import { fileURLToPath } from "node:url";
 import { chromium } from "playwright";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
-const out = process.argv[2] || join(root, "docs", "screenshots");
+const out = process.argv[2] || join(root, "docs", "images");
 mkdirSync(out, { recursive: true });
 const data = readFileSync(join(root, "examples", "demo-budget.json"), "utf8");
 const browser = await chromium.launch();

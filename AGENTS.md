@@ -151,6 +151,6 @@ minute. To add one:
   is installed (`npm i -D playwright`), and is skipped otherwise.
 - `node tools/preview.mjs` shows the app with the demo data.
 - Demo data and screenshots: `python3 tools/make-demo.py` regenerates `examples/demo-budget.json`
-  (fictional, deterministic); `node tools/screenshots.mjs` regenerates `docs/screenshots/` (Playwright).
+  (fictional, deterministic); `node tools/screenshots.mjs` regenerates `docs/images/` (Playwright).
 - Keep `app/` and `server/` platform-neutral; platform code belongs in `platforms/`.
 - Never commit real personal data: examples must be obviously fictional.
