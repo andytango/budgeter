@@ -8,10 +8,10 @@ using it day to day.
 
 | | Why | Notes |
 |---|---|---|
-| **Claude Code on the web** | Runs in your private finance repo, can run scripts, call the Cloudflare API and deploy the app. | The daily routine is a scheduled Claude Code routine. |
+| **Claude Code on the web** | Runs in your private finance repo, can run scripts, call your host's API and deploy the app. | The daily routine is a scheduled Claude Code routine. |
 | **A bank connector** | Balances and transactions. | This was built with **Era Context** (open banking, read-only). Any connector that lists transactions works; describe it in `CLAUDE.md` and the routine prompt. Without one, you can upload statements instead. |
 | **An email connector** (e.g. Gmail) | Explains mystery payments from receipts, spots renewals, bills and bookings. | Keep it read-only apart from drafts you ask for. |
-| **Cloudflare access** | Writes the budget to D1 and queues notifications. | An API token in the environment (see [setup.md](setup.md#8-give-claude-access)), or the Cloudflare connector. |
+| **Database access** | Writes the budget and queues notifications. | Cloudflare: an API token in the environment (see [setup.md](setup.md#8-give-claude-access)) or the Cloudflare connector. Vercel + Supabase: the Supabase secret key in the environment or the Supabase connector (see [vercel-supabase.md](vercel-supabase.md#8-give-claude-access)). |
 | Google Drive (optional) | Reads documents you keep there: payslips, quotes, a shared household spreadsheet. | |
 
 ## Working memory: `CLAUDE.md`
@@ -36,8 +36,8 @@ Two options:
   `gap 0.00`. Claude can write the rules with you: "match my statement's descriptions to bills and
   build history".
 
-Then load it into D1 (`tools/make-seed.mjs`, see [setup.md](setup.md#6-load-a-budget)) or let Claude
-write it.
+Then load it into the database ([Cloudflare](setup.md#6-load-a-budget),
+[Supabase](vercel-supabase.md#6-load-a-budget)) or let Claude write it.
 
 ## The artifact
 
@@ -97,7 +97,8 @@ These are in the templates. They're worth keeping:
 
 ## Notifications
 
-The routine queues one message a day. Any session can send one:
+The routine queues one message a day. Any session can send one (this is D1; for Supabase see
+[vercel-supabase.md](vercel-supabase.md#8-give-claude-access)):
 
 ```sql
 INSERT INTO notifications (title, body, url) VALUES ('Budget', 'Your text', '/');
@@ -105,6 +106,6 @@ INSERT INTO notifications (title, body, url) VALUES ('Budget', 'Your text', '/')
 INSERT INTO notifications (title, body, url, created_at) VALUES ('Budget', 'Your text', '/', '2026-10-01 07:00:00');
 ```
 
-The Worker's cron sends queued messages every minute and records `sent_at` and `result` (the push
+Queued messages are sent every minute and records `sent_at` and `result` (the push
 services' HTTP status per device, `no devices` or `stale` for anything more than a day old). Keep
 messages short, and don't put anything in them you wouldn't want on your lock screen.

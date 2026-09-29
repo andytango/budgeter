@@ -21,6 +21,8 @@ Last updated: YYYY-MM-DD.
 - **Email** connector: read to explain transactions. Never send or delete; drafts only when I ask.
 - **Cloudflare**: env vars `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` (Workers, D1 Edit, Access,
   DNS on my zone). The Cloudflare MCP connector can also query D1.
+  *(Vercel + Supabase instead: env vars `SUPABASE_URL` / `SUPABASE_SECRET_KEY`, or the Supabase
+  connector. Keep whichever block matches your host and delete the other.)*
 - **Daily routine** "Daily budget check" (trigger `{{TRIGGER_ID}}`), {{TIME}} {{TIMEZONE}}. Update its
   prompt when the rules below change.
 
@@ -31,6 +33,11 @@ Last updated: YYYY-MM-DD.
 - D1 database `budget-panel-db` (id `{{D1_DATABASE_ID}}`): `docs` row `current` = the budget JSON;
   `push_subs`; `notifications` (insert a row to notify my phone; a future `created_at` schedules it).
 - Deploy code: `cd budget-panel/app && npx wrangler deploy`. Data changes need no deploy.
+- *(Vercel + Supabase instead:* phone app https://{{YOUR_DOMAIN}} on Vercel, sign-in by emailed code
+  (Supabase Auth, `ALLOWED_EMAILS` = me only). Supabase project `{{SUPABASE_PROJECT_REF}}`: `docs` row
+  `current` (column `body`, jsonb) = the budget JSON; `push_subs`; `notifications` (insert a row to
+  notify my phone; a future `created_at` schedules it, e.g. `'2026-10-01 08:00 Europe/London'`).
+  Deploy code: push to the repo's production branch; Vercel deploys it. Data changes need no deploy.*)
 
 **Model (my rules):**
 - A pay period runs from the day before payday to the day before the next payday.

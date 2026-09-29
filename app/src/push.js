@@ -77,27 +77,29 @@ export async function sendPush(sub, message, env) {
 }
 
 // Delivers every queued notification (the daily routine inserts rows into `notifications`) to every
-// subscribed device. A row with a future created_at (UTC) waits until then, so reminders can be
-// scheduled. Messages more than a day old are skipped rather than sent late.
-export async function deliverPending(env) {
-  const { results: queued } = await env.DB.prepare(
-    "SELECT id, title, body, url, created_at FROM notifications WHERE sent_at IS NULL AND created_at <= datetime('now') ORDER BY id LIMIT 10").all();
+// subscribed device. A row with a future created_at waits until then, so reminders can be scheduled.
+// Messages more than a day old are skipped rather than sent late.
+//
+// `store` hides the database, so the Cloudflare Worker (D1) and the Vercel functions (Supabase) share
+// this loop. It needs: queued() → [{id, title, body, url, created_at (ms since epoch)}] that are due,
+// devices() → [{endpoint, p256dh, auth}], dropDevice(endpoint), deviceOk(endpoint), markSent(id, result).
+export async function deliverPending(store, env) {
+  const queued = await store.queued();
   if (!queued.length) return 0;
-  const { results: subs } = await env.DB.prepare("SELECT endpoint, p256dh, auth FROM push_subs").all();
+  const subs = await store.devices();
   for (const n of queued) {
-    const stale = Date.parse(n.created_at.replace(" ", "T") + "Z") < Date.now() - 24 * 3600 * 1000;
+    const stale = n.created_at < Date.now() - 24 * 3600 * 1000;
     const results = [];
     if (!stale) {
       for (const s of subs) {
         let status = 0;
         try { status = await sendPush(s, { title: n.title, body: n.body, url: n.url || "/" }, env); } catch { status = -1; }
         results.push(status);
-        if (status === 404 || status === 410) await env.DB.prepare("DELETE FROM push_subs WHERE endpoint = ?").bind(s.endpoint).run();
-        else if (status >= 200 && status < 300) await env.DB.prepare("UPDATE push_subs SET last_ok = datetime('now') WHERE endpoint = ?").bind(s.endpoint).run();
+        if (status === 404 || status === 410) await store.dropDevice(s.endpoint);
+        else if (status >= 200 && status < 300) await store.deviceOk(s.endpoint);
       }
     }
-    await env.DB.prepare("UPDATE notifications SET sent_at = datetime('now'), result = ? WHERE id = ?")
-      .bind(stale ? "stale" : subs.length ? results.join(",") : "no devices", n.id).run();
+    await store.markSent(n.id, stale ? "stale" : subs.length ? results.join(",") : "no devices");
   }
   return queued.length;
 }

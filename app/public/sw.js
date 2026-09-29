@@ -1,7 +1,7 @@
 // Keeps the app shell and the last budget on the phone so it opens offline.
-const SHELL = "budget-shell-v12";
+const SHELL = "budget-shell-v13";
 const DATA = "budget-data-v1";
-const SHELL_FILES = ["/", "/manifest.webmanifest", "/icon-192.png", "/icon-512.png", "/apple-touch-icon.png", "/panel.css", "/panel.js"];
+const SHELL_FILES = ["/", "/manifest.webmanifest", "/icon-192.png", "/icon-512.png", "/apple-touch-icon.png", "/panel.css", "/panel.js", "/auth.js"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(SHELL).then((c) => c.addAll(SHELL_FILES)).catch(() => {}));
@@ -28,7 +28,7 @@ self.addEventListener("fetch", (e) => {
     return;
   }
 
-  // Pages: network first so Cloudflare Access can send you to sign in; cached shell when offline.
+  // Pages: network first (so Cloudflare Access can send you to sign in); cached shell when offline.
   if (e.request.mode === "navigate") {
     e.respondWith(fetch(e.request).catch(() => caches.match("/")));
     return;

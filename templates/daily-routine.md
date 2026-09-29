@@ -5,6 +5,9 @@ This is the prompt for the scheduled Claude routine that runs the budget every m
 and "Plans and reminders" sections as they come up. See [docs/claude.md](../docs/claude.md) for how to
 create the routine.
 
+Where it says **Cloudflare** / **Vercel + Supabase**, keep the lines for your host and delete the
+others.
+
 Keep the prompt and `CLAUDE.md` in step: the prompt holds the rules the routine follows every day,
 while `CLAUDE.md` holds the facts (debts, bills, people, history of decisions).
 
@@ -92,7 +95,7 @@ Check:
    Write to BOTH places:
    (a) Artifact: ArtifactData `set` `budget/current` with `file_path` = your edited file, pinned with
        `if_version`.
-   (b) Phone app (D1 database `{{D1_DATABASE_ID}}`): with the Cloudflare API token in the environment,
+   (b) Phone app. **Cloudflare** (D1 database `{{D1_DATABASE_ID}}`): with the Cloudflare API token in the environment,
        POST https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/d1/database/{{D1_DATABASE_ID}}/query
        with `{"sql": "UPDATE docs SET body = json_patch(body, json(?)), updated_at = datetime('now') WHERE id = 'current'", "params": [<the document WITHOUT history>]}`,
        reading the JSON from your file so nothing is retyped. On a rollover, first append the finished
@@ -102,17 +105,26 @@ Check:
        `body` (SQLite keeps only the last assignment), guarded with json_extract checks.
        Then check D1 matches: `SELECT length(body), json_valid(body), json_array_length(body, '$.history')`
        (D1 stores 45 as 45.0, so compare fields rather than lengths).
+       **Vercel + Supabase** (table `docs`, row `current`, column `body` jsonb): with `SUPABASE_URL` and
+       `SUPABASE_SECRET_KEY` in the environment, write the WHOLE document (history included) from your
+       file: `jq -c '{body: .}' <file> | curl -sS -X PATCH "$SUPABASE_URL/rest/v1/docs?id=eq.current" -H "apikey: $SUPABASE_SECRET_KEY" -H "content-type: application/json" --data-binary @-`.
+       With the Supabase connector instead, use `execute_sql`:
+       `update docs set body = body || $j$<the document WITHOUT history>$j$::jsonb where id = 'current'`,
+       and on a rollover first `update docs set body = jsonb_set(body, '{history}', (body->'history') || jsonb_build_array($j$<the finished period>$j$::jsonb)) where id = 'current' and jsonb_array_length(body->'history') = <current count>`.
+       Then check: `select body->>'asOf', jsonb_array_length(body->'history') from docs where id = 'current'`.
 
 5. **Reminders** when they're due (gently, not every day):
    - {{e.g. "Reconnect the bank connections before 24 Dec."}}
    - {{e.g. "From 1 Jul 2027, remind me now and then that my mortgage fix ends 31 Dec 2027."}}
    - Don't remind me about: {{THINGS YOU DON'T WANT NAGGING ABOUT}}.
 
-6. **Push notification** (last step, after the data is written): queue ONE row in D1:
-   `INSERT INTO notifications (title, body, url) VALUES (?, ?, '/')` with title "Budget" (or
+6. **Push notification** (last step, after the data is written): queue ONE row in `notifications`
+   (**Cloudflare**: in D1, `INSERT INTO notifications (title, body, url) VALUES (?, ?, '/')`;
+   **Vercel + Supabase**: `POST $SUPABASE_URL/rest/v1/notifications` with `{"title": …, "body": …}`,
+   or the same INSERT with the Supabase connector) with title "Budget" (or
    "Budget: action needed" when something needs doing today) and a plain-text body of at most ~180
-   characters: the Period End Cash and its change, plus the single most important flag. The Worker
-   sends it within a minute. Check it went: `SELECT sent_at, result FROM notifications ORDER BY id
+   characters: the Period End Cash and its change, plus the single most important flag. It's sent
+   within a minute. Check it went: `SELECT sent_at, result FROM notifications ORDER BY id
    DESC LIMIT 1` ("no devices" means notifications aren't on yet: mention the bell in the app once).
 
 If a bank connection needs reconnecting or the data looks stale, say so plainly instead of guessing.

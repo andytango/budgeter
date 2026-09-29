@@ -26,12 +26,17 @@
 <main class="panel" id="app"><p class="status">Loading…</p></main>
 
 <script src="/panel.js"></script>
+<script src="/auth.js"></script>
 <script>
 document.addEventListener("gesturestart", (e) => e.preventDefault());
 (function () {
+  // All API calls go through api(): on Vercel + Supabase, auth.js adds the sign-in token.
+  const Auth = window.BudgetAuth;
+  const api = (path, opts = {}) => (Auth ? Auth.fetch : fetch)(path, Object.assign({ credentials: "same-origin" }, opts));
   async function load() {
     try {
-      const res = await fetch("/api/budget", { credentials: "same-origin", cache: "no-store", headers: { Accept: "application/json" } });
+      const res = await api("/api/budget", { cache: "no-store", headers: { Accept: "application/json" } });
+      if (res.status === 401 && Auth) return Auth.signIn().then(load);
       const type = res.headers.get("content-type") || "";
       if (!res.ok || !type.includes("application/json")) throw new Error("signin");
       BudgetPanel.render(await res.json());
@@ -47,7 +52,7 @@ document.addEventListener("gesturestart", (e) => e.preventDefault());
   // Push notifications (iOS: only once the app is on the Home Screen). The bell in the header
   // subscribes this phone; tapping it again sends a test notification.
   const pushOK = "serviceWorker" in navigator && "PushManager" in window && "Notification" in window;
-  const post = (path, body) => fetch(path, { method: "POST", credentials: "same-origin", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
+  const post = (path, body) => api(path, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body) });
   const keyBytes = (s) => Uint8Array.from(atob((s + "=".repeat((4 - (s.length % 4)) % 4)).replace(/-/g, "+").replace(/_/g, "/")), (c) => c.charCodeAt(0));
   if (pushOK) {
     BudgetPanel.push = {
@@ -60,7 +65,7 @@ document.addEventListener("gesturestart", (e) => e.preventDefault());
         const reg = await navigator.serviceWorker.ready;
         let sub = await reg.pushManager.getSubscription();
         if (!sub) {
-          const { key } = await (await fetch("/api/push/key", { credentials: "same-origin" })).json();
+          const { key } = await (await api("/api/push/key")).json();
           sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: keyBytes(key) });
         }
         await post("/api/push/subscribe", sub.toJSON());
@@ -76,7 +81,7 @@ document.addEventListener("gesturestart", (e) => e.preventDefault());
       post("/api/push/subscribe", sub.toJSON()).catch(() => {}); // keep the server's copy current
     }).catch(() => {});
   }
-  load();
+  (Auth ? Auth.ready() : Promise.resolve()).then(load);
   document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") load(); });
   if ("serviceWorker" in navigator) {
     // A newer app version took over (e.g. found by the refresh button): reload to run it.

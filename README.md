@@ -61,11 +61,13 @@ Start of Period  (balance just before your salary lands)
 - **Timeline notes.** The daily routine pins notes on the period's progress bar (amber = something to
   do, green = good news) and lists them at the bottom.
 - **Push notifications** (Web Push with VAPID, written from scratch with WebCrypto: no dependencies).
-  The routine queues a message in the database and the Worker sends it within a minute. Messages can
+  The routine queues a message in the database and the server sends it within a minute. Messages can
   be scheduled for later.
 - **Installable phone app (PWA)** with light and dark mode, offline copy, no pinch zoom or bounce.
-- **Private by default.** The app sits behind Cloudflare Access (email one-time code, your address
-  only), and the Worker verifies the Access token itself too.
+- **Private by default.** Sign-in is an emailed one-time code for your address only: Cloudflare
+  Access (checked again by the Worker), or Supabase Auth on Vercel.
+- **Two ways to host it:** Cloudflare (Workers + D1 + Access), or Vercel + Supabase. Same app, same
+  features.
 - **A Claude artifact** that renders the same budget with the same code, inside Claude.
 
 ## How it fits together
@@ -88,10 +90,16 @@ Start of Period  (balance just before your salary lands)
                                                                   Your phone (Home Screen app + push)
 ```
 
+On Vercel + Supabase the right-hand side is Supabase Postgres instead of D1 and Vercel Functions
+instead of the Worker, with Supabase Auth for sign-in and Supabase's `pg_cron` calling the delivery
+endpoint every minute.
+
 | Path | What it is |
 |---|---|
 | [`app/`](app/) | The Cloudflare Worker and the phone app (`public/`). `panel.js` + `panel.css` hold all the rendering and the projection engine. |
 | [`app/schema.sql`](app/schema.sql) | The D1 tables. |
+| [`api/`](api/), [`vercel.json`](vercel.json) | The Vercel Functions: the same API, backed by Supabase. |
+| [`platforms/vercel-supabase/`](platforms/vercel-supabase/) | Supabase schema (and the every-minute schedule), the Supabase sign-in, the Vercel build step. |
 | [`artifact/artifact.html`](artifact/artifact.html) | The Claude artifact shell that loads the same `panel.js` / `panel.css`. |
 | [`templates/CLAUDE.md`](templates/CLAUDE.md) | A starting point for Claude's working memory about your finances. |
 | [`templates/daily-routine.md`](templates/daily-routine.md) | The prompt for the daily routine. |
@@ -115,13 +123,19 @@ This serves the app with the demo budget. Point it at your own file with
 
 ## Set it up for yourself
 
-The full guide is in **[docs/setup.md](docs/setup.md)**. In short:
+Pick a host:
 
-1. **Cloudflare**: a domain on Cloudflare, a D1 database, a Cloudflare Access application for your
-   email, VAPID keys, then `npx wrangler deploy`.
-2. **Your data**: a private repo for your finances with `CLAUDE.md` (from the template) and your
+- **Cloudflare** (the original): **[docs/setup.md](docs/setup.md)**. A domain on Cloudflare, a D1
+  database, a Cloudflare Access application for your email, VAPID keys, then `npx wrangler deploy`.
+- **Vercel + Supabase**: **[docs/vercel-supabase.md](docs/vercel-supabase.md)**. A Supabase project
+  (tables, one user, sign-ups off), VAPID keys, then import the repo into Vercel with a few
+  environment variables. No domain needed.
+
+Then, whichever host:
+
+1. **Your data**: a private repo for your finances with `CLAUDE.md` (from the template) and your
    first budget document (start from the demo, or backfill history from a statement).
-3. **Claude**: Claude Code on the web with a bank connector and an email connector, the Budget Panel
+2. **Claude**: Claude Code on the web with a bank connector and an email connector, the Budget Panel
    artifact, and the daily routine created from the template prompt.
 
 How the Claude side works, and how to talk to it, is in **[docs/claude.md](docs/claude.md)**.
@@ -129,16 +143,16 @@ The budget JSON is documented in **[docs/data-model.md](docs/data-model.md)**.
 
 ## Costs
 
-The Cloudflare side fits in the free plan (Workers, D1, Access for up to 50 users). You'll need a
-domain on Cloudflare. The Claude side needs a Claude plan that includes Claude Code on the web and
+Either host fits in its free plan: Cloudflare (Workers, D1, Access for up to 50 users; you'll need
+a domain on Cloudflare), or Vercel Hobby + Supabase Free (no domain needed). The Claude side needs a Claude plan that includes Claude Code on the web and
 scheduled routines, plus whatever your bank connector charges.
 
 ## Keep your data private
 
 This repo contains **code only**. Your budget document, `CLAUDE.md`, statements and the routine prompt
-hold your real finances: keep them in a **private** repo, and never commit the VAPID private key or a
-Cloudflare API token. The app is only reachable through Cloudflare Access, and only for the email
-addresses in its policy.
+hold your real finances: keep them in a **private** repo, and never commit the VAPID private key, a
+Cloudflare API token or a Supabase secret key. Your budget is only served to a signed-in address
+you've allowed.
 
 It's UK-flavoured: pounds, `en-GB` dates, UK tax years, and a payday rule of "last Friday of the
 month, brought forward off bank holidays" (Christmas, Boxing Day, New Year's Day and Good Friday).

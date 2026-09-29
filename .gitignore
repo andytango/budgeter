@@ -5,3 +5,6 @@ seed.sql
 *.csv
 history.json
 backfill.json
+dist/
+.vercel/
+.env*

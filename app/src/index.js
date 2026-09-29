@@ -41,6 +41,19 @@ async function verifyAccess(request, env) {
   return auds.includes(env.ACCESS_AUD) && payload.exp > now && payload.iss === env.ACCESS_TEAM_DOMAIN;
 }
 
+// D1 behind the push delivery loop in push.js.
+const d1Store = (db) => ({
+  async queued() {
+    const { results } = await db.prepare(
+      "SELECT id, title, body, url, created_at FROM notifications WHERE sent_at IS NULL AND created_at <= datetime('now') ORDER BY id LIMIT 10").all();
+    return results.map((n) => ({ ...n, created_at: Date.parse(n.created_at.replace(" ", "T") + "Z") }));
+  },
+  async devices() { return (await db.prepare("SELECT endpoint, p256dh, auth FROM push_subs").all()).results; },
+  dropDevice: (endpoint) => db.prepare("DELETE FROM push_subs WHERE endpoint = ?").bind(endpoint).run(),
+  deviceOk: (endpoint) => db.prepare("UPDATE push_subs SET last_ok = datetime('now') WHERE endpoint = ?").bind(endpoint).run(),
+  markSent: (id, result) => db.prepare("UPDATE notifications SET sent_at = datetime('now'), result = ? WHERE id = ?").bind(result, id).run(),
+});
+
 const noStore = { "cache-control": "no-store", "x-robots-tag": "noindex" };
 
 export default {
@@ -86,6 +99,6 @@ export default {
 
   // Every minute: send anything the daily routine has queued.
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(deliverPending(env));
+    ctx.waitUntil(deliverPending(d1Store(env.DB), env));
   },
 };

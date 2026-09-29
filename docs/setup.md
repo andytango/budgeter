@@ -1,5 +1,8 @@
 # Setup
 
+This is the Cloudflare setup. For Vercel + Supabase, follow [vercel-supabase.md](vercel-supabase.md)
+instead.
+
 About an hour, most of it clicking through Cloudflare. You'll need:
 
 - a **Cloudflare account** with a **domain** on it (the app lives on a subdomain such as
