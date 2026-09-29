@@ -77,7 +77,7 @@ date is the forecast's last payment.
 ## Alerts (timeline notes)
 
 ```json
-{ "date": "2026-10-02", "kind": "action", "text": "Renew the TV licence before it lapses" }
+{ "date": "2026-10-02", "kind": "action", "text": "Renew the home insurance before it lapses" }
 ```
 
 `kind` is `action` (amber: something to do; stays until removed), `good` (green) or `info` (grey).

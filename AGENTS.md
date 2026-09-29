@@ -100,7 +100,7 @@ Tell the user, in plain words:
 2. Share → **Add to Home Screen**, then open it from the Home Screen (on iPhone, push only works there).
 3. Tap the **bell** and allow notifications: a test message arrives.
 4. What happens every morning, and that they can just talk to Claude in their finance repo to change
-   things ("I've cancelled Netflix", "add a £40 haircut mid-month", "remind me Friday at 8").
+   things ("I've cancelled my streaming subscription", "add phone insurance, £12 on the 3rd", "remind me Friday at 8").
 
 Then send a push through NOTIFY from `snippets.md` and confirm it arrived.
 

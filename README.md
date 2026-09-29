@@ -4,8 +4,6 @@ A personal budget that Claude keeps up to date for you every morning, on your ph
 
 ![Budgeter on a phone: the current pay period, this period's spending, the tax year view and dark mode](docs/screenshots/hero.jpg)
 
-*Demo data ([`examples/demo-budget.json`](examples/demo-budget.json)).*
-
 ## What it is
 
 Most budgeting apps ask you to categorise transactions and then show you charts of the past. This one
@@ -60,8 +58,8 @@ http://localhost:8787 to see the demo (Node 20+, no install).
 ## Using it
 
 Talk to Claude in your finance repo, the same place the routine runs. For example:
-- "I've cancelled Disney+." It comes off the plan, and Claude watches for it coming back.
-- "Add a monthly haircut, about £40 mid-month." It becomes a planned bill.
+- "I've cancelled my streaming subscription." It comes off the plan, and Claude watches for it coming back.
+- "Add phone insurance, £12 on the 3rd." It becomes a planned bill.
 - "How did this period go negative?" or "What's driving the year-end number?" You get a breakdown.
 - "I'm borrowing £100 from my partner until payday." It goes in as income now and a repayment on payday.
 - "Move the notes to the bottom of the screen." Claude changes the app and redeploys it.

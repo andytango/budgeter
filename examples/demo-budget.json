@@ -5,7 +5,7 @@
  "periodEnd": "2026-10-29",
  "payday": "2026-10-30",
  "opening": 286.4,
- "balance": 1628.8,
+ "balance": 1643.75,
  "income": [
   {
    "group": "Salary",
@@ -35,7 +35,7 @@
    "group": "Housing",
    "items": [
     {
-     "name": "Mortgage (Nationwide)",
+     "name": "Mortgage (Harbourside BS)",
      "amount": 1084.37,
      "due": "2026-10-01",
      "done": true
@@ -47,7 +47,7 @@
      "done": true
     },
     {
-     "name": "Home insurance (Direct Line)",
+     "name": "Home insurance (Hearthguard)",
      "amount": 21.84,
      "due": "2026-10-08",
      "done": true
@@ -58,20 +58,20 @@
    "group": "Debt Repayments",
    "items": [
     {
-     "name": "Amex",
+     "name": "Kestrel card",
      "amount": 250.0,
      "due": "2026-10-03",
-     "debt": "Amex",
+     "debt": "Kestrel card",
      "done": true
     },
     {
-     "name": "Barclaycard (0% transfer)",
+     "name": "Meridian card (0% transfer)",
      "amount": 120.0,
      "due": "2026-10-12",
-     "debt": "Barclaycard"
+     "debt": "Meridian card"
     },
     {
-     "name": "Car finance (Black Horse)",
+     "name": "Car finance (Fernway)",
      "amount": 239.41,
      "due": "2026-10-20",
      "debt": "Car finance"
@@ -99,31 +99,31 @@
    "group": "Groceries",
    "items": [
     {
-     "name": "Tesco weekly shop",
+     "name": "Greenleaf weekly shop",
      "amount": 74.18,
      "due": "2026-09-26",
      "done": true
     },
     {
-     "name": "Tesco weekly shop",
+     "name": "Greenleaf weekly shop",
      "amount": 81.06,
      "due": "2026-10-03",
      "done": true
     },
     {
-     "name": "Tesco weekly shop",
+     "name": "Greenleaf weekly shop",
      "amount": 75.0,
      "due": "2026-10-10",
      "est": true
     },
     {
-     "name": "Tesco weekly shop",
+     "name": "Greenleaf weekly shop",
      "amount": 75.0,
      "due": "2026-10-17",
      "est": true
     },
     {
-     "name": "Tesco weekly shop",
+     "name": "Greenleaf weekly shop",
      "amount": 75.0,
      "due": "2026-10-24",
      "est": true
@@ -134,30 +134,24 @@
    "group": "Bills",
    "items": [
     {
-     "name": "TV Licence",
-     "amount": 14.95,
-     "due": "2026-10-01",
-     "done": true
-    },
-    {
-     "name": "Octopus Energy",
+     "name": "Brightwatt Energy",
      "amount": 128.0,
      "due": "2026-10-02",
      "done": true
     },
     {
-     "name": "giffgaff",
+     "name": "Pocket Mobile",
      "amount": 12.0,
      "due": "2026-10-09",
      "done": true
     },
     {
-     "name": "Wessex Water",
+     "name": "Riverside Water",
      "amount": 41.0,
      "due": "2026-10-15"
     },
     {
-     "name": "Virgin Media broadband",
+     "name": "Loop Broadband",
      "amount": 47.5,
      "due": "2026-10-22"
     }
@@ -167,12 +161,12 @@
    "group": "Car",
    "items": [
     {
-     "name": "Car insurance (Admiral)",
+     "name": "Car insurance (Lanternside)",
      "amount": 48.12,
      "due": "2026-10-11"
     },
     {
-     "name": "MOT and service",
+     "name": "Car service",
      "amount": 249.0,
      "due": "2026-10-19",
      "est": true
@@ -189,13 +183,13 @@
      "done": true
     },
     {
-     "name": "PureGym",
+     "name": "Pulse Fitness",
      "amount": 27.99,
      "due": "2026-10-04",
      "done": true
     },
     {
-     "name": "ManyPets (Biscuit)",
+     "name": "Pet insurance (Pawprint)",
      "amount": 31.76,
      "due": "2026-10-18"
     }
@@ -205,23 +199,23 @@
    "group": "Subscriptions",
    "items": [
     {
-     "name": "iCloud+",
+     "name": "Nimbus storage",
      "amount": 2.99,
      "due": "2026-09-26",
      "done": true
     },
     {
-     "name": "Spotify Duo",
+     "name": "Tuneloop (music)",
      "amount": 16.99,
      "due": "2026-10-14"
     },
     {
-     "name": "Netflix",
+     "name": "Reelhouse (films)",
      "amount": 12.99,
      "due": "2026-10-21"
     },
     {
-     "name": "iCloud+",
+     "name": "Nimbus storage",
      "amount": 2.99,
      "due": "2026-10-26"
     }
@@ -232,100 +226,100 @@
    "discretionary": true,
    "items": [
     {
-     "name": "Pret A Manger",
+     "name": "Bean & Leaf Café",
      "amount": 23.85,
      "count": 4,
      "done": true,
      "due": "2026-09-25"
     },
     {
-     "name": "The Old Market Tavern",
+     "name": "The Copper Kettle",
      "amount": 31.4,
      "done": true,
      "due": "2026-09-26"
     },
     {
-     "name": "Trainline (London return)",
+     "name": "Northline Rail (return trip)",
      "amount": 64.3,
      "done": true,
      "due": "2026-09-27"
     },
     {
-     "name": "Boots",
+     "name": "Wellspring Pharmacy",
      "amount": 12.49,
      "done": true,
      "due": "2026-09-28"
     },
     {
-     "name": "Shell",
+     "name": "Petrolux (fuel)",
      "amount": 58.72,
      "done": true,
      "due": "2026-09-29"
     },
     {
-     "name": "Waterstones",
+     "name": "Pageturner Books",
      "amount": 18.99,
      "done": true,
      "due": "2026-10-01"
     },
     {
-     "name": "Amazon",
+     "name": "Everymart",
      "amount": 24.99,
      "done": true,
      "due": "2026-10-02"
     },
     {
-     "name": "Wagamama",
+     "name": "Ember Kitchen",
      "amount": 46.8,
      "done": true,
      "due": "2026-10-03"
     },
     {
-     "name": "Vue Cinemas",
+     "name": "Starlight Cinema",
      "amount": 21.98,
      "done": true,
      "due": "2026-10-04"
     },
     {
-     "name": "Alex's half (Wagamama)",
+     "name": "Alex's half (Ember Kitchen)",
      "amount": -23.4,
      "done": true,
      "due": "2026-10-04"
     },
     {
-     "name": "B&Q",
+     "name": "Toolbox DIY",
      "amount": 37.15,
      "done": true,
      "due": "2026-10-04"
     },
     {
-     "name": "Uniqlo",
+     "name": "Thread & Co",
      "amount": 39.9,
      "done": true,
      "due": "2026-10-05"
     },
     {
-     "name": "Amazon refund",
+     "name": "Everymart refund",
      "amount": -24.99,
      "done": true,
      "due": "2026-10-06"
     },
     {
-     "name": "Greggs",
+     "name": "Corner Bakery",
      "amount": 9.15,
      "count": 3,
      "done": true,
      "due": "2026-10-07"
     },
     {
-     "name": "Sainsbury's Local",
+     "name": "Fairway Local",
      "amount": 22.6,
      "count": 3,
      "done": true,
      "due": "2026-10-08"
     },
     {
-     "name": "Deliveroo",
+     "name": "Dishdash (food delivery)",
      "amount": 27.45,
      "done": true,
      "due": "2026-10-08"
@@ -335,7 +329,7 @@
  ],
  "debts": [
   {
-   "name": "Amex",
+   "name": "Kestrel card",
    "rate": "24.9% APR",
    "apr": 24.9,
    "monthly": 250,
@@ -343,7 +337,7 @@
    "start": 3200.0
   },
   {
-   "name": "Barclaycard",
+   "name": "Meridian card",
    "rate": "0% until Jun 2027",
    "apr": 0,
    "monthly": 120,
@@ -363,20 +357,20 @@
   {
    "date": "2026-10-07",
    "kind": "good",
-   "text": "Amazon refund of £24.99 landed"
+   "text": "Everymart refund of £24.99 landed"
   },
   {
    "date": "2026-10-12",
    "kind": "action",
-   "text": "Get car insurance quotes: Admiral renews 2 Nov"
+   "text": "Get car insurance quotes: renews 2 Nov"
   },
   {
    "date": "2026-10-19",
    "kind": "info",
-   "text": "MOT and service at Kwik Fit, about £249"
+   "text": "Car service booked, about £249"
   }
  ],
- "note": "On track for **£594** on Thu 29 Oct, the day before payday. Discretionary so far **£391**, £115 of it eating out.",
+ "note": "On track for **£609** on Thu 29 Oct, the day before payday. Discretionary so far **£391**, £115 of it eating out.",
  "plan": {
   "income": [
    {
@@ -395,7 +389,7 @@
    },
    {
     "group": "Salary",
-    "name": "Christmas bonus",
+    "name": "Year-end bonus",
     "amount": 1150.0,
     "date": "2026-12-18",
     "est": true
@@ -404,7 +398,7 @@
   "expenses": [
    {
     "group": "Housing",
-    "name": "Mortgage (Nationwide)",
+    "name": "Mortgage (Harbourside BS)",
     "amount": 1084.37,
     "day": 1
    },
@@ -428,27 +422,27 @@
    },
    {
     "group": "Housing",
-    "name": "Home insurance (Direct Line)",
+    "name": "Home insurance (Hearthguard)",
     "amount": 21.84,
     "day": 8
    },
    {
     "group": "Debt Repayments",
-    "name": "Amex",
+    "name": "Kestrel card",
     "amount": 250.0,
     "day": 3,
-    "debt": "Amex"
+    "debt": "Kestrel card"
    },
    {
     "group": "Debt Repayments",
-    "name": "Barclaycard (0% transfer)",
+    "name": "Meridian card (0% transfer)",
     "amount": 120.0,
     "day": 12,
-    "debt": "Barclaycard"
+    "debt": "Meridian card"
    },
    {
     "group": "Debt Repayments",
-    "name": "Car finance (Black Horse)",
+    "name": "Car finance (Fernway)",
     "amount": 239.41,
     "day": 20,
     "debt": "Car finance"
@@ -467,51 +461,45 @@
    },
    {
     "group": "Groceries",
-    "name": "Tesco weekly shop",
+    "name": "Greenleaf weekly shop",
     "amount": 75.0,
     "weekly": 6,
     "est": true
    },
    {
     "group": "Bills",
-    "name": "Octopus Energy",
+    "name": "Brightwatt Energy",
     "amount": 128.0,
     "day": 2,
     "est": true
    },
    {
     "group": "Bills",
-    "name": "Wessex Water",
+    "name": "Riverside Water",
     "amount": 41.0,
     "day": 15
    },
    {
     "group": "Bills",
-    "name": "Virgin Media broadband",
+    "name": "Loop Broadband",
     "amount": 47.5,
     "day": 22
    },
    {
     "group": "Bills",
-    "name": "giffgaff",
+    "name": "Pocket Mobile",
     "amount": 12.0,
     "day": 9
    },
    {
-    "group": "Bills",
-    "name": "TV Licence",
-    "amount": 14.95,
-    "day": 1
-   },
-   {
     "group": "Car",
-    "name": "Car insurance (Admiral)",
+    "name": "Car insurance (Lanternside)",
     "amount": 48.12,
     "day": 11
    },
    {
     "group": "Car",
-    "name": "MOT and service",
+    "name": "Car service",
     "amount": 249.0,
     "date": "2026-10-19",
     "everyYears": 1,
@@ -519,7 +507,7 @@
    },
    {
     "group": "Health & Pets",
-    "name": "PureGym",
+    "name": "Pulse Fitness",
     "amount": 27.99,
     "day": 4
    },
@@ -531,55 +519,55 @@
    },
    {
     "group": "Health & Pets",
-    "name": "ManyPets (Biscuit)",
+    "name": "Pet insurance (Pawprint)",
     "amount": 31.76,
     "day": 18
    },
    {
     "group": "Subscriptions",
-    "name": "Spotify Duo",
+    "name": "Tuneloop (music)",
     "amount": 16.99,
     "day": 14
    },
    {
     "group": "Subscriptions",
-    "name": "Netflix",
+    "name": "Reelhouse (films)",
     "amount": 12.99,
     "day": 21
    },
    {
     "group": "Subscriptions",
-    "name": "iCloud+",
+    "name": "Nimbus storage",
     "amount": 2.99,
     "day": 26
    },
    {
     "group": "Subscriptions",
-    "name": "Microsoft 365 Family (annual)",
+    "name": "Office apps (annual)",
     "amount": 104.99,
     "date": "2026-11-19",
     "everyYears": 1
    },
    {
     "group": "Subscriptions",
-    "name": "Duolingo Super (annual)",
+    "name": "Language app (annual)",
     "amount": 84.99,
     "date": "2027-02-03",
     "everyYears": 1
    },
    {
     "group": "Subscriptions",
-    "name": "Amazon Prime (annual)",
+    "name": "Everymart membership (annual)",
     "amount": 95.0,
     "date": "2027-03-08",
     "everyYears": 1
    },
    {
     "group": "Debt Repayments",
-    "name": "Amex (from the bonus)",
+    "name": "Kestrel card (from the bonus)",
     "amount": 600.0,
     "date": "2026-12-18",
-    "debt": "Amex"
+    "debt": "Kestrel card"
    }
   ]
  },
@@ -619,7 +607,7 @@
      "group": "Housing",
      "items": [
       {
-       "name": "Mortgage (Nationwide)",
+       "name": "Mortgage (Harbourside BS)",
        "amount": 1084.37,
        "done": true,
        "due": "2026-04-01"
@@ -631,7 +619,7 @@
        "due": "2026-04-01"
       },
       {
-       "name": "Home insurance (Direct Line)",
+       "name": "Home insurance (Hearthguard)",
        "amount": 21.84,
        "done": true,
        "due": "2026-04-08"
@@ -642,19 +630,19 @@
      "group": "Debt Repayments",
      "items": [
       {
-       "name": "Amex",
+       "name": "Kestrel card",
        "amount": 250.0,
        "done": true,
        "due": "2026-04-03"
       },
       {
-       "name": "Barclaycard (0% transfer)",
+       "name": "Meridian card (0% transfer)",
        "amount": 120.0,
        "done": true,
        "due": "2026-04-12"
       },
       {
-       "name": "Car finance (Black Horse)",
+       "name": "Car finance (Fernway)",
        "amount": 239.41,
        "done": true,
        "due": "2026-04-20"
@@ -682,25 +670,25 @@
      "group": "Groceries",
      "items": [
       {
-       "name": "Tesco weekly shop",
+       "name": "Greenleaf weekly shop",
        "amount": 75.02,
        "done": true,
        "due": "2026-03-28"
       },
       {
-       "name": "Tesco weekly shop",
+       "name": "Greenleaf weekly shop",
        "amount": 78.35,
        "done": true,
        "due": "2026-04-04"
       },
       {
-       "name": "Tesco weekly shop",
+       "name": "Greenleaf weekly shop",
        "amount": 89.65,
        "done": true,
        "due": "2026-04-11"
       },
       {
-       "name": "Tesco weekly shop",
+       "name": "Greenleaf weekly shop",
        "amount": 75.44,
        "done": true,
        "due": "2026-04-18"
@@ -711,31 +699,25 @@
      "group": "Bills",
      "items": [
       {
-       "name": "TV Licence",
-       "amount": 14.95,
-       "done": true,
-       "due": "2026-04-01"
-      },
-      {
-       "name": "Octopus Energy",
+       "name": "Brightwatt Energy",
        "amount": 112.25,
        "done": true,
        "due": "2026-04-02"
       },
       {
-       "name": "giffgaff",
+       "name": "Pocket Mobile",
        "amount": 12.0,
        "done": true,
        "due": "2026-04-09"
       },
       {
-       "name": "Wessex Water",
+       "name": "Riverside Water",
        "amount": 41.0,
        "done": true,
        "due": "2026-04-15"
       },
       {
-       "name": "Virgin Media broadband",
+       "name": "Loop Broadband",
        "amount": 47.5,
        "done": true,
        "due": "2026-04-22"
@@ -746,7 +728,7 @@
      "group": "Car",
      "items": [
       {
-       "name": "Car insurance (Admiral)",
+       "name": "Car insurance (Lanternside)",
        "amount": 48.12,
        "done": true,
        "due": "2026-04-11"
@@ -763,13 +745,13 @@
        "due": "2026-04-01"
       },
       {
-       "name": "PureGym",
+       "name": "Pulse Fitness",
        "amount": 27.99,
        "done": true,
        "due": "2026-04-04"
       },
       {
-       "name": "ManyPets (Biscuit)",
+       "name": "Pet insurance (Pawprint)",
        "amount": 31.76,
        "done": true,
        "due": "2026-04-18"
@@ -780,13 +762,13 @@
      "group": "Subscriptions",
      "items": [
       {
-       "name": "Spotify Duo",
+       "name": "Tuneloop (music)",
        "amount": 16.99,
        "done": true,
        "due": "2026-04-14"
       },
       {
-       "name": "Netflix",
+       "name": "Reelhouse (films)",
        "amount": 12.99,
        "done": true,
        "due": "2026-04-21"
@@ -798,96 +780,90 @@
      "discretionary": true,
      "items": [
       {
-       "name": "Wagamama",
-       "amount": 48.2,
+       "name": "Wellspring Pharmacy",
+       "amount": 14.35,
        "done": true,
-       "due": "2026-03-29"
+       "due": "2026-03-27"
       },
       {
-       "name": "Amazon",
-       "amount": 129.31,
+       "name": "Dishdash (food delivery)",
+       "amount": 94.47,
        "done": true,
        "due": "2026-03-29",
-       "count": 4
+       "count": 3
       },
       {
-       "name": "The Old Market Tavern",
-       "amount": 62.08,
+       "name": "Bean & Leaf Café",
+       "amount": 31.75,
        "done": true,
-       "due": "2026-03-31",
-       "count": 2
-      },
-      {
-       "name": "Uber",
-       "amount": 26.14,
-       "done": true,
-       "due": "2026-04-02",
-       "count": 2
-      },
-      {
-       "name": "Shell",
-       "amount": 124.79,
-       "done": true,
-       "due": "2026-04-03",
-       "count": 2
-      },
-      {
-       "name": "Pret A Manger",
-       "amount": 32.19,
-       "done": true,
-       "due": "2026-04-04",
+       "due": "2026-03-30",
        "count": 5
       },
       {
-       "name": "Nando's",
-       "amount": 31.24,
+       "name": "Fairway Local",
+       "amount": 58.19,
+       "done": true,
+       "due": "2026-04-02",
+       "count": 4
+      },
+      {
+       "name": "Daily Grind",
+       "amount": 15.02,
+       "done": true,
+       "due": "2026-04-03",
+       "count": 3
+      },
+      {
+       "name": "Toolbox DIY",
+       "amount": 66.91,
+       "done": true,
+       "due": "2026-04-04"
+      },
+      {
+       "name": "Pageturner Books",
+       "amount": 20.07,
+       "done": true,
+       "due": "2026-04-05"
+      },
+      {
+       "name": "The Copper Kettle",
+       "amount": 74.89,
+       "done": true,
+       "due": "2026-04-06",
+       "count": 3
+      },
+      {
+       "name": "Everymart",
+       "amount": 91.75,
+       "done": true,
+       "due": "2026-04-06",
+       "count": 3
+      },
+      {
+       "name": "Homestead Home",
+       "amount": 66.93,
        "done": true,
        "due": "2026-04-06"
       },
       {
-       "name": "Costa Coffee",
-       "amount": 18.16,
+       "name": "Northline Rail",
+       "amount": 221.59,
        "done": true,
-       "due": "2026-04-08",
-       "count": 4
-      },
-      {
-       "name": "Trainline",
-       "amount": 127.29,
-       "done": true,
-       "due": "2026-04-08",
+       "due": "2026-04-14",
        "count": 3
       },
       {
-       "name": "Vue Cinemas",
-       "amount": 20.69,
+       "name": "Starlight Cinema",
+       "amount": 24.29,
        "done": true,
-       "due": "2026-04-08"
+       "due": "2026-04-17"
       },
       {
-       "name": "John Lewis",
-       "amount": 76.55,
+       "name": "Greenleaf top-up",
+       "amount": 96.68,
        "done": true,
-       "due": "2026-04-08"
-      },
-      {
-       "name": "Tesco top-up",
-       "amount": 79.77,
-       "done": true,
-       "due": "2026-04-09",
-       "count": 4
-      },
-      {
-       "name": "B&Q",
-       "amount": 25.68,
-       "done": true,
-       "due": "2026-04-10"
-      },
-      {
-       "name": "Waterstones",
-       "amount": 15.89,
-       "done": true,
-       "due": "2026-04-16"
+       "due": "2026-04-19",
+       "count": 3
       },
       {
        "name": "Alex's half (split bills)",
@@ -896,35 +872,15 @@
        "due": "2026-04-19"
       },
       {
-       "name": "Greggs",
-       "amount": 5.92,
-       "done": true,
-       "due": "2026-04-22"
-      },
-      {
-       "name": "Deliveroo",
-       "amount": 87.11,
+       "name": "Petrolux (fuel)",
+       "amount": 133.02,
        "done": true,
        "due": "2026-04-22",
-       "count": 3
-      },
-      {
-       "name": "Sainsbury's Local",
-       "amount": 84.76,
-       "done": true,
-       "due": "2026-04-23",
-       "count": 6
-      },
-      {
-       "name": "Boots",
-       "amount": 14.91,
-       "done": true,
-       "due": "2026-04-23",
        "count": 2
       },
       {
-       "name": "Pets at Home",
-       "amount": 23.62,
+       "name": "Nuts & Bolts",
+       "amount": 39.34,
        "done": true,
        "due": "2026-04-23"
       }
@@ -967,7 +923,7 @@
      "group": "Housing",
      "items": [
       {
-       "name": "Mortgage (Nationwide)",
+       "name": "Mortgage (Harbourside BS)",
        "amount": 1084.37,
        "done": true,
        "due": "2026-05-01"
@@ -979,7 +935,7 @@
        "due": "2026-05-01"
       },
       {
-       "name": "Home insurance (Direct Line)",
+       "name": "Home insurance (Hearthguard)",
        "amount": 21.84,
        "done": true,
        "due": "2026-05-08"
@@ -990,19 +946,19 @@
      "group": "Debt Repayments",
      "items": [
       {
-       "name": "Amex",
+       "name": "Kestrel card",
        "amount": 250.0,
        "done": true,
        "due": "2026-05-03"
       },
       {
-       "name": "Barclaycard (0% transfer)",
+       "name": "Meridian card (0% transfer)",
        "amount": 120.0,
        "done": true,
        "due": "2026-05-12"
       },
       {
-       "name": "Car finance (Black Horse)",
+       "name": "Car finance (Fernway)",
        "amount": 239.41,
        "done": true,
        "due": "2026-05-20"
@@ -1030,32 +986,32 @@
      "group": "Groceries",
      "items": [
       {
-       "name": "Tesco weekly shop",
-       "amount": 71.6,
+       "name": "Greenleaf weekly shop",
+       "amount": 85.37,
        "done": true,
        "due": "2026-04-25"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 73.78,
+       "name": "Greenleaf weekly shop",
+       "amount": 62.96,
        "done": true,
        "due": "2026-05-02"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 72.11,
+       "name": "Greenleaf weekly shop",
+       "amount": 69.72,
        "done": true,
        "due": "2026-05-09"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 89.5,
+       "name": "Greenleaf weekly shop",
+       "amount": 75.34,
        "done": true,
        "due": "2026-05-16"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 62.17,
+       "name": "Greenleaf weekly shop",
+       "amount": 70.21,
        "done": true,
        "due": "2026-05-23"
       }
@@ -1065,31 +1021,25 @@
      "group": "Bills",
      "items": [
       {
-       "name": "TV Licence",
-       "amount": 14.95,
-       "done": true,
-       "due": "2026-05-01"
-      },
-      {
-       "name": "Octopus Energy",
-       "amount": 99.83,
+       "name": "Brightwatt Energy",
+       "amount": 122.36,
        "done": true,
        "due": "2026-05-02"
       },
       {
-       "name": "giffgaff",
+       "name": "Pocket Mobile",
        "amount": 12.0,
        "done": true,
        "due": "2026-05-09"
       },
       {
-       "name": "Wessex Water",
+       "name": "Riverside Water",
        "amount": 41.0,
        "done": true,
        "due": "2026-05-15"
       },
       {
-       "name": "Virgin Media broadband",
+       "name": "Loop Broadband",
        "amount": 47.5,
        "done": true,
        "due": "2026-05-22"
@@ -1100,7 +1050,7 @@
      "group": "Car",
      "items": [
       {
-       "name": "Car insurance (Admiral)",
+       "name": "Car insurance (Lanternside)",
        "amount": 48.12,
        "done": true,
        "due": "2026-05-11"
@@ -1117,13 +1067,13 @@
        "due": "2026-05-01"
       },
       {
-       "name": "PureGym",
+       "name": "Pulse Fitness",
        "amount": 27.99,
        "done": true,
        "due": "2026-05-04"
       },
       {
-       "name": "ManyPets (Biscuit)",
+       "name": "Pet insurance (Pawprint)",
        "amount": 31.76,
        "done": true,
        "due": "2026-05-18"
@@ -1134,25 +1084,25 @@
      "group": "Subscriptions",
      "items": [
       {
-       "name": "iCloud+",
+       "name": "Nimbus storage",
        "amount": 2.99,
        "done": true,
        "due": "2026-04-26"
       },
       {
-       "name": "Spotify Duo",
+       "name": "Tuneloop (music)",
        "amount": 16.99,
        "done": true,
        "due": "2026-05-14"
       },
       {
-       "name": "Netflix",
+       "name": "Reelhouse (films)",
        "amount": 12.99,
        "done": true,
        "due": "2026-05-21"
       },
       {
-       "name": "iCloud+",
+       "name": "Nimbus storage",
        "amount": 2.99,
        "done": true,
        "due": "2026-05-26"
@@ -1164,138 +1114,130 @@
      "discretionary": true,
      "items": [
       {
-       "name": "The Old Market Tavern",
-       "amount": 71.67,
-       "done": true,
-       "due": "2026-04-24",
-       "count": 3
-      },
-      {
-       "name": "Nando's",
-       "amount": 30.35,
-       "done": true,
-       "due": "2026-04-26"
-      },
-      {
-       "name": "Deliveroo",
-       "amount": 84.97,
-       "done": true,
-       "due": "2026-04-26",
-       "count": 3
-      },
-      {
-       "name": "Shell",
-       "amount": 115.99,
-       "done": true,
-       "due": "2026-04-26",
-       "count": 2
-      },
-      {
-       "name": "Barber (Ruffians)",
-       "amount": 29.89,
+       "name": "Thread & Co",
+       "amount": 63.49,
        "done": true,
        "due": "2026-04-28"
       },
       {
-       "name": "Greggs",
-       "amount": 18.86,
+       "name": "Starlight Cinema",
+       "amount": 23.61,
        "done": true,
-       "due": "2026-04-29",
-       "count": 4
+       "due": "2026-04-29"
       },
       {
-       "name": "Screwfix",
-       "amount": 35.85,
+       "name": "The Copper Kettle",
+       "amount": 66.93,
+       "done": true,
+       "due": "2026-05-06",
+       "count": 2
+      },
+      {
+       "name": "Corner Bakery",
+       "amount": 6.11,
        "done": true,
        "due": "2026-05-08"
       },
       {
-       "name": "John Lewis",
-       "amount": 87.53,
+       "name": "Everymart",
+       "amount": 155.45,
        "done": true,
-       "due": "2026-05-09"
+       "due": "2026-05-09",
+       "count": 4
       },
       {
-       "name": "Pets at Home",
-       "amount": 39.89,
+       "name": "Ember Kitchen",
+       "amount": 51.95,
        "done": true,
        "due": "2026-05-10"
       },
       {
-       "name": "B&Q",
-       "amount": 15.94,
+       "name": "Northline Rail",
+       "amount": 211.84,
        "done": true,
-       "due": "2026-05-11"
+       "due": "2026-05-11",
+       "count": 3
       },
       {
-       "name": "Vue Cinemas",
-       "amount": 21.11,
+       "name": "Trattoria Sole",
+       "amount": 62.57,
+       "done": true,
+       "due": "2026-05-12"
+      },
+      {
+       "name": "Pageturner Books",
+       "amount": 16.46,
+       "done": true,
+       "due": "2026-05-13"
+      },
+      {
+       "name": "Noodle Yard",
+       "amount": 30.16,
        "done": true,
        "due": "2026-05-14"
       },
       {
-       "name": "Tesco top-up",
-       "amount": 104.35,
+       "name": "Nuts & Bolts",
+       "amount": 15.57,
        "done": true,
-       "due": "2026-05-15",
-       "count": 4
+       "due": "2026-05-17"
       },
       {
-       "name": "Boots",
-       "amount": 30.47,
+       "name": "Daily Grind",
+       "amount": 13.86,
        "done": true,
-       "due": "2026-05-16",
-       "count": 2
-      },
-      {
-       "name": "Costa Coffee",
-       "amount": 7.83,
-       "done": true,
-       "due": "2026-05-18",
-       "count": 2
-      },
-      {
-       "name": "Sainsbury's Local",
-       "amount": 40.63,
-       "done": true,
-       "due": "2026-05-18",
+       "due": "2026-05-19",
        "count": 3
       },
       {
-       "name": "Wagamama",
-       "amount": 36.95,
+       "name": "Petworld",
+       "amount": 27.4,
        "done": true,
-       "due": "2026-05-20"
+       "due": "2026-05-19"
       },
       {
-       "name": "Waterstones",
-       "amount": 16.35,
+       "name": "Bean & Leaf Café",
+       "amount": 32.53,
        "done": true,
-       "due": "2026-05-20"
-      },
-      {
-       "name": "Pret A Manger",
-       "amount": 39.22,
-       "done": true,
-       "due": "2026-05-23",
+       "due": "2026-05-20",
        "count": 5
       },
       {
-       "name": "Trainline",
-       "amount": 211.89,
+       "name": "Toolbox DIY",
+       "amount": 50.02,
        "done": true,
-       "due": "2026-05-24",
-       "count": 3
+       "due": "2026-05-21"
+      },
+      {
+       "name": "Petrolux (fuel)",
+       "amount": 110.9,
+       "done": true,
+       "due": "2026-05-23",
+       "count": 2
       },
       {
        "name": "Alex's half (split bills)",
-       "amount": -18.57,
+       "amount": -27.41,
        "done": true,
        "due": "2026-05-24"
       },
       {
-       "name": "Amazon",
-       "amount": 84.35,
+       "name": "Dishdash (food delivery)",
+       "amount": 83.13,
+       "done": true,
+       "due": "2026-05-25",
+       "count": 3
+      },
+      {
+       "name": "Fairway Local",
+       "amount": 42.38,
+       "done": true,
+       "due": "2026-05-27",
+       "count": 4
+      },
+      {
+       "name": "Greenleaf top-up",
+       "amount": 66.55,
        "done": true,
        "due": "2026-05-28",
        "count": 3
@@ -1339,7 +1281,7 @@
      "group": "Housing",
      "items": [
       {
-       "name": "Mortgage (Nationwide)",
+       "name": "Mortgage (Harbourside BS)",
        "amount": 1084.37,
        "done": true,
        "due": "2026-06-01"
@@ -1351,7 +1293,7 @@
        "due": "2026-06-01"
       },
       {
-       "name": "Home insurance (Direct Line)",
+       "name": "Home insurance (Hearthguard)",
        "amount": 21.84,
        "done": true,
        "due": "2026-06-08"
@@ -1362,19 +1304,19 @@
      "group": "Debt Repayments",
      "items": [
       {
-       "name": "Amex",
+       "name": "Kestrel card",
        "amount": 250.0,
        "done": true,
        "due": "2026-06-03"
       },
       {
-       "name": "Barclaycard (0% transfer)",
+       "name": "Meridian card (0% transfer)",
        "amount": 120.0,
        "done": true,
        "due": "2026-06-12"
       },
       {
-       "name": "Car finance (Black Horse)",
+       "name": "Car finance (Fernway)",
        "amount": 239.41,
        "done": true,
        "due": "2026-06-20"
@@ -1402,26 +1344,26 @@
      "group": "Groceries",
      "items": [
       {
-       "name": "Tesco weekly shop",
-       "amount": 86.15,
+       "name": "Greenleaf weekly shop",
+       "amount": 64.06,
        "done": true,
        "due": "2026-05-30"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 72.72,
+       "name": "Greenleaf weekly shop",
+       "amount": 89.15,
        "done": true,
        "due": "2026-06-06"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 70.76,
+       "name": "Greenleaf weekly shop",
+       "amount": 87.41,
        "done": true,
        "due": "2026-06-13"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 85.66,
+       "name": "Greenleaf weekly shop",
+       "amount": 90.14,
        "done": true,
        "due": "2026-06-20"
       }
@@ -1431,31 +1373,25 @@
      "group": "Bills",
      "items": [
       {
-       "name": "TV Licence",
-       "amount": 14.95,
-       "done": true,
-       "due": "2026-06-01"
-      },
-      {
-       "name": "Octopus Energy",
-       "amount": 120.32,
+       "name": "Brightwatt Energy",
+       "amount": 119.95,
        "done": true,
        "due": "2026-06-02"
       },
       {
-       "name": "giffgaff",
+       "name": "Pocket Mobile",
        "amount": 12.0,
        "done": true,
        "due": "2026-06-09"
       },
       {
-       "name": "Wessex Water",
+       "name": "Riverside Water",
        "amount": 41.0,
        "done": true,
        "due": "2026-06-15"
       },
       {
-       "name": "Virgin Media broadband",
+       "name": "Loop Broadband",
        "amount": 47.5,
        "done": true,
        "due": "2026-06-22"
@@ -1466,7 +1402,7 @@
      "group": "Car",
      "items": [
       {
-       "name": "Car insurance (Admiral)",
+       "name": "Car insurance (Lanternside)",
        "amount": 48.12,
        "done": true,
        "due": "2026-06-11"
@@ -1483,13 +1419,13 @@
        "due": "2026-06-01"
       },
       {
-       "name": "PureGym",
+       "name": "Pulse Fitness",
        "amount": 27.99,
        "done": true,
        "due": "2026-06-04"
       },
       {
-       "name": "ManyPets (Biscuit)",
+       "name": "Pet insurance (Pawprint)",
        "amount": 31.76,
        "done": true,
        "due": "2026-06-18"
@@ -1500,13 +1436,13 @@
      "group": "Subscriptions",
      "items": [
       {
-       "name": "Spotify Duo",
+       "name": "Tuneloop (music)",
        "amount": 16.99,
        "done": true,
        "due": "2026-06-14"
       },
       {
-       "name": "Netflix",
+       "name": "Reelhouse (films)",
        "amount": 12.99,
        "done": true,
        "due": "2026-06-21"
@@ -1518,157 +1454,136 @@
      "discretionary": true,
      "items": [
       {
-       "name": "Costa Coffee",
-       "amount": 18.36,
+       "name": "Northline Rail",
+       "amount": 77.23,
        "done": true,
-       "due": "2026-05-31",
-       "count": 4
+       "due": "2026-05-30"
       },
       {
-       "name": "Amazon",
-       "amount": 114.22,
-       "done": true,
-       "due": "2026-06-01",
-       "count": 3
-      },
-      {
-       "name": "Just Eat",
-       "amount": 28.22,
+       "name": "Noodle Yard",
+       "amount": 41.73,
        "done": true,
        "due": "2026-06-01"
       },
       {
-       "name": "Card Factory",
-       "amount": 9.34,
-       "done": true,
-       "due": "2026-06-01"
-      },
-      {
-       "name": "Vue Cinemas",
-       "amount": 23.01,
+       "name": "Ember Kitchen",
+       "amount": 35.72,
        "done": true,
        "due": "2026-06-02"
       },
       {
-       "name": "Greggs",
-       "amount": 18.56,
+       "name": "Dishdash (food delivery)",
+       "amount": 58.07,
+       "done": true,
+       "due": "2026-06-02",
+       "count": 2
+      },
+      {
+       "name": "The Copper Kettle",
+       "amount": 80.87,
        "done": true,
        "due": "2026-06-03",
-       "count": 4
+       "count": 2
       },
       {
-       "name": "Uniqlo",
-       "amount": 30.23,
+       "name": "Nuts & Bolts",
+       "amount": 31.23,
        "done": true,
-       "due": "2026-06-03"
+       "due": "2026-06-04"
       },
       {
-       "name": "Tesco top-up",
-       "amount": 19.04,
+       "name": "Wellspring Pharmacy",
+       "amount": 16.58,
        "done": true,
-       "due": "2026-06-03"
+       "due": "2026-06-05"
       },
       {
-       "name": "Deliveroo",
-       "amount": 95.92,
+       "name": "Toolbox DIY",
+       "amount": 31.93,
        "done": true,
-       "due": "2026-06-05",
+       "due": "2026-06-05"
+      },
+      {
+       "name": "Petworld",
+       "amount": 28.85,
+       "done": true,
+       "due": "2026-06-06"
+      },
+      {
+       "name": "Fairway Local",
+       "amount": 51.05,
+       "done": true,
+       "due": "2026-06-09",
+       "count": 5
+      },
+      {
+       "name": "Trattoria Sole",
+       "amount": 56.94,
+       "done": true,
+       "due": "2026-06-11"
+      },
+      {
+       "name": "Petrolux (fuel)",
+       "amount": 67.1,
+       "done": true,
+       "due": "2026-06-12"
+      },
+      {
+       "name": "Corner Bakery",
+       "amount": 5.11,
+       "done": true,
+       "due": "2026-06-14"
+      },
+      {
+       "name": "Pageturner Books",
+       "amount": 16.39,
+       "done": true,
+       "due": "2026-06-14"
+      },
+      {
+       "name": "Greenleaf top-up",
+       "amount": 71.83,
+       "done": true,
+       "due": "2026-06-14",
        "count": 3
       },
       {
-       "name": "Boots",
-       "amount": 33.61,
+       "name": "Homestead Home",
+       "amount": 91.95,
        "done": true,
-       "due": "2026-06-06",
-       "count": 2
+       "due": "2026-06-18"
       },
       {
-       "name": "B&Q",
-       "amount": 37.57,
+       "name": "Bean & Leaf Café",
+       "amount": 6.12,
        "done": true,
-       "due": "2026-06-07"
-      },
-      {
-       "name": "Pets at Home",
-       "amount": 36.18,
-       "done": true,
-       "due": "2026-06-07"
-      },
-      {
-       "name": "Trainline",
-       "amount": 70.23,
-       "done": true,
-       "due": "2026-06-08"
-      },
-      {
-       "name": "Wagamama",
-       "amount": 46.66,
-       "done": true,
-       "due": "2026-06-10"
-      },
-      {
-       "name": "Uber",
-       "amount": 28.85,
-       "done": true,
-       "due": "2026-06-12",
-       "count": 2
-      },
-      {
-       "name": "John Lewis",
-       "amount": 31.03,
-       "done": true,
-       "due": "2026-06-13"
+       "due": "2026-06-19"
       },
       {
        "name": "Alex's half (split bills)",
-       "amount": -39.47,
+       "amount": -20.56,
        "done": true,
        "due": "2026-06-21"
       },
       {
-       "name": "Pret A Manger",
-       "amount": 33.43,
+       "name": "Everymart",
+       "amount": 79.44,
        "done": true,
-       "due": "2026-06-23",
-       "count": 6
+       "due": "2026-06-22",
+       "count": 3
       },
       {
-       "name": "Sainsbury's Local",
-       "amount": 83.33,
-       "done": true,
-       "due": "2026-06-23",
-       "count": 8
-      },
-      {
-       "name": "The Old Market Tavern",
-       "amount": 42.74,
-       "done": true,
-       "due": "2026-06-23",
-       "count": 2
-      },
-      {
-       "name": "Shell",
-       "amount": 62.16,
+       "name": "Thread & Co",
+       "amount": 52.17,
        "done": true,
        "due": "2026-06-23"
       },
       {
-       "name": "Barber (Ruffians)",
-       "amount": 30.6,
+       "name": "Bytebox Takeaway",
+       "amount": 57.38,
        "done": true,
-       "due": "2026-06-24"
-      },
-      {
-       "name": "Nando's",
-       "amount": 27.1,
-       "done": true,
-       "due": "2026-06-25"
-      },
-      {
-       "name": "Zizzi",
-       "amount": 56.36,
-       "done": true,
-       "due": "2026-06-25"
+       "due": "2026-06-24",
+       "count": 2
       }
      ]
     }
@@ -1709,7 +1624,7 @@
      "group": "Housing",
      "items": [
       {
-       "name": "Mortgage (Nationwide)",
+       "name": "Mortgage (Harbourside BS)",
        "amount": 1084.37,
        "done": true,
        "due": "2026-07-01"
@@ -1721,7 +1636,7 @@
        "due": "2026-07-01"
       },
       {
-       "name": "Home insurance (Direct Line)",
+       "name": "Home insurance (Hearthguard)",
        "amount": 21.84,
        "done": true,
        "due": "2026-07-08"
@@ -1732,19 +1647,19 @@
      "group": "Debt Repayments",
      "items": [
       {
-       "name": "Amex",
+       "name": "Kestrel card",
        "amount": 250.0,
        "done": true,
        "due": "2026-07-03"
       },
       {
-       "name": "Barclaycard (0% transfer)",
+       "name": "Meridian card (0% transfer)",
        "amount": 120.0,
        "done": true,
        "due": "2026-07-12"
       },
       {
-       "name": "Car finance (Black Horse)",
+       "name": "Car finance (Fernway)",
        "amount": 239.41,
        "done": true,
        "due": "2026-07-20"
@@ -1772,32 +1687,32 @@
      "group": "Groceries",
      "items": [
       {
-       "name": "Tesco weekly shop",
-       "amount": 69.32,
+       "name": "Greenleaf weekly shop",
+       "amount": 87.81,
        "done": true,
        "due": "2026-06-27"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 67.7,
+       "name": "Greenleaf weekly shop",
+       "amount": 67.47,
        "done": true,
        "due": "2026-07-04"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 69.69,
+       "name": "Greenleaf weekly shop",
+       "amount": 91.25,
        "done": true,
        "due": "2026-07-11"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 87.54,
+       "name": "Greenleaf weekly shop",
+       "amount": 82.2,
        "done": true,
        "due": "2026-07-18"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 83.93,
+       "name": "Greenleaf weekly shop",
+       "amount": 66.7,
        "done": true,
        "due": "2026-07-25"
       }
@@ -1807,31 +1722,25 @@
      "group": "Bills",
      "items": [
       {
-       "name": "TV Licence",
-       "amount": 14.95,
-       "done": true,
-       "due": "2026-07-01"
-      },
-      {
-       "name": "Octopus Energy",
-       "amount": 121.54,
+       "name": "Brightwatt Energy",
+       "amount": 121.96,
        "done": true,
        "due": "2026-07-02"
       },
       {
-       "name": "giffgaff",
+       "name": "Pocket Mobile",
        "amount": 12.0,
        "done": true,
        "due": "2026-07-09"
       },
       {
-       "name": "Wessex Water",
+       "name": "Riverside Water",
        "amount": 41.0,
        "done": true,
        "due": "2026-07-15"
       },
       {
-       "name": "Virgin Media broadband",
+       "name": "Loop Broadband",
        "amount": 47.5,
        "done": true,
        "due": "2026-07-22"
@@ -1842,7 +1751,7 @@
      "group": "Car",
      "items": [
       {
-       "name": "Car insurance (Admiral)",
+       "name": "Car insurance (Lanternside)",
        "amount": 48.12,
        "done": true,
        "due": "2026-07-11"
@@ -1859,13 +1768,13 @@
        "due": "2026-07-01"
       },
       {
-       "name": "PureGym",
+       "name": "Pulse Fitness",
        "amount": 27.99,
        "done": true,
        "due": "2026-07-04"
       },
       {
-       "name": "ManyPets (Biscuit)",
+       "name": "Pet insurance (Pawprint)",
        "amount": 31.76,
        "done": true,
        "due": "2026-07-18"
@@ -1876,25 +1785,25 @@
      "group": "Subscriptions",
      "items": [
       {
-       "name": "iCloud+",
+       "name": "Nimbus storage",
        "amount": 2.99,
        "done": true,
        "due": "2026-06-26"
       },
       {
-       "name": "Spotify Duo",
+       "name": "Tuneloop (music)",
        "amount": 16.99,
        "done": true,
        "due": "2026-07-14"
       },
       {
-       "name": "Netflix",
+       "name": "Reelhouse (films)",
        "amount": 12.99,
        "done": true,
        "due": "2026-07-21"
       },
       {
-       "name": "iCloud+",
+       "name": "Nimbus storage",
        "amount": 2.99,
        "done": true,
        "due": "2026-07-26"
@@ -1906,158 +1815,126 @@
      "discretionary": true,
      "items": [
       {
-       "name": "Uber",
-       "amount": 18.71,
+       "name": "Toolbox DIY",
+       "amount": 63.36,
        "done": true,
        "due": "2026-06-27"
       },
       {
-       "name": "Costa Coffee",
-       "amount": 16.84,
+       "name": "Trattoria Sole",
+       "amount": 52.4,
        "done": true,
-       "due": "2026-06-29",
-       "count": 4
+       "due": "2026-06-27"
       },
       {
-       "name": "B&Q",
-       "amount": 37.04,
-       "done": true,
-       "due": "2026-06-30"
-      },
-      {
-       "name": "Waterstones",
-       "amount": 18.37,
-       "done": true,
-       "due": "2026-07-04"
-      },
-      {
-       "name": "Just Eat",
-       "amount": 30.83,
-       "done": true,
-       "due": "2026-07-04"
-      },
-      {
-       "name": "easyJet (Lisbon, 2 seats)",
+       "name": "Skylark Air (holiday flights, 2 seats)",
        "amount": 238.46,
        "done": true,
        "due": "2026-07-04"
       },
       {
-       "name": "The Old Market Tavern",
-       "amount": 46.44,
+       "name": "Ember Kitchen",
+       "amount": 43.23,
        "done": true,
-       "due": "2026-07-05",
+       "due": "2026-07-08"
+      },
+      {
+       "name": "Nuts & Bolts",
+       "amount": 41.39,
+       "done": true,
+       "due": "2026-07-09"
+      },
+      {
+       "name": "Zoomcab",
+       "amount": 34.18,
+       "done": true,
+       "due": "2026-07-16",
        "count": 2
       },
       {
-       "name": "Screwfix",
-       "amount": 25.14,
+       "name": "Dishdash (food delivery)",
+       "amount": 64.84,
        "done": true,
-       "due": "2026-07-06"
-      },
-      {
-       "name": "Pret A Manger",
-       "amount": 29.98,
-       "done": true,
-       "due": "2026-07-08",
-       "count": 5
-      },
-      {
-       "name": "Deliveroo",
-       "amount": 59.61,
-       "done": true,
-       "due": "2026-07-08",
+       "due": "2026-07-17",
        "count": 2
       },
       {
-       "name": "Amazon",
-       "amount": 43.82,
+       "name": "Fairway Local",
+       "amount": 84.75,
        "done": true,
-       "due": "2026-07-08",
-       "count": 2
+       "due": "2026-07-19",
+       "count": 6
       },
       {
-       "name": "Tesco top-up",
-       "amount": 68.37,
+       "name": "The Copper Kettle",
+       "amount": 99.6,
        "done": true,
-       "due": "2026-07-08",
-       "count": 4
-      },
-      {
-       "name": "Shell",
-       "amount": 106.03,
-       "done": true,
-       "due": "2026-07-11",
-       "count": 2
-      },
-      {
-       "name": "Zizzi",
-       "amount": 46.54,
-       "done": true,
-       "due": "2026-07-11"
-      },
-      {
-       "name": "Barber (Ruffians)",
-       "amount": 29.42,
-       "done": true,
-       "due": "2026-07-12"
-      },
-      {
-       "name": "Trainline",
-       "amount": 136.97,
-       "done": true,
-       "due": "2026-07-18",
+       "due": "2026-07-19",
        "count": 3
       },
       {
-       "name": "Boots",
-       "amount": 17.15,
+       "name": "Thread & Co",
+       "amount": 48.0,
        "done": true,
-       "due": "2026-07-24"
+       "due": "2026-07-22"
       },
       {
-       "name": "Pets at Home",
-       "amount": 35.32,
+       "name": "Homestead Home",
+       "amount": 49.94,
        "done": true,
-       "due": "2026-07-25"
+       "due": "2026-07-22"
+      },
+      {
+       "name": "Everymart",
+       "amount": 128.65,
+       "done": true,
+       "due": "2026-07-23",
+       "count": 4
       },
       {
        "name": "Alex's half (split bills)",
-       "amount": -54.09,
+       "amount": -26.98,
        "done": true,
        "due": "2026-07-26"
       },
       {
-       "name": "Greggs",
-       "amount": 14.91,
+       "name": "Petrolux (fuel)",
+       "amount": 59.83,
+       "done": true,
+       "due": "2026-07-27"
+      },
+      {
+       "name": "Wellspring Pharmacy",
+       "amount": 22.03,
+       "done": true,
+       "due": "2026-07-27"
+      },
+      {
+       "name": "Corner Bakery",
+       "amount": 14.98,
        "done": true,
        "due": "2026-07-28",
        "count": 3
       },
       {
-       "name": "Sainsbury's Local",
-       "amount": 23.4,
+       "name": "Bean & Leaf Café",
+       "amount": 33.84,
        "done": true,
-       "due": "2026-07-28",
+       "due": "2026-07-29",
+       "count": 6
+      },
+      {
+       "name": "Greenleaf top-up",
+       "amount": 9.69,
+       "done": true,
+       "due": "2026-07-29"
+      },
+      {
+       "name": "Bytebox Takeaway",
+       "amount": 54.18,
+       "done": true,
+       "due": "2026-07-30",
        "count": 2
-      },
-      {
-       "name": "Uniqlo",
-       "amount": 31.23,
-       "done": true,
-       "due": "2026-07-29"
-      },
-      {
-       "name": "Card Factory",
-       "amount": 10.18,
-       "done": true,
-       "due": "2026-07-29"
-      },
-      {
-       "name": "John Lewis",
-       "amount": 88.42,
-       "done": true,
-       "due": "2026-07-30"
       }
      ]
     }
@@ -2098,7 +1975,7 @@
      "group": "Housing",
      "items": [
       {
-       "name": "Mortgage (Nationwide)",
+       "name": "Mortgage (Harbourside BS)",
        "amount": 1084.37,
        "done": true,
        "due": "2026-08-01"
@@ -2110,7 +1987,7 @@
        "due": "2026-08-01"
       },
       {
-       "name": "Home insurance (Direct Line)",
+       "name": "Home insurance (Hearthguard)",
        "amount": 21.84,
        "done": true,
        "due": "2026-08-08"
@@ -2121,19 +1998,19 @@
      "group": "Debt Repayments",
      "items": [
       {
-       "name": "Amex",
+       "name": "Kestrel card",
        "amount": 250.0,
        "done": true,
        "due": "2026-08-03"
       },
       {
-       "name": "Barclaycard (0% transfer)",
+       "name": "Meridian card (0% transfer)",
        "amount": 120.0,
        "done": true,
        "due": "2026-08-12"
       },
       {
-       "name": "Car finance (Black Horse)",
+       "name": "Car finance (Fernway)",
        "amount": 239.41,
        "done": true,
        "due": "2026-08-20"
@@ -2161,26 +2038,26 @@
      "group": "Groceries",
      "items": [
       {
-       "name": "Tesco weekly shop",
-       "amount": 71.24,
+       "name": "Greenleaf weekly shop",
+       "amount": 79.22,
        "done": true,
        "due": "2026-08-01"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 89.17,
+       "name": "Greenleaf weekly shop",
+       "amount": 69.49,
        "done": true,
        "due": "2026-08-08"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 90.32,
+       "name": "Greenleaf weekly shop",
+       "amount": 64.02,
        "done": true,
        "due": "2026-08-15"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 86.97,
+       "name": "Greenleaf weekly shop",
+       "amount": 82.53,
        "done": true,
        "due": "2026-08-22"
       }
@@ -2190,31 +2067,25 @@
      "group": "Bills",
      "items": [
       {
-       "name": "TV Licence",
-       "amount": 14.95,
-       "done": true,
-       "due": "2026-08-01"
-      },
-      {
-       "name": "Octopus Energy",
-       "amount": 120.04,
+       "name": "Brightwatt Energy",
+       "amount": 98.59,
        "done": true,
        "due": "2026-08-02"
       },
       {
-       "name": "giffgaff",
+       "name": "Pocket Mobile",
        "amount": 12.0,
        "done": true,
        "due": "2026-08-09"
       },
       {
-       "name": "Wessex Water",
+       "name": "Riverside Water",
        "amount": 41.0,
        "done": true,
        "due": "2026-08-15"
       },
       {
-       "name": "Virgin Media broadband",
+       "name": "Loop Broadband",
        "amount": 47.5,
        "done": true,
        "due": "2026-08-22"
@@ -2225,7 +2096,7 @@
      "group": "Car",
      "items": [
       {
-       "name": "Car insurance (Admiral)",
+       "name": "Car insurance (Lanternside)",
        "amount": 48.12,
        "done": true,
        "due": "2026-08-11"
@@ -2242,13 +2113,13 @@
        "due": "2026-08-01"
       },
       {
-       "name": "PureGym",
+       "name": "Pulse Fitness",
        "amount": 27.99,
        "done": true,
        "due": "2026-08-04"
       },
       {
-       "name": "ManyPets (Biscuit)",
+       "name": "Pet insurance (Pawprint)",
        "amount": 31.76,
        "done": true,
        "due": "2026-08-18"
@@ -2259,19 +2130,19 @@
      "group": "Subscriptions",
      "items": [
       {
-       "name": "Spotify Duo",
+       "name": "Tuneloop (music)",
        "amount": 16.99,
        "done": true,
        "due": "2026-08-14"
       },
       {
-       "name": "Netflix",
+       "name": "Reelhouse (films)",
        "amount": 12.99,
        "done": true,
        "due": "2026-08-21"
       },
       {
-       "name": "iCloud+",
+       "name": "Nimbus storage",
        "amount": 2.99,
        "done": true,
        "due": "2026-08-26"
@@ -2283,122 +2154,131 @@
      "discretionary": true,
      "items": [
       {
-       "name": "The Old Market Tavern",
-       "amount": 16.55,
+       "name": "Greenleaf top-up",
+       "amount": 62.32,
        "done": true,
-       "due": "2026-08-02"
+       "due": "2026-07-31",
+       "count": 3
       },
       {
-       "name": "Just Eat",
-       "amount": 26.48,
+       "name": "Corner Bakery",
+       "amount": 11.67,
        "done": true,
-       "due": "2026-08-02"
+       "due": "2026-08-01",
+       "count": 3
       },
       {
-       "name": "B&Q",
-       "amount": 28.24,
+       "name": "Everymart",
+       "amount": 77.63,
+       "done": true,
+       "due": "2026-08-01",
+       "count": 3
+      },
+      {
+       "name": "Ember Kitchen",
+       "amount": 30.8,
        "done": true,
        "due": "2026-08-03"
       },
       {
-       "name": "Uber",
-       "amount": 11.67,
+       "name": "Northline Rail",
+       "amount": 90.09,
        "done": true,
-       "due": "2026-08-05"
+       "due": "2026-08-05",
+       "count": 2
       },
       {
-       "name": "Pret A Manger",
-       "amount": 6.83,
+       "name": "Noodle Yard",
+       "amount": 23.95,
        "done": true,
        "due": "2026-08-06"
       },
       {
-       "name": "Sainsbury's Local",
-       "amount": 11.69,
+       "name": "Zoomcab",
+       "amount": 8.32,
        "done": true,
-       "due": "2026-08-08",
-       "count": 2
+       "due": "2026-08-06"
       },
       {
-       "name": "Airbnb (Lisbon)",
+       "name": "Holiday rental",
        "amount": 412.8,
        "done": true,
        "due": "2026-08-08"
       },
       {
-       "name": "Lisbon: food and trams",
+       "name": "Holiday: food and travel",
        "amount": 186.35,
        "done": true,
        "due": "2026-08-08"
       },
       {
-       "name": "Boots",
-       "amount": 5.98,
+       "name": "Bytebox Takeaway",
+       "amount": 25.79,
+       "done": true,
+       "due": "2026-08-09"
+      },
+      {
+       "name": "Pageturner Books",
+       "amount": 16.44,
        "done": true,
        "due": "2026-08-10"
       },
       {
-       "name": "Amazon",
-       "amount": 41.96,
+       "name": "Fairway Local",
+       "amount": 86.35,
        "done": true,
-       "due": "2026-08-10"
+       "due": "2026-08-13",
+       "count": 7
       },
       {
-       "name": "Nando's",
-       "amount": 23.88,
+       "name": "Thread & Co",
+       "amount": 33.95,
        "done": true,
-       "due": "2026-08-12"
+       "due": "2026-08-17"
       },
       {
-       "name": "John Lewis",
-       "amount": 79.03,
-       "done": true,
-       "due": "2026-08-15"
-      },
-      {
-       "name": "Tesco top-up",
-       "amount": 68.47,
-       "done": true,
-       "due": "2026-08-16",
-       "count": 4
-      },
-      {
-       "name": "Wagamama",
-       "amount": 35.13,
+       "name": "Bean & Leaf Café",
+       "amount": 6.02,
        "done": true,
        "due": "2026-08-18"
       },
       {
-       "name": "Pets at Home",
-       "amount": 29.24,
+       "name": "Dishdash (food delivery)",
+       "amount": 43.71,
        "done": true,
-       "due": "2026-08-19"
+       "due": "2026-08-18",
+       "count": 2
+      },
+      {
+       "name": "The Copper Kettle",
+       "amount": 63.02,
+       "done": true,
+       "due": "2026-08-23",
+       "count": 2
       },
       {
        "name": "Alex's half (split bills)",
-       "amount": -35.77,
+       "amount": -36.83,
        "done": true,
        "due": "2026-08-23"
       },
       {
-       "name": "Trainline",
-       "amount": 108.96,
+       "name": "Daily Grind",
+       "amount": 3.37,
        "done": true,
-       "due": "2026-08-25",
-       "count": 3
+       "due": "2026-08-25"
       },
       {
-       "name": "Costa Coffee",
-       "amount": 12.12,
+       "name": "Wellspring Pharmacy",
+       "amount": 9.31,
        "done": true,
-       "due": "2026-08-26",
-       "count": 3
+       "due": "2026-08-25"
       },
       {
-       "name": "Zizzi",
-       "amount": 49.05,
+       "name": "Trattoria Sole",
+       "amount": 42.44,
        "done": true,
-       "due": "2026-08-26"
+       "due": "2026-08-25"
       }
      ]
     }
@@ -2439,7 +2319,7 @@
      "group": "Housing",
      "items": [
       {
-       "name": "Mortgage (Nationwide)",
+       "name": "Mortgage (Harbourside BS)",
        "amount": 1084.37,
        "done": true,
        "due": "2026-09-01"
@@ -2451,7 +2331,7 @@
        "due": "2026-09-01"
       },
       {
-       "name": "Home insurance (Direct Line)",
+       "name": "Home insurance (Hearthguard)",
        "amount": 21.84,
        "done": true,
        "due": "2026-09-08"
@@ -2462,19 +2342,19 @@
      "group": "Debt Repayments",
      "items": [
       {
-       "name": "Amex",
+       "name": "Kestrel card",
        "amount": 250.0,
        "done": true,
        "due": "2026-09-03"
       },
       {
-       "name": "Barclaycard (0% transfer)",
+       "name": "Meridian card (0% transfer)",
        "amount": 120.0,
        "done": true,
        "due": "2026-09-12"
       },
       {
-       "name": "Car finance (Black Horse)",
+       "name": "Car finance (Fernway)",
        "amount": 239.41,
        "done": true,
        "due": "2026-09-20"
@@ -2502,26 +2382,26 @@
      "group": "Groceries",
      "items": [
       {
-       "name": "Tesco weekly shop",
-       "amount": 76.58,
+       "name": "Greenleaf weekly shop",
+       "amount": 63.96,
        "done": true,
        "due": "2026-08-29"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 73.21,
+       "name": "Greenleaf weekly shop",
+       "amount": 76.77,
        "done": true,
        "due": "2026-09-05"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 62.14,
+       "name": "Greenleaf weekly shop",
+       "amount": 69.23,
        "done": true,
        "due": "2026-09-12"
       },
       {
-       "name": "Tesco weekly shop",
-       "amount": 75.2,
+       "name": "Greenleaf weekly shop",
+       "amount": 72.7,
        "done": true,
        "due": "2026-09-19"
       }
@@ -2531,31 +2411,25 @@
      "group": "Bills",
      "items": [
       {
-       "name": "TV Licence",
-       "amount": 14.95,
-       "done": true,
-       "due": "2026-09-01"
-      },
-      {
-       "name": "Octopus Energy",
-       "amount": 105.3,
+       "name": "Brightwatt Energy",
+       "amount": 109.55,
        "done": true,
        "due": "2026-09-02"
       },
       {
-       "name": "giffgaff",
+       "name": "Pocket Mobile",
        "amount": 12.0,
        "done": true,
        "due": "2026-09-09"
       },
       {
-       "name": "Wessex Water",
+       "name": "Riverside Water",
        "amount": 41.0,
        "done": true,
        "due": "2026-09-15"
       },
       {
-       "name": "Virgin Media broadband",
+       "name": "Loop Broadband",
        "amount": 47.5,
        "done": true,
        "due": "2026-09-22"
@@ -2566,7 +2440,7 @@
      "group": "Car",
      "items": [
       {
-       "name": "Car insurance (Admiral)",
+       "name": "Car insurance (Lanternside)",
        "amount": 48.12,
        "done": true,
        "due": "2026-09-11"
@@ -2583,13 +2457,13 @@
        "due": "2026-09-01"
       },
       {
-       "name": "PureGym",
+       "name": "Pulse Fitness",
        "amount": 27.99,
        "done": true,
        "due": "2026-09-04"
       },
       {
-       "name": "ManyPets (Biscuit)",
+       "name": "Pet insurance (Pawprint)",
        "amount": 31.76,
        "done": true,
        "due": "2026-09-18"
@@ -2600,13 +2474,13 @@
      "group": "Subscriptions",
      "items": [
       {
-       "name": "Spotify Duo",
+       "name": "Tuneloop (music)",
        "amount": 16.99,
        "done": true,
        "due": "2026-09-14"
       },
       {
-       "name": "Netflix",
+       "name": "Reelhouse (films)",
        "amount": 12.99,
        "done": true,
        "due": "2026-09-21"
@@ -2618,150 +2492,135 @@
      "discretionary": true,
      "items": [
       {
-       "name": "Just Eat",
-       "amount": 24.81,
+       "name": "Nuts & Bolts",
+       "amount": 31.14,
        "done": true,
        "due": "2026-08-28"
       },
       {
-       "name": "Nando's",
-       "amount": 31.3,
+       "name": "Bytebox Takeaway",
+       "amount": 56.45,
        "done": true,
-       "due": "2026-08-29"
-      },
-      {
-       "name": "Barber (Ruffians)",
-       "amount": 29.09,
-       "done": true,
-       "due": "2026-08-31"
-      },
-      {
-       "name": "Greggs",
-       "amount": 14.56,
-       "done": true,
-       "due": "2026-09-02",
-       "count": 3
-      },
-      {
-       "name": "The Old Market Tavern",
-       "amount": 82.96,
-       "done": true,
-       "due": "2026-09-03",
-       "count": 3
-      },
-      {
-       "name": "Sainsbury's Local",
-       "amount": 98.87,
-       "done": true,
-       "due": "2026-09-04",
-       "count": 7
-      },
-      {
-       "name": "Vue Cinemas",
-       "amount": 22.55,
-       "done": true,
-       "due": "2026-09-04"
-      },
-      {
-       "name": "Uber",
-       "amount": 11.06,
-       "done": true,
-       "due": "2026-09-06"
-      },
-      {
-       "name": "Waterstones",
-       "amount": 19.0,
-       "done": true,
-       "due": "2026-09-06"
-      },
-      {
-       "name": "Costa Coffee",
-       "amount": 14.4,
-       "done": true,
-       "due": "2026-09-08",
-       "count": 4
-      },
-      {
-       "name": "Trainline",
-       "amount": 148.99,
-       "done": true,
-       "due": "2026-09-09",
-       "count": 3
-      },
-      {
-       "name": "Shell",
-       "amount": 123.6,
-       "done": true,
-       "due": "2026-09-09",
+       "due": "2026-08-28",
        "count": 2
       },
       {
-       "name": "Wagamama",
-       "amount": 40.64,
+       "name": "Everymart",
+       "amount": 123.58,
        "done": true,
-       "due": "2026-09-10"
+       "due": "2026-08-31",
+       "count": 4
       },
       {
-       "name": "Uniqlo",
-       "amount": 55.65,
+       "name": "Bean & Leaf Café",
+       "amount": 31.74,
+       "done": true,
+       "due": "2026-09-01",
+       "count": 5
+      },
+      {
+       "name": "Petrolux (fuel)",
+       "amount": 113.8,
+       "done": true,
+       "due": "2026-09-03",
+       "count": 2
+      },
+      {
+       "name": "The Copper Kettle",
+       "amount": 80.18,
+       "done": true,
+       "due": "2026-09-04",
+       "count": 3
+      },
+      {
+       "name": "Corner Bakery",
+       "amount": 16.14,
+       "done": true,
+       "due": "2026-09-09",
+       "count": 3
+      },
+      {
+       "name": "Starlight Cinema",
+       "amount": 24.72,
        "done": true,
        "due": "2026-09-11"
       },
       {
-       "name": "B&Q",
-       "amount": 47.46,
+       "name": "Ember Kitchen",
+       "amount": 52.46,
        "done": true,
-       "due": "2026-09-12"
+       "due": "2026-09-13"
       },
       {
-       "name": "Amazon",
-       "amount": 89.57,
+       "name": "Homestead Home",
+       "amount": 78.14,
        "done": true,
-       "due": "2026-09-13",
+       "due": "2026-09-14"
+      },
+      {
+       "name": "Greenleaf top-up",
+       "amount": 48.24,
+       "done": true,
+       "due": "2026-09-15",
        "count": 2
       },
       {
-       "name": "Screwfix",
-       "amount": 35.2,
+       "name": "Daily Grind",
+       "amount": 14.48,
        "done": true,
-       "due": "2026-09-14"
+       "due": "2026-09-18",
+       "count": 3
       },
       {
-       "name": "Zizzi",
-       "amount": 66.28,
+       "name": "Fairway Local",
+       "amount": 99.28,
        "done": true,
-       "due": "2026-09-14"
+       "due": "2026-09-18",
+       "count": 8
       },
       {
-       "name": "Boots",
-       "amount": 13.92,
+       "name": "Dishdash (food delivery)",
+       "amount": 26.7,
        "done": true,
-       "due": "2026-09-15"
+       "due": "2026-09-19"
       },
       {
-       "name": "John Lewis",
-       "amount": 91.38,
-       "done": true,
-       "due": "2026-09-18"
-      },
-      {
-       "name": "Tesco top-up",
-       "amount": 15.77,
+       "name": "Wellspring Pharmacy",
+       "amount": 21.41,
        "done": true,
        "due": "2026-09-19"
       },
       {
        "name": "Alex's half (split bills)",
-       "amount": -42.86,
+       "amount": -23.11,
        "done": true,
        "due": "2026-09-20"
       },
       {
-       "name": "Deliveroo",
-       "amount": 80.96,
+       "name": "Northline Rail",
+       "amount": 188.23,
        "done": true,
-       "due": "2026-09-24",
+       "due": "2026-09-23",
        "count": 3
+      },
+      {
+       "name": "Zoomcab",
+       "amount": 28.18,
+       "done": true,
+       "due": "2026-09-23",
+       "count": 2
+      },
+      {
+       "name": "Toolbox DIY",
+       "amount": 61.05,
+       "done": true,
+       "due": "2026-09-24"
+      },
+      {
+       "name": "Thread & Co",
+       "amount": 57.52,
+       "done": true,
+       "due": "2026-09-24"
       }
      ]
     }
