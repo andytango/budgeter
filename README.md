@@ -1,7 +1,6 @@
 # Budgeter
 
-A personal budget that Claude keeps up to date for you every morning, shown as a SimCity 4-style
-budget screen on your phone.
+A personal budget that Claude keeps up to date for you every morning, on your phone.
 
 ![Budgeter on a phone: the current pay period, this period's spending, the tax year view and dark mode](docs/screenshots/hero.jpg)
 
@@ -106,3 +105,8 @@ UK defaults (pounds, UK tax year, paid on the last Friday of the month): your ag
 ## Licence
 
 MIT. See [LICENSE](LICENSE).
+
+---
+
+<sub>P.S. If the look feels oddly familiar: it's lovingly lifted from SimCity 4's budget screen. Balancing
+the household books should be at least as satisfying as balancing a city's, and with fewer riots.</sub>
