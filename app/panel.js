@@ -245,7 +245,9 @@
     return '<section class="summary" role="button" tabindex="0" aria-expanded="' + state.breakdown + '" aria-label="' + unit + ' totals. Tap for the breakdown">' +
       '<div class="line big"><span>Start of ' + unit + (year ? "" : " (" + shortDate(p.start) + ")") + "</span><span>" + whole(p.opening) + "</span></div>" +
       '<div class="line in"><span>Income</span><span>' + whole(p.totIn) + "</span></div>" +
-      '<div class="line out"><span>Expenses</span><span>' + whole(p.totOut) + "</span></div>" +
+      // Expenses is shown as the balancing figure so the four rounded numbers always add up
+      // (rounding each line separately can leave them £1 out). It's within a pound of the true total.
+      '<div class="line out"><span>Expenses</span><span>' + whole(Math.round(p.opening) + Math.round(p.totIn) - Math.round(p.periodEnd)) + "</span></div>" +
       '<div class="line end' + (p.periodEnd < 0 ? " neg" : "") + '"><span>' + unit + " End Cash</span><span>" + whole(p.periodEnd) + "</span></div>" +
       "</section>";
   }
