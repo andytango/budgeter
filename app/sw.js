@@ -1,5 +1,5 @@
 // Keeps the app shell and the last budget on the phone so it opens offline.
-const SHELL = "budget-shell-v14";
+const SHELL = "budget-shell-v15";
 const DATA = "budget-data-v1";
 const SHELL_FILES = ["/", "/manifest.webmanifest", "/icon-192.png", "/icon-512.png", "/apple-touch-icon.png", "/panel.css", "/panel.js", "/auth.js"];
 
